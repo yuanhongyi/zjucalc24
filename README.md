@@ -1,4 +1,4 @@
-# zjucalc24.github.io
+# zjucalc fall-winter 2024-2025
 Repository of Calculus (A) I Course Materials for the Autumn-Winter Semester of the 2024-2025 Academic Year at Zhejiang University.
 
 ---
