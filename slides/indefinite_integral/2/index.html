@@ -4,12 +4,12 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="yuanhongyi2004" name="author"/>
-<link href="https://zjucalc24.github.io/slides/5/slides_Taylor/" rel="canonical"/>
-<link href="../../.." rel="prev"/>
-<link href="../../indefinite_integral/1/" rel="next"/>
+<link href="https://zjucalc24.github.io/slides/indefinite_integral/2/" rel="canonical"/>
+<link href="../1/" rel="prev"/>
+<link href="../3/" rel="next"/>
 <link href="../../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.46" name="generator"/>
-<title>Taylor - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
+<title>有理三角函数 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
 <link href="../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
@@ -35,9 +35,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#taylor">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -59,7 +56,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Taylor
+              有理三角函数
             
           </span>
 </div>
@@ -123,7 +120,7 @@
       </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="./">
+<a class="md-tabs__link" href="../../5/slides_Taylor/">
           
   
     
@@ -169,96 +166,61 @@
             Slides
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
 <span class="md-ellipsis">
     微分中值定理
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_1">
 <span class="md-nav__icon md-icon"></span>
             微分中值定理
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../5/slides_Taylor/">
 <span class="md-ellipsis">
     Taylor
   </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
-<span class="md-ellipsis">
-    Taylor
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      有限区间在某点展开
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      无穷区间以及在任意点展开
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      中值极限
-    </span>
 </a>
 </li>
 </ul>
 </nav>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
 <span class="md-ellipsis">
     不定积分
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             不定积分
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indefinite_integral/1/">
+<a class="md-nav__link" href="../1/">
 <span class="md-ellipsis">
     有理函数
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../indefinite_integral/2/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     有理三角函数
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../indefinite_integral/3/">
+<a class="md-nav__link" href="../3/">
 <span class="md-ellipsis">
     换元法和分部积分
   </span>
@@ -279,139 +241,13 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      有限区间在某点展开
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      无穷区间以及在任意点展开
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      中值极限
-    </span>
-</a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="taylor">Taylor<a class="headerlink" href="#taylor" title="Permanent link">¶</a></h1>
-<p>若要证明的式子中含有高阶导数（如<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{(4)}(\xi)\)</span></span>、<span><span class="arithmatex">\(f^{(m)}(\xi)\)</span><span class="heti-spacing"> </span></span>等<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，一般要用带拉格朗日余项的泰勒公式：</p>
-<h3 id="_1">有限区间在某点展开<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
-<div class="arithmatex">\[
-f(x)=f(x_{0})+f'(x_{0})(x - x_{0})+\dfrac{f^{\prime \prime}(x_{0})}{2!}(x - x_{0})^{2}+\cdots+\dfrac{f^{(n)}(\xi)}{(n)!}(x - x_{0})^{n}
-\]</div>
-<p>在选取展开点和被展开点时，总的思路是<strong>选取导数值信息多的点作为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span>(<span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_0\)</span><span class="heti-spacing"> </span></span>处展开<span><span class="heti-spacing"> </span>)</span></strong>。当然，有时也会有其他展开方式，<strong>如将两端点均在中点处展开、将中点分别在两个端点处展开、在任意点处展开等</strong>，具体情况需具体分析。</p>
-<h4 id="1">例<span><span class="heti-spacing"> </span>1</span><a class="headerlink" href="#1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([-1,1]\)</span><span class="heti-spacing"> </span></span>三阶连续可导，<span class="arithmatex">\(f(-1)=0\)</span>，<span class="arithmatex">\(f'(0)=0\)</span>，<span class="arithmatex">\(f(1)=1\)</span>，证：<span class="arithmatex">\(\exists \xi \in(-1,1)\)</span>，s.t.<span class="arithmatex">\(f^{\prime \prime \prime}(\xi)=3\)</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>注<span><span class="heti-spacing"> </span>1</span>：介值定理小推论：<span class="arithmatex">\(af(u)+bf(v) = (a+b)f(\eta)\)</span></p>
-<p>注<span><span class="heti-spacing"> </span>2</span>：由达布定理可知，这里的“三阶连续可导”可弱化为“三阶可导”，部分题目有类似情况。</p>
-</div>
-<h4 id="2">例<span><span class="heti-spacing"> </span>2</span><a class="headerlink" href="#2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>二阶可导，<span class="arithmatex">\(f(0)=f(1)=0\)</span>，<span class="arithmatex">\([f(x)]_{min}=-1\)</span>，证：<span class="arithmatex">\(\exists \xi \in(0,1)\)</span>，s.t.<span class="arithmatex">\(f^{\prime \prime}(\xi) \geq8\)</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>极值点蕴含了导数的信息，所以常常将函数在极值点处泰勒展开。</p>
-</div>
-<h4 id="3">例<span><span class="heti-spacing"> </span>3</span><a class="headerlink" href="#3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = x_{0}\)</span><span class="heti-spacing"> </span></span>的邻域内四阶可导，<span class="arithmatex">\(|f^{(4)}(x)| \leq M(M&gt;0)\)</span>，证：对此邻域上任意一个不同于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span><span class="heti-spacing"> </span></span>的点<span><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span></span>，以及其关于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_0\)</span><span class="heti-spacing"> </span></span>的对称点<span><span class="heti-spacing"> </span><span class="arithmatex">\(b\)</span></span>，有<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f^{\prime \prime}(x_{0})-\dfrac{f(a)+f(b)-2f(x_{0})}{(a - x_{0})^{2}}| \leq\dfrac{M}{12}(a - x_{0})^{2}\)</span></span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>若题干中无具体点的导数信息，可观察欲证结论确定展开点和被展开点，此思想可解决下面两道类题。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>类题<span class="heti-skip"><span class="heti-spacing"> </span>1: <span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>二阶连续可导，证：<span class="arithmatex">\(\exists \xi \in(a,b)\)</span>，使<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(a)-2f(\dfrac{a + b}{2})+f(b)=\dfrac{(b - a)^{2}}{4}f^{\prime \prime}(\xi)\)</span></span></p>
-</div>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>类题<span class="heti-skip"><span class="heti-spacing"> </span>2: <span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>三阶连续可导，证：<span class="arithmatex">\(\exists \xi \in(a,b)\)</span>，使<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(b)=f(a)+f'(\dfrac{a + b}{2})(b - a)+\dfrac{(b - a)^{3}}{24}f^{\prime \prime \prime}(\xi)\)</span></span></p>
-</div>
-<p><br/><br/><br/><br/><br/><br/><br/></p>
-<h4 id="4">例<span><span class="heti-spacing"> </span>4</span><a class="headerlink" href="#4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>在一条笔直的道路上，一辆汽车从开始启动到刹车停止用单位时间走完了单位路程，证明：至少有一个时间点，其加速度的绝对值不小于<span><span class="heti-spacing"> </span>4</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>对于端点处函数、导数信息都已知的题目，初学者可能选“两端点处相互展开”，但不够精确，通常将中点在端点处展开利用“对称美”，类似题目如下。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>类题<span class="heti-skip"><span class="heti-spacing"> </span>: <span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>阶可导<span><span class="heti-spacing"> </span><span class="arithmatex">\((n\geq2)\)</span></span>，满足<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{(i)}(a)=f^{(i)}(b)=0(i = 1,2,\cdots,n - 1)\)</span></span>，得<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f^{(n)}(\xi)| \geq\dfrac{2^{n - 1}n!}{(b - a)^{n}}|f(b)-f(a)|\)</span></span>。</p>
-</div>
-<p><br/><br/><br/><br/><br/></p>
-<h3 id="_2">无穷区间以及在任意点展开<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
-<p>当题目出现无穷区间时，我们有一种特殊的展开方式</p>
-<div class="arithmatex">\[
-f(x+h) = f(x)+f'(x)h+\dfrac{f^{\prime \prime}(x)}{2!}h^{2}+\cdots+\dfrac{f^{(n)}(\xi)}{n!}h^{n}, \xi位于x和x+h之间
-\]</div>
-<p>以及</p>
-<div class="arithmatex">\[
-f(x-h) = f(x)-f'(x)h+\dfrac{f^{\prime \prime}(x)}{2!}h^{2}-\cdots+\dfrac{f^{(n)}(\xi)}{n!}h^{n}, \xi位于x和x-h之间
-\]</div>
-<h4 id="1_1">例<span><span class="heti-spacing"> </span>1</span><a class="headerlink" href="#1_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p><span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,+\infty)\)</span><span class="heti-spacing"> </span></span>三阶可导，且<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\)</span><span class="heti-spacing"> </span></span>有界，证明：<span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,+\infty)\)</span><span class="heti-spacing"> </span></span>也有界。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>本题只需证“有界”，未求具体“界”，而下面三道题给出了具体界。</p>
-</div>
-<h4 id="2_1">例<span><span class="heti-spacing"> </span>2</span><a class="headerlink" href="#2_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>二阶可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f(x)| \leq a\)</span></span>，<span class="arithmatex">\(|f^{\prime \prime}(x)| \leq b\)</span>，证：<span><span class="arithmatex">\(|f'(x)| \leq 2a+\dfrac{b}{2}\)</span><span class="heti-spacing"> </span></span>成立。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>注意，本题的结论是对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>上的任意<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>都成立，而不是对于某个特定的<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>成立。请思考怎么展开</p>
-</div>
-<h4 id="3_1">例<span><span class="heti-spacing"> </span>3</span><a class="headerlink" href="#3_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((-\infty,+\infty)\)</span><span class="heti-spacing"> </span></span>二阶可导，记<span><span class="heti-spacing"> </span><span class="arithmatex">\(M_{i}=\max |f^{(i)}(x)|(i = 0,1,2)\)</span></span>，证明：<span class="arithmatex">\(M_{1}^{2} \leq 2M_{0}M_{2}\)</span>。</p>
-<p><br/><br/><br/><br/><br/><br/><br/></p>
-<h4 id="4_1">例<span><span class="heti-spacing"> </span>4</span><a class="headerlink" href="#4_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,+\infty)\)</span><span class="heti-spacing"> </span></span>二阶可导，记<span><span class="heti-spacing"> </span><span class="arithmatex">\(M_{i}=\max |f^{(i)}(x)|(i = 0,1,2)\)</span></span>，证明：<span class="arithmatex">\(M_{1}^{2} \leq 4M_{0}M_{2}\)</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>定义域缩小为<span><span class="heti-spacing"> </span><span class="arithmatex">\((0,+\infty)\)</span></span>，对称美消失，界不精确，属正常情况。</p>
-</div>
-<h3 id="_3">中值极限<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
-<p>有一种题目，是让你计算有限增量公式中的中值参数的极限。这种题目的思想其实特别简单，只需要自己将<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>重新展开一次，然后和题干给出的展开式对比，得到一个简单等式，然后想办法把中值分离出来即可。</p>
-<p>我们往往用<strong>拉格朗日中值定理或者泰勒公式</strong>去剥离中值参数</p>
-<h4 id="1_2">例<span><span class="heti-spacing"> </span>1</span><a class="headerlink" href="#1_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p><span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>二阶连续可导，<span class="arithmatex">\(f''(x)\neq0\)</span>，若<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x + h)=f(x)+f'(x+\theta h)h(0&lt;\theta&lt;1)\)</span></span>，证：<span class="arithmatex">\(\lim\limits_{h\to0}\theta=\dfrac{1}{2}\)</span>。</p>
-<p><br/><br/><br/><br/></p>
-<h4 id="2_2">例<span><span class="heti-spacing"> </span>2</span><a class="headerlink" href="#2_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p><span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n + 1\)</span><span class="heti-spacing"> </span></span>阶连续导数，若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(a + h)=f(a)+f'(a)h+\dfrac{f''(a)}{2}h^{2}+\cdots+\dfrac{f^{(n)}(a+\theta h)}{n!}h^{n}(0&lt;\theta&lt;1)\)</span><span class="heti-spacing"> </span></span>且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{(n + 1)}(a)\neq0\)</span></span>，证明：<span class="arithmatex">\(\lim\limits_{h\to0}\theta=\dfrac{1}{n + 1}\)</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<h4 id="3_2">例<span><span class="heti-spacing"> </span>3</span><a class="headerlink" href="#3_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
-<p><span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>阶连续导数，<span class="arithmatex">\(f^{(k)}(x_{0})=0(k = 2,3,\cdots,n - 1)\)</span>，<span class="arithmatex">\(f^{(n)}(x_{0})\neq0\)</span>，<span class="arithmatex">\(f(x_{0}+h)=f(x_{0})+hf'(x_{0}+\theta h)\)</span>，其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(0&lt;\theta&lt;1\)</span></span>，证明：<span class="arithmatex">\(\lim\limits_{h\to0}\theta=\dfrac{1}{\sqrt[n - 1]{n}}\)</span>。</p>
-<p><br/><br/><br/><br/><br/></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>本题给出了很多导数的信息，所以在对估计一阶导数的差值时我们需要使用<span class="heti-skip"><span class="heti-spacing"> </span>Taylor<span class="heti-spacing"> </span></span>展开<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>误差就太大了</p>
-</div>
+<h1>有理三角函数</h1>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
@@ -432,7 +268,7 @@ f(x-h) = f(x)-f'(x)h+\dfrac{f^{\prime \prime}(x)}{2!}h^{2}-\cdots+\dfrac{f^{(n)}
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Preface" class="md-footer__link md-footer__link--prev" href="../../..">
+<a aria-label="Previous: 有理函数" class="md-footer__link md-footer__link--prev" href="../1/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -441,17 +277,17 @@ f(x-h) = f(x)-f'(x)h+\dfrac{f^{\prime \prime}(x)}{2!}h^{2}-\cdots+\dfrac{f^{(n)}
                 Previous
               </span>
 <div class="md-ellipsis">
-                Preface
+                有理函数
               </div>
 </div>
 </a>
-<a aria-label="Next: 有理函数" class="md-footer__link md-footer__link--next" href="../../indefinite_integral/1/">
+<a aria-label="Next: 换元法和分部积分" class="md-footer__link md-footer__link--next" href="../3/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                有理函数
+                换元法和分部积分
               </div>
 </div>
 <div class="md-footer__button md-icon">
