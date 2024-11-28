@@ -1,0 +1,80 @@
+h1 {
+  counter-reset: h2;
+}
+h2 {
+  counter-reset: h3;
+}
+h3 {
+  counter-reset: h4;
+}
+h4 {
+  counter-reset: h5;
+}
+h5 {
+  counter-reset: h6;
+}
+/* h2:before {
+  counter-increment: h2;
+  content: counter(h2);
+  margin-right: 0.8rem;
+}
+h3:before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3);
+  margin-right: 0.8rem;
+}
+h4:before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4);
+  margin-right: 0.8rem;
+}
+h5:before {
+  counter-increment: h5;
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5);
+  margin-right: 0.8rem;
+}
+h6:before {
+  counter-increment: h6;
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6);
+  margin-right: 0.8rem;
+} */
+.md-typeset h1, .md-typeset h2 {
+  font-weight: 600;
+}
+.md-typeset h3 {
+  font-weight: 500;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: rgb(0, 63, 136);
+  --md-primary-bg-color: #FFFFFF;
+  --md-typeset-a-color: #555555;
+  --md-default-fg-color: #000000;
+  --md-footer-fg-color: #000000;
+  --md-footer-bg-color: #EFEFEF;
+  --md-footer-bg-color--dark: rgb(60, 53, 120);
+  --md-footer-fg-color--light: #FFFFFF;
+  --md-footer-fg-color--lighter: #FFFFFF;
+  --md-code-bg-color: #fafafa;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #161616;
+  --md-default-bg-color--light: #161616;
+  --md-default-bg-color--lighter: #161616;
+  --md-default-bg-color--lightest: #161616;
+  --md-default-fg-color: rgba(255,255,255);
+  --md-default-fg-color--light: rgba(255,255,255,0.85);
+  --md-default-fg-color--lighter: rgba(255,255,255,0.8);
+  --md-default-fg-color--lightest: rgba(255,255,255,0.6);
+  --md-primary-fg-color: rgb(0, 63, 136);
+  --md-typeset-a-color: #d3d3d3;
+  --md-footer-fg-color: #fff;
+  --md-footer-bg-color: #0d0d0d;
+  --md-footer-fg-color: #FFFFFF;
+  --md-footer-bg-color--dark: rgb(60, 53, 120);
+  --md-footer-fg-color--light: #FFFFFF;
+  --md-footer-fg-color--lighter: #FFFFFF;
+  --md-code-bg-color: #1d1d1d;
+}
+

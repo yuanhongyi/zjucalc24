@@ -1,8 +1,19 @@
-site_name: 浙江大学2024-2025学年秋冬学期微积分（甲）I课程资料仓库
+site_name: 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学
 site_url: https://zjucalc24.github.io/
 site_author: yuanhongyi2004
+
+extra:
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/3546574332365752
+    - icon: fontawesome/brands/github
+      link: https://github.com/yuanhongyi2004/zjucalc24
+
+
 theme: 
   name: material #主题
+  logo: graph/ckc.png
+  favicon: graph/ckc.png 
   icon:
     admonition:
       note: octicons/tag-16
@@ -17,21 +28,103 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+    repo: fontawesome/brands/github
+    edit: material/pencil
+  features:
+    - search.highlight
+#    - navigation.instant
+    - navigation.expand
+    - navigation.footer
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+#    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - header.autohide
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - content.tabs.link
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    code: JetBrains Mono
+    text: Noto Serif SC
 
 
 markdown_extensions:
-  - pymdownx.arithmatex
   - admonition
+  # Python Markdown
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - abbr
+  - def_list
+  - attr_list
+  - footnotes
+  - md_in_html
+  - admonition
+  - sane_lists
+  # Python Markdown Extensions
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - neoteroi.cards # install using `pip install neoteroi-mkdocs`
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js
+extra_css:
+  - stylesheets/neoteroi-mkdocs.css
+  - stylesheets/custom.css
 
-
+plugins:
+  - search
+  - glightbox # install using `pip install mkdocs-glightbox`
+  - heti:
+      extra_skipped_class:
+        - arithmatex
+      disable_serve: false
+  - git-revision-date-localized
+  # - git-authors
+  # - git-committers
+  # - with-pdf
 
 
 nav:
-  - 首页: index.md
-  - 课程资料:
-    - 泰勒展开: slides/5/slides_Taylor.md
+  - 前言: index.md
+  - Slides:
+    - Taylor展开: slides/5/slides_Taylor.md
+    - 不定积分: slides/7/1.md
