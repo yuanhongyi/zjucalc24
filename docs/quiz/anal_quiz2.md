@@ -81,8 +81,10 @@ $f''(0) = 1,f'(0) = 0$
 - C. 方程$\ln x-\dfrac{x}{e}+100=0$恰有两个正实根
 - D. 若函数$f(x)$在$\mathbb{R}$上可导且有界，则导函数$f'(x)$在$\mathbb{R}$上必有界
 
+A 多了一个负号
 $\pi^{e-1}<e^{\pi-1}\iff(e-1)\ln\pi<(\pi-1)\ln e$
 $f(x) = \dfrac{\ln x}{x-1},f'(x) = \dfrac{1-\dfrac{1}{x}-\ln x}{(x-1)^2}\le 0$
+D $f(x) = \sin(x^2)$
 
 **ABC**
 
