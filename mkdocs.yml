@@ -124,7 +124,11 @@ plugins:
 
 
 nav:
-  - 前言: index.md
+  - Preface: index.md
   - Slides:
-    - Taylor展开: slides/5/slides_Taylor.md
-    - 不定积分: slides/7/1.md
+    - 微分中值定理:
+      - Taylor: slides/5/slides_Taylor.md
+    - 不定积分:
+      - 有理函数: slides/indefinite_integral/1.md
+      - 有理三角函数: slides/indefinite_integral/2.md
+      - 换元法和分部积分: slides/indefinite_integral/3.md
