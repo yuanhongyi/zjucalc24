@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -129,6 +132,16 @@
 
         </a>
 </li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../quiz/anal_quiz2/">
+          
+  
+    
+  
+  Quiz
+
+        </a>
+</li>
 </ul>
 </div>
 </nav>
@@ -213,11 +226,43 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    有理三角函数
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     有理三角函数
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      三角有理函数积分的通用方法
+    </span>
+</a>
+<nav aria-label="三角有理函数积分的通用方法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      三角有理函数积分的特殊解法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../3/">
@@ -232,6 +277,30 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    Quiz
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            Quiz
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../quiz/anal_quiz2/">
+<span class="md-ellipsis">
+    Anal-Quiz2
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -241,13 +310,225 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      三角有理函数积分的通用方法
+    </span>
+</a>
+<nav aria-label="三角有理函数积分的通用方法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      三角有理函数积分的特殊解法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>有理三角函数</h1>
+<h1 id="_1">三角有理函数积分<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">三角有理函数积分的通用方法<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<p>一切三角有理函数的积分，只需利用<strong>万能公式</strong>，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\tan(\dfrac{x}{2}) = t\)</span></span>，就总能将三角有理函数的积分化为有理函数的积分。而由于一切有理函数的积分方法我们都已经学会，所以——“从理论上来说”，三角有理函数的积分本身并没有本质上的困难；但就像前文所述，通法并不一定是好方法，利用万能公式计算三角有理函数的积分是下下策，因为这种解法的计算量往往会很大，尤其是被积函数的次数太高时，计算量是不可想象的。</p>
+<p>所以，我们常常希望避开万能公式去求解三角有理函数的积分。当然，为了不出现知识盲区，我们还是以两道题目为例，来展示一下三角有理函数的万能公式解法。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{3 + 5\cos x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong>：</p>
+<div class="arithmatex">\[
+\int\dfrac{1}{1+ \sin x+\cos x}\mathrm{d}x
+\]</div>
+<h3 id="_3">三角有理函数积分的特殊解法<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>我们一般都是具体问题具体分析，灵活使用三角函数的各种恒等变形和凑微分技巧，达到快速求解的目的。总的来说，有以下几个小技巧——</p>
+<h4 id="_4">化简分母<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>如果分母为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(1\pm\cos x\)</span><span class="heti-spacing"> </span></span>或者<span><span class="heti-spacing"> </span><span class="arithmatex">\(1\pm\sin x\)</span></span>，那么我们可以尝试分子分母<strong>乘以共轭表达式</strong>，使分母从两项变为一项，达到化简的效果。因为，对于一个不定积分而言，如果分母项数太多，将是非常难于处理的；而如果分母只有一项，分子就算有很多项相加，我们也可以将整个积分拆分成若干个小积分，分别计算即可。当然，除了乘以共轭表达式以外，还可以利用<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\cos 2x\)</span><span class="heti-spacing"> </span></span>的二倍角公式，也能达到缩分母的效果。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{1 + \cos x}\mathrm{d}x
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\sin x}{1 + \sin x}\mathrm{d}x
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>本题可以分子<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(+1 - 1\)</span><span class="heti-spacing"> </span></span>然后拆开，然后转化为上一题；也可以直接分子分母乘以<span><span class="heti-spacing"> </span><span class="arithmatex">\(\cdots\)</span></span></p>
+</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin x + \cos x}\mathrm{d}x
+\]</div>
+<p>注：辅助角公式<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sin x + \cos x = \sqrt{2}\sin(x + \dfrac{\pi}{4})\)</span><span class="heti-spacing"> </span></span>虽然用的频率不高，但是也需要记住，偶尔会产生奇效</p>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\cos x}{\sin x + \cos x}\mathrm{d}x
+\]</div>
+<h4 id="rsin-x-cos-x-rsin-xcos-x"><span class="arithmatex">\(R(\sin x,-\cos x)=-R(\sin x,\cos x)\)</span><a class="headerlink" href="#rsin-x-cos-x-rsin-xcos-x" title="Permanent link">¶</a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>把<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\cos x\)</span><span class="heti-spacing"> </span></span>凑到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后面凑微分</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin^{2}x\cdot\cos x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\cos^{3}x - 2\cos x}{1 + \sin^{2}x + \sin^{4}x}\mathrm{d}x
+\]</div>
+<blockquote>
+<p>此题要联系上一讲的结论</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>6</span></strong>：</p>
+<div class="arithmatex">\[
+\int\sec^3 x\mathrm{d}x
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注：本题除了利用<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(R(\sin x,-\cos x)=-R(\sin x,\cos x)\)</span><span class="heti-spacing"> </span></span>外，还可以使用分部积分，然后出现积分重现，即可解出我们需要的<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int\sec^{3}x\mathrm{d}x\)</span></span>。利用这个思想，我们解决下面两个类题——
+<strong>类题<span><span class="heti-spacing"> </span>1</span></strong>：</p>
+<div class="arithmatex">\[
+\int\sqrt{1 + x^{2}}\mathrm{d}x
+\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong>：请思考如何计算积分</p>
+<div class="arithmatex">\[
+I_{n}=\int\sec^{n}x\mathrm{d}x(n\geq3)
+\]</div>
+<p>Hint：分奇偶，直接凑，很简单；<span><span class="arithmatex">\(I_{2n + 1}\)</span><span class="heti-spacing"> </span></span>的计算方法和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{2n - 1}\)</span><span class="heti-spacing"> </span></span>类似，也是“分部积分<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>积分重现”，然后得到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{2n + 1}\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{2n - 1}\)</span><span class="heti-spacing"> </span></span>之间的递推关系。大家可以利用这个思想去计算一下<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int\sec^{4}x\mathrm{d}x\)</span></span>，<span class="arithmatex">\(\int\sec^{5}x\mathrm{d}x\)</span>）</p>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong>：
+请推导出积分</p>
+<div class="arithmatex">\[
+I_{n}=\int\tan^{n}x\mathrm{d}x(n\geq2)
+\]</div>
+<p>的递推公式</p>
+<p><strong>类题<span><span class="heti-spacing"> </span>4</span></strong>：
+请推导出积分</p>
+<div class="arithmatex">\[
+I_{n}=\int\sin^{n}x\mathrm{d}x(n\geq2)
+\]</div>
+<p>的递推公式</p>
+<p><strong>类题<span><span class="heti-spacing"> </span>5</span></strong>：根据类题<span class="heti-skip"><span class="heti-spacing"> </span>4<span class="heti-spacing"> </span></span>的结论，可推导出定积分中大名鼎鼎的“点火公式”——</p>
+<div class="arithmatex">\[
+I_{n}=\int_{0}^{\frac{\pi}{2}}\sin^{n}x\mathrm{d}x=\begin{cases}\frac{n - 1}{n}\cdot\frac{n - 3}{n - 2}\cdots\frac{2}{3},&amp;n为奇数\\\frac{n - 1}{n}\cdot\frac{n - 3}{n - 2}\cdots\frac{1}{2}\cdot\frac{\pi}{2},&amp;n为偶数\end{cases}
+\]</div>
+</div>
+<h4 id="r-sin-xcos-x-rsin-xcos-x"><span class="arithmatex">\(R(-\sin x,\cos x)=-R(\sin x,\cos x)\)</span><a class="headerlink" href="#r-sin-xcos-x-rsin-xcos-x" title="Permanent link">¶</a></h4>
+<p>注：这种情况和上面的情形类似，所以只用两个简单的例子作为说明即可。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>7</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin x\cdot\cos^{2}x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>8</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{5 + 4\cos x}{(2 + \cos x)^{2}\cdot\sin x}\mathrm{d}x
+\]</div>
+<h4 id="r-sin-x-cos-x-rsin-x-cos-x"><span class="arithmatex">\(R(-\sin x,-\cos x) = R(\sin x, \cos x)\)</span><a class="headerlink" href="#r-sin-x-cos-x-rsin-x-cos-x" title="Permanent link">¶</a></h4>
+<p>想办法创造出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sec^2\mathrm{d}x\)</span>,<span class="heti-spacing"> </span></span>凑出<span><span class="heti-spacing"> </span><span class="arithmatex">\(\text{dtan}x\)</span></span></p>
+<p>我们 有时候喜欢分子分母同时除以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\cos ^{2} x\)</span> ,<span class="heti-spacing"> </span></span>使分子出现<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sec^2\mathrm{d}x\)</span>,<span class="heti-spacing"> </span></span>就是这个原因｡</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>9</span></strong>: </p>
+<div class="arithmatex">\[
+\int \frac{1}{1+\cos ^{2} x} \text{d} x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>10</span></strong>:</p>
+<div class="arithmatex">\[
+\int \frac{1}{(3 \sin x+2 \cos x)^{2}}\text{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>11</span></strong>: </p>
+<div class="arithmatex">\[
+\int \frac{1}{a^{2} \sin ^{2} x+b^{2} \cos ^{2} x} \text{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>12</span></strong>: </p>
+<div class="arithmatex">\[
+\int \frac{1}{\sin ^{4} x \cdot \cos ^{2} x} \text{d}x
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注<span class="heti-skip"><span class="heti-spacing"> </span>:<span class="heti-spacing"> </span></span>如果把被积函数中的分子分母颠倒<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>改为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \sin ^{4} x \cdot \cos ^{2} x d x\)</span><span class="heti-spacing"> </span></span>后<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>虽然也可以凑<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>但后续操作并不容易<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>当然<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>也能做<span><span class="heti-spacing"> </span>);</span></p>
+<p>但是若能灵活地使用二倍角公式<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>变为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \sin ^{4} x \cdot \cos ^{2} x ~d x=\dfrac{1}{4} \int \sin ^{2} 2 x \cdot \dfrac{1-\cos 2x}{2}\text{d}x\)</span> ,<span class="heti-spacing"> </span></span>则后续操作会容易很多｡这再一次体现了不定积分特别容易出现一题多解的情况<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>希望大家具体问题具体分析｡ </p>
+</div>
+<p>例题<span><span class="heti-spacing"> </span>13</span> </p>
+<div class="arithmatex">\[
+\int \frac{1+\sin x+\cos x}{1+\sin ^{2} x}\text{d}x
+\]</div>
+<h4 id="intdfracasin-x-bcos-xcsin-x-dcos-x">对于形如<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int\dfrac{A\sin x + B\cos x}{C\sin x + D\cos x}\)</span><span class="heti-spacing"> </span></span>的积分<a class="headerlink" href="#intdfracasin-x-bcos-xcsin-x-dcos-x" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>我们一般假设“分子<span class="heti-skip"><span class="heti-spacing"> </span>= <span class="arithmatex">\(p\)</span><span class="heti-spacing"> </span></span>分母<span><span class="heti-spacing"> </span>+ <span class="arithmatex">\(q\)</span></span>（分母）'”，解出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(p\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(q\)</span><span class="heti-spacing"> </span></span>即可。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>14</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\cos x}{\sin x + \cos x}\mathrm{d}x
+\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注：本题当然也可以归结于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\cdots\)</span><span class="heti-spacing"> </span></span>的类型，然后凑<span><span class="heti-spacing"> </span><span class="arithmatex">\(\cdots\)</span></span>，同一个题有很多解法。</p>
+</div>
+<h4 id="_5">当被积函数中出现不同角度的三角函数时<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>我们一般先用倍角公式统一角度。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>15</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin x\cdot\sin 2x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>16</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\cos 2x - \sin 2x}{\sin x + \cos x}\mathrm{d}x
+\]</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="arithmatex">\[
+\int\dfrac{\sin x\cos x}{\sin x+\cos x}\mathrm{d}x
+\]</div>
+<p>的求解，利用<span><span class="heti-spacing"> </span><span class="arithmatex">\((\sin x+\cos x)^2 = 1 + 2\sin x\cos x\)</span></span></p>
+</div>
+<h4 id="intsin-axsin-bxaneq-b">对于形如<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int\sin ax\sin bx(a\neq b)\)</span><span class="heti-spacing"> </span></span>之类的题<a class="headerlink" href="#intsin-axsin-bxaneq-b" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>我们可以直接采用积化和差公式，一步秒杀</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>17</span></strong>：</p>
+<div class="arithmatex">\[
+\int\sin 2x\cdot\sin 3x\mathrm{d}x
+\]</div>
+<h4 id="_6">有些题，具体问题具体分析<a class="headerlink" href="#_6" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h4>
+<p>这是最核心的思想。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>18-1</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\sin x\cos x}{\sin x + \cos x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>18-2</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\sin x\cos x}{\sin x - \cos x}\mathrm{d}x
+\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>19</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{\sin x\cdot\cos x}{\sin^{4}x + \cos^{4}x}\mathrm{d}x
+\]</div>
+<blockquote>
+<p>分母配方降次</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>20</span></strong>：</p>
+<div class="arithmatex">\[
+\int\dfrac{1}{\sin^6x + \cos^6x}\mathrm{d}x
+\]</div>
+<blockquote>
+<p>立方差，配方</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>21</span></strong>：</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin^{3}x + \cos^{3}x}\mathrm{d}x
+\]</div>
+<p>注：本题涉及到了三角有理函数的裂项，它们没有通法（或许是我不知道<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，只有观察式子结构，不断尝试，类似的还有下面这道题。</p>
+<div class="arithmatex">\[
+\int\frac{1}{\sin(x + a)\sin(x + b)}\mathrm{d}x(\sin(a - b)\neq0)
+\]</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
