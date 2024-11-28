@@ -132,3 +132,5 @@ nav:
       - 有理函数: slides/indefinite_integral/1.md
       - 有理三角函数: slides/indefinite_integral/2.md
       - 换元法和分部积分: slides/indefinite_integral/3.md
+  - Quiz:
+    - Anal-Quiz2: quiz/anal_quiz2.md
