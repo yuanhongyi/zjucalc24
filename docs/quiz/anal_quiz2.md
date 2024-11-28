@@ -59,7 +59,35 @@ $f''(0) = 1,f'(0) = 0$
 
 1，3对 $令f(x) = x快速求解$
 
-对于2：TBD
+对于2：
+
+ $\forall \varepsilon>0, \exists\delta > 0$, 当 $|x| < \delta$ 时, 有
+
+$$
+-\frac{\varepsilon}{2} < \frac{f(2x) - f(x)}{x} < \frac{\varepsilon}{2}
+$$
+
+特别地, 取 $x_n = \dfrac{x}{2^n} (k \in \mathbb{N})$, 上式亦成立. 故有
+
+$$\frac{1}{2^k}\left(- \frac{\varepsilon}{2}\right) < \frac{f\left(\frac{x}{2^{k-1}}\right) - f\left(\frac{x}{2^k}\right)}{x} < \frac{1}{2^k}\left(\frac{\varepsilon}{2}\right),$$
+
+$k=1,2,\cdots,n$. 将此 n 式相加, 注意
+
+$$\sum_{k=1}^{n} \left[f\left(\frac{x}{2^{k-1}}\right) - f\left(\frac{x}{2^k}\right)\right] = f(x) - f\left(\frac{x}{2^n}\right) = f(x) - f(x_n), \quad \sum_{k=1}^{n} \frac{1}{2^k} = 1 - \frac{1}{2^n},$$
+
+有
+
+$$\left(1 - \frac{1}{2^n}\right)\left(- \frac{\varepsilon}{2}\right) < \frac{f(x) - f(x_n)}{x} < \left(1 - \frac{1}{2^n}\right)\left(\frac{\varepsilon}{2}\right).$$
+
+再令 $n \to \infty$, 取极限, 这时 $x_n = \dfrac{x}{2^n} \to 0$, 而 $f$ 在 $0$ 处连续, $\lim_\limits{n \to \infty} f(x_n) = f(0)$, 故
+
+$$-\frac{\varepsilon}{2} \leq \frac{f(x) - f(0)}{x} \leq \frac{\varepsilon}{2}.$$
+
+即
+
+$$\left|\frac{f(x) - f(0)}{x} - 0\right| \leq \frac{\varepsilon}{2} < \varepsilon, \quad f'(0) \text{ 存在且 } f'(0) = 0.$$
+
+
 
 ---
 
@@ -82,11 +110,12 @@ $f''(0) = 1,f'(0) = 0$
 - D. 若函数$f(x)$在$\mathbb{R}$上可导且有界，则导函数$f'(x)$在$\mathbb{R}$上必有界
 
 A 多了一个负号
+
 $\pi^{e-1}<e^{\pi-1}\iff(e-1)\ln\pi<(\pi-1)\ln e$
 $f(x) = \dfrac{\ln x}{x-1},f'(x) = \dfrac{1-\dfrac{1}{x}-\ln x}{(x-1)^2}\le 0$
 D $f(x) = \sin(x^2)$
 
-**ABC**
+**BC**
 
 ---
 
