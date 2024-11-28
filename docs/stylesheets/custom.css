@@ -69,7 +69,6 @@ h6:before {
   --md-default-fg-color--lightest: rgba(255,255,255,0.6);
   --md-primary-fg-color: rgb(0, 63, 136);
   --md-typeset-a-color: #d3d3d3;
-  --md-footer-fg-color: #fff;
   --md-footer-bg-color: #0d0d0d;
   --md-footer-fg-color: #FFFFFF;
   --md-footer-bg-color--dark: rgb(60, 53, 120);
@@ -78,3 +77,6 @@ h6:before {
   --md-code-bg-color: #1d1d1d;
 }
 
+.md-footer-meta {
+  background-color: rgb(48, 55, 62);
+}

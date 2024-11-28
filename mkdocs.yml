@@ -7,13 +7,13 @@ extra:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/3546574332365752
     - icon: fontawesome/brands/github
-      link: https://github.com/yuanhongyi2004/zjucalc24
+      link: https://github.com/yuanhongyi/zjucalc24
 
 
 theme: 
   name: material #主题
-  logo: graph/ckc.png
-  favicon: graph/ckc.png 
+  logo: graph/ZJU-logo.svg
+  favicon: graph/ZJU-logo.svg 
   icon:
     admonition:
       note: octicons/tag-16

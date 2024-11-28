@@ -1,21 +1,59 @@
-# Welcome to MkDocs
+# 浙江大学24-25秋冬学期微积分（甲）I辅学
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## 课程说明
 
-## Commands
+有空再写叭~
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 友链
 
-## Project layout
+[竺院辅学](https://ckc-agc.bowling233.top/)
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+  <style>
+    /* 友链按钮容器样式 */
+  .friend-link-btn {
+      display: inline-block;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      /* 图片宽度和高度根据实际图片调整 */
+      width: 64px;
+      height: 64px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-## test
+    /* 图片样式 */
+    img.friend-link-img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-out;
+    }
 
-    11eq2
+    /* 按钮悬停时图片的动画效果 */
+  .friend-link-btn:hover img.friend-link-img {
+      transform: scale(1.1);
+    }
+
+    /* 按钮点击时的样式变化 */
+  .friend-link-btn:active {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 遮罩层样式，用于点击区域覆盖 */
+  .btn-mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+  </style>
+
+
+  <a href="https://ckc-agc.bowling233.top/" target="_blank">
+    <div class="friend-link-btn">
+      <img class="friend-link-img" src="graph/ckc.png" alt="友链按钮图片">
+      <div class="btn-mask"></div>
+    </div>
+  </a>
+
