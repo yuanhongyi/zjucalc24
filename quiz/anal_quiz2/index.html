@@ -328,7 +328,21 @@ B选项后面那个极限可能不存在</p>
 </ul>
 <p><strong>A</strong> </p>
 <p>1，<span>3<span class="heti-spacing"> </span></span>对<span><span class="heti-spacing"> </span><span class="arithmatex">\(令f(x) = x快速求解\)</span></span></p>
-<p>对于<span><span class="heti-spacing"> </span>2</span>：TBD</p>
+<p>对于<span><span class="heti-spacing"> </span>2</span>：</p>
+<p><span><span class="arithmatex">\(\forall \varepsilon&gt;0, \exists\delta &gt; 0\)</span>,<span class="heti-spacing"> </span></span>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(|x| &lt; \delta\)</span><span class="heti-spacing"> </span></span>时<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>有</p>
+<div class="arithmatex">\[
+-\frac{\varepsilon}{2} &lt; \frac{f(2x) - f(x)}{x} &lt; \frac{\varepsilon}{2}
+\]</div>
+<p>特别地<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>取<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_n = \dfrac{x}{2^n} (k \in \mathbb{N})\)</span>,<span class="heti-spacing"> </span></span>上式亦成立<span class="heti-skip"><span class="heti-spacing"> </span>.<span class="heti-spacing"> </span></span>故有</p>
+<div class="arithmatex">\[\frac{1}{2^k}\left(- \frac{\varepsilon}{2}\right) &lt; \frac{f\left(\frac{x}{2^{k-1}}\right) - f\left(\frac{x}{2^k}\right)}{x} &lt; \frac{1}{2^k}\left(\frac{\varepsilon}{2}\right),\]</div>
+<p><span><span class="arithmatex">\(k=1,2,\cdots,n\)</span>.<span class="heti-spacing"> </span></span>将此<span class="heti-skip"><span class="heti-spacing"> </span>n<span class="heti-spacing"> </span></span>式相加<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>注意</p>
+<div class="arithmatex">\[\sum_{k=1}^{n} \left[f\left(\frac{x}{2^{k-1}}\right) - f\left(\frac{x}{2^k}\right)\right] = f(x) - f\left(\frac{x}{2^n}\right) = f(x) - f(x_n), \quad \sum_{k=1}^{n} \frac{1}{2^k} = 1 - \frac{1}{2^n},\]</div>
+<p>有</p>
+<div class="arithmatex">\[\left(1 - \frac{1}{2^n}\right)\left(- \frac{\varepsilon}{2}\right) &lt; \frac{f(x) - f(x_n)}{x} &lt; \left(1 - \frac{1}{2^n}\right)\left(\frac{\varepsilon}{2}\right).\]</div>
+<p>再令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n \to \infty\)</span>,<span class="heti-spacing"> </span></span>取极限<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>这时<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_n = \dfrac{x}{2^n} \to 0\)</span>,<span class="heti-spacing"> </span></span>而<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(0\)</span><span class="heti-spacing"> </span></span>处连续<span class="heti-skip"><span class="heti-spacing"> </span>, <span class="arithmatex">\(\lim_\limits{n \to \infty} f(x_n) = f(0)\)</span>,<span class="heti-spacing"> </span></span>故</p>
+<div class="arithmatex">\[-\frac{\varepsilon}{2} \leq \frac{f(x) - f(0)}{x} \leq \frac{\varepsilon}{2}.\]</div>
+<p>即</p>
+<div class="arithmatex">\[\left|\frac{f(x) - f(0)}{x} - 0\right| \leq \frac{\varepsilon}{2} &lt; \varepsilon, \quad f'(0) \text{ 存在且 } f'(0) = 0.\]</div>
 <hr/>
 <p><span>5.<span class="heti-spacing"> </span></span>下列函数中，在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = 0\)</span><span class="heti-spacing"> </span></span>处不可导的是<span><span class="heti-spacing"> </span>( )</span></p>
 <ul>
@@ -346,11 +360,11 @@ B选项后面那个极限可能不存在</p>
 <li><span>C.<span class="heti-spacing"> </span></span>方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\ln x-\dfrac{x}{e}+100=0\)</span><span class="heti-spacing"> </span></span>恰有两个正实根</li>
 <li><span>D.<span class="heti-spacing"> </span></span>若函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathbb{R}\)</span><span class="heti-spacing"> </span></span>上可导且有界，则导函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathbb{R}\)</span><span class="heti-spacing"> </span></span>上必有界</li>
 </ul>
-<p><span>A<span class="heti-spacing"> </span></span>多了一个负号
-<span class="arithmatex">\(\pi^{e-1}&lt;e^{\pi-1}\iff(e-1)\ln\pi&lt;(\pi-1)\ln e\)</span>
+<p><span>A<span class="heti-spacing"> </span></span>多了一个负号</p>
+<p><span class="arithmatex">\(\pi^{e-1}&lt;e^{\pi-1}\iff(e-1)\ln\pi&lt;(\pi-1)\ln e\)</span>
 <span class="arithmatex">\(f(x) = \dfrac{\ln x}{x-1},f'(x) = \dfrac{1-\dfrac{1}{x}-\ln x}{(x-1)^2}\le 0\)</span>
 D <span class="arithmatex">\(f(x) = \sin(x^2)\)</span></p>
-<p><strong>ABC</strong></p>
+<p><strong>BC</strong></p>
 <hr/>
 <p><span>7.<span class="heti-spacing"> </span></span>极坐标系下的曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(C: r = 2\cos\theta\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\theta=\dfrac{\pi}{3}\)</span><span class="heti-spacing"> </span></span>处的切线方程为<span><span class="heti-spacing"> </span>( )</span></p>
 <ul>
