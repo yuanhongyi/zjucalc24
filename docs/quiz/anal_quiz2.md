@@ -1,7 +1,7 @@
 # 2024 - 2025学年秋冬学期数学分析(甲)I(H)第二次小测
 
 
-1.已知函数$f(x)$在$\mathbb{R}$上处处可导，且$\forall x \in \mathbb{R}$，$f(x)>0$，则$\lim\limits_{n \to \infty} \dfrac{f(2024+\dfrac{1}{n})}{f(2024)}=( )$
+1.已知函数$f(x)$在$\mathbb{R}$上处处可导，且$\forall x \in \mathbb{R}$，$f(x)>0$，则$\lim\limits_{n \to \infty} n\ln\dfrac{f(2024+\dfrac{1}{n})}{f(2024)}=( )$
 
 - A. 0
 - B. 其他都不对
@@ -25,6 +25,7 @@
 
 A达布定理，D拉格朗日
 B选项后面那个极限可能不存在
+
 ---
 
 3.设函数$f(x)$定义在$\mathbb{R}$上，满足方程$f^{\prime \prime}(x)+(f'(x))^{2}=e^{x}$且$f'(0)=0$，则有( )
@@ -79,7 +80,7 @@ $$\sum_{k=1}^{n} \left[f\left(\frac{x}{2^{k-1}}\right) - f\left(\frac{x}{2^k}\ri
 
 $$\left(1 - \frac{1}{2^n}\right)\left(- \frac{\varepsilon}{2}\right) < \frac{f(x) - f(x_n)}{x} < \left(1 - \frac{1}{2^n}\right)\left(\frac{\varepsilon}{2}\right).$$
 
-再令 $n \to \infty$, 取极限, 这时 $x_n = \dfrac{x}{2^n} \to 0$, 而 $f$ 在 $0$ 处连续, $\lim_\limits{n \to \infty} f(x_n) = f(0)$, 故
+再令 $n \to \infty$, 取极限, 这时 $x_n = \dfrac{x}{2^n} \to 0$, 而 $f$ 在 $0$ 处连续, $\lim\limits_{n \to \infty} f(x_n) = f(0)$, 故
 
 $$-\frac{\varepsilon}{2} \leq \frac{f(x) - f(0)}{x} \leq \frac{\varepsilon}{2}.$$
 
@@ -107,13 +108,14 @@ $$\left|\frac{f(x) - f(0)}{x} - 0\right| \leq \frac{\varepsilon}{2} < \varepsilo
 - A. 设$f(x)=\dfrac{1}{x^{2}-4}$，则$f^{(2024)}(3)=-\dfrac{(2024)!}{4}\left(1-\dfrac{1}{5^{2025}}\right)$ 
 - B. $\dfrac{\pi}{e}>\dfrac{\pi^{e}}{e^{\pi}}$
 - C. 方程$\ln x-\dfrac{x}{e}+100=0$恰有两个正实根
-- D. 若函数$f(x)$在$\mathbb{R}$上可导且有界，则导函数$f'(x)$在$\mathbb{R}$上必有界
+- D. 若函数$f(x)$在$(0,1)$上可导且有界，则导函数$f'(x)$在$(0,1)$上必有界
 
 A 多了一个负号
 
 $\pi^{e-1}<e^{\pi-1}\iff(e-1)\ln\pi<(\pi-1)\ln e$
 $f(x) = \dfrac{\ln x}{x-1},f'(x) = \dfrac{1-\dfrac{1}{x}-\ln x}{(x-1)^2}\le 0$
-D $f(x) = \sin(x^2)$
+
+D $f(x) = \sin(\dfrac{1}{x}),f'(x) = -\dfrac{1}{x^2}\cos(\dfrac{1}{x})$
 
 **BC**
 
@@ -144,7 +146,7 @@ $(\dfrac{1}{2},\dfrac{\sqrt{3}}{2})$
 $y(0) = 1$
 $e^x-e^yy' = y+xy'\Rightarrow y'(0) = 0$
 
-$e^x-e^y(y')^2-e^yy'' = 2y'+ xy''$ 
+$e^x-e^y(y')^2-e^yy'' = 2y'+ xy''\Rightarrow y''(0) = \dfrac{1}{e}$ 
 
 ---
 
@@ -172,4 +174,4 @@ C $设f'(+\infty) = k\neq 0, f(2x)-f(x) = xf'(\xi)\to+\infty(x\to+\infty)$
 
 **C**   
 
-Taylor $-1/6-1/3 = -1/2$  
+Taylor公式 $-\dfrac{1}{6} - \dfrac{1}{3} = -\dfrac{1}{2}$  
