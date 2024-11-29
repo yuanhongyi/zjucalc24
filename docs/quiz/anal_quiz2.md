@@ -26,6 +26,10 @@
 A达布定理，D拉格朗日
 B选项后面那个极限可能不存在
 
+$f(x) = x^2\sin(\dfrac{1}{x}),g(x) = \sin x$
+
+$\lim\limits_{x\to0}\dfrac{f(x)}{g(x)} = 0,\dfrac{f'(x)}{g'(x)} = \dfrac{2x\sin(\dfrac{1}{x})-\cos(\dfrac{1}{x})}{\cos x}极限不存在$
+
 ---
 
 3.设函数$f(x)$定义在$\mathbb{R}$上，满足方程$f^{\prime \prime}(x)+(f'(x))^{2}=e^{x}$且$f'(0)=0$，则有( )
