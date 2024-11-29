@@ -127,10 +127,13 @@ nav:
   - Preface: index.md
   - Slides:
     - 微分中值定理:
-      - Taylor: slides/5/slides_Taylor.md
+      - 泰勒展开式: slides/diff/Taylor/slides_Taylor.md
+      - 常数K值法: slides/diff/constK/slides_constK.md
     - 不定积分:
-      - 有理函数: slides/indefinite_integral/1.md
-      - 有理三角函数: slides/indefinite_integral/2.md
-      - 换元法和分部积分: slides/indefinite_integral/3.md
+      - 有理函数: slides/int/indefinite/1.md
+      - 有理三角函数: slides/int/indefinite/2.md
+      - 换元法和分部积分: slides/int/indefinite/3.md
   - Quiz:
-    - Anal-Quiz2: quiz/anal_quiz2.md
+    - 24数分H第二次小测: quiz/anal_quiz2.md
+  - Exam:
+    - 24微甲期末模拟: exam/24final_sim.md
