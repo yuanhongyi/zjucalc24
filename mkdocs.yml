@@ -124,7 +124,9 @@ plugins:
 
 
 nav:
-  - Preface: index.md
+  - Preface: 
+    - Preface: index.md
+    # - Ciallo～(∠・ω< )⌒★: ciallo.md
   - Slides:
     - 微分中值定理:
       - 泰勒展开式: slides/diff/Taylor/slides_Taylor.md
