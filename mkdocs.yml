@@ -118,9 +118,10 @@ plugins:
         - arithmatex
       disable_serve: false
   - git-revision-date-localized
+  # x- table-reader
   # - git-authors
   # - git-committers
-  # - with-pdf
+  # x- with-pdf
 
 
 nav:
@@ -138,4 +139,5 @@ nav:
   - Quiz:
     - 24数分H第二次小测: quiz/anal_quiz2.md
   - Exam:
+    - 考情分析: exam/final_exam_analysis.md
     - 24微甲期末模拟: exam/24final_sim.md
