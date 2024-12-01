@@ -7,7 +7,7 @@
 <link href="https://zjucalc24.github.io/exam/report%26ans/" rel="canonical"/>
 <link href="../24final_sim/" rel="prev"/>
 <link href="../../graph/ZJU-logo.svg" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.5.46" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.5.47" name="generator"/>
 <title>模拟题分析与解答 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
 <link href="../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
@@ -384,75 +384,263 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">模拟题分析与解答<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
-<p>依照【考情分析<heti-adjacent class="heti-adjacent-half">】</heti-adjacent>，我给同学模拟了一些题目<span class="heti-skip"><span class="heti-spacing"> </span>1-8<span class="heti-spacing"> </span></span>为计算题，<span>9<span class="heti-spacing"> </span></span>为综合计算题，<span>10-12<span class="heti-spacing"> </span></span>为综合分析题</p>
-<p><span>1-2<span class="heti-spacing"> </span></span>属于极限部分<span class="heti-skip"><span class="heti-spacing"> </span>3-4<span class="heti-spacing"> </span></span>属于导数部分<span class="heti-skip"><span class="heti-spacing"> </span>5-8<span class="heti-spacing"> </span></span>属于积分部分</p>
-<p><span>1.<span class="heti-spacing"> </span></span>考察夹逼准则求极限</p>
-<p><span>2.<span class="heti-spacing"> </span></span>考察等价无穷小或者泰勒展开或者中值定理求极限</p>
-<p><span>3.<span class="heti-spacing"> </span></span>考察参数方程求导以及导数定义</p>
-<p><span>4.<span class="heti-spacing"> </span></span>考察复合函数求导以及导数定义</p>
-<p><span>5.<span class="heti-spacing"> </span></span>有理函数的不定积分，分部积分法</p>
-<p><span>6.<span class="heti-spacing"> </span></span>利用定积分定义求极限</p>
-<p><span>7.<span class="heti-spacing"> </span></span>定积分的几何应用，求曲线弧长</p>
-<p><span>8.<span class="heti-spacing"> </span></span>反常积分</p>
-<p><span>9.<span class="heti-spacing"> </span></span>定积分的几何应用，求旋转体体积</p>
-<p><span>10.<span class="heti-spacing"> </span></span>递推数列极限综合题</p>
-<p><span>11.<span class="heti-spacing"> </span></span>微分中值定理综合题，主要考察泰勒展开</p>
-<p><span>12.<span class="heti-spacing"> </span></span>函数与积分综合题，考察导数与单调性，积分不等式</p>
-<p><span>10-12<span class="heti-spacing"> </span></span>难度较大，但是我均做了铺垫</p>
-<p>总体来说这张模拟卷的难度要高于期末考试，毕竟模拟总要难一点（别打我<span><span class="heti-spacing"> </span>QWQ</span>）</p>
+<p>依照【考情分析<heti-adjacent class="heti-adjacent-half">】</heti-adjacent>，我给同学模拟了一些题目。<span>1-8<span class="heti-spacing"> </span></span>为计算题，<span>9<span class="heti-spacing"> </span></span>为综合计算题，<span>10-12<span class="heti-spacing"> </span></span>为综合分析题</p>
+<table>
+<thead>
+<tr>
+<th>题号</th>
+<th>知识点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>夹逼准则求极限</td>
+</tr>
+<tr>
+<td>2</td>
+<td>等价无穷小、泰勒展开或中值定理求极限</td>
+</tr>
+<tr>
+<td>3</td>
+<td>参数方程求导及导数定义</td>
+</tr>
+<tr>
+<td>4</td>
+<td>复合函数求导及导数定义</td>
+</tr>
+<tr>
+<td>5</td>
+<td>有理函数的不定积分、分部积分法</td>
+</tr>
+<tr>
+<td>6</td>
+<td>利用定积分定义求极限</td>
+</tr>
+<tr>
+<td>7</td>
+<td>定积分的几何应用<span class="heti-skip"><span class="heti-spacing"> </span>-<span class="heti-spacing"> </span></span>求曲线弧长</td>
+</tr>
+<tr>
+<td>8</td>
+<td>反常积分</td>
+</tr>
+<tr>
+<td>9</td>
+<td>定积分的几何应用<span class="heti-skip"><span class="heti-spacing"> </span>-<span class="heti-spacing"> </span></span>求旋转体体积</td>
+</tr>
+<tr>
+<td>10</td>
+<td>递推数列极限综合题</td>
+</tr>
+<tr>
+<td>11</td>
+<td>微分中值定理综合题（主要考察泰勒展开）</td>
+</tr>
+<tr>
+<td>12</td>
+<td>函数与积分综合题（考察导数与单调性、积分不等式）</td>
+</tr>
+</tbody>
+</table>
+<p>纵观历年的考卷，基本方法求极限方法如<strong>等价无穷小，恒等变形，夹逼准则，泰勒展开式，洛必达法则，定积分定义</strong>是考察的热点，我据此选了<span><span class="heti-spacing"> </span>1</span>，2，<span>6<span class="heti-spacing"> </span></span>题</p>
+<p>函数部分，不是考察的热点，偶尔会有题目考察<strong>渐近线，零点存在性定理</strong>，因此我没有单独出题，但是我把反函数，介值定理等知识点融入了第<span><span class="heti-spacing"> </span>8</span>，<span>11<span class="heti-spacing"> </span></span>题中</p>
+<p>导数部分，主要考察<strong>导数定义，复合函数求导，参数方程求导，隐函数求导，高阶导数计算</strong>，我选了<span><span class="heti-spacing"> </span>3</span>，<span>4<span class="heti-spacing"> </span></span>题</p>
+<p>微分中值定理部分，我选了一个常规的泰勒展开题<span><span class="heti-spacing"> </span>(11)</span></p>
+<p>积分部分，不定积分选了一个题<span><span class="heti-spacing"> </span>(5)</span>，综合考察有理函数积分换元法和分部积分法。定积分的几何应用是期末考试的必考题，包括求<strong>弧长，面积，体积</strong>(7，9)。反常积分部分选了一个题和反函数结合考察（8<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，定积分综合题和函数与导数结合考察（12）</p>
+<p><span>10-12<span class="heti-spacing"> </span></span>难度较大，但是我均做了铺垫。总体来说这张模拟卷的难度要高于期末考试，毕竟模拟总要难一点（别打我<span><span class="heti-spacing"> </span>QWQ</span>）</p>
 <h2 id="_2">参考答案<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>TBD，有空再写（</p>
 <p><span>1.<span class="heti-spacing"> </span></span>计算极限</p>
 <div class="arithmatex">\[
 \lim\limits_{x\to0}\dfrac{\sin(x^2\sin\dfrac{1}{x})}{x}
 \]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<div class="arithmatex">\[
+0 \leq \dfrac{\left|\sin \left( x^{2} \sin \dfrac{1}{x} \right)\right|}{|x|} \leq \dfrac{\left|x^{2} \sin \dfrac{1}{x}\right|}{|x|} \leq \dfrac{\left|x^{2}\right|}{|x|} = |x| \rightarrow 0
+\]</div>
+<div class="arithmatex">\[
+\text{由夹逼准则，} \lim_{x \rightarrow 0} \dfrac{\left|\sin \left( x^{2} \sin \dfrac{1}{x} \right)\right|}{|x|} = 0, \text{ 故 } \lim_{x \rightarrow 0} \dfrac{\sin \left( x^{2} \sin \dfrac{1}{x} \right)}{x} = 0
+\]</div>
+</div>
 <hr/>
 <p><span>2.<span class="heti-spacing"> </span></span>计算极限</p>
 <div class="arithmatex">\[
 \lim\limits_{x\to0}\dfrac{e^{(1+x)^{\frac{1}{x}}} - \left(1+x\right)^{\frac{e}{x}}}{x^2}
 \]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../image.png"><img alt="alt text" src="../image.png"/></a></p>
+</div>
 <hr/>
 <p><span>3.<span class="heti-spacing"> </span></span>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(y = f(x)\)</span><span class="heti-spacing"> </span></span>由参数方程<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\begin{cases}x = 1 + t^{3}\\y = e^{t^{2}}\end{cases}\)</span><span class="heti-spacing"> </span></span>确定，求下面的极限：</p>
-<div class="arithmatex">\[\lim_{x\to+\infty}x\left[f\left(2+\frac{2}{x}\right)-f(2)\right]\]</div>
+<div class="arithmatex">\[\lim_{x\to+\infty}x\left[f\left(2+\dfrac{2}{x}\right)-f(2)\right]\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>容易看出函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{\prime}(x)=\dfrac{\text{d}y}{\text{d}x}=\dfrac{e^{t^{2}} \cdot 2t}{3t^{2}}\)</span></span>，</p>
+<p>当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = 2,t = 1\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(f^{\prime}(2)=\left.\dfrac{e^{t^{2}} \cdot 2t}{3t^{2}}\right|_{t = 1}=\dfrac{2}{3}e\)</span>，所以，</p>
+<div class="arithmatex">\[
+\lim_{x \to +\infty} x\left(f\left(2+\dfrac{2}{x}\right)-f(2)\right)=2 \lim_{x \to +\infty} \dfrac{f\left(2+\dfrac{2}{x}\right)-f(2)}{\dfrac{2}{x}}=2f^{\prime}(2) = \dfrac{4}{3}e.
+\]</div>
+</div>
 <hr/>
 <p><span>4.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\int_{0}^{x}\cos(x - t)^{2}\text{d}t\)</span></span>，<span class="arithmatex">\(\varphi(x)=\begin{cases}\dfrac{x-\sin x}{x-\ln(1 + x)},&amp;x\neq0\\0,&amp;x = 0\end{cases}\)</span>，求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\mathrm{d}}{\mathrm{d}x}f(\varphi(x))\vert_{x = 0}\)</span></span></p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<div class="arithmatex">\[
+\varphi^{\prime}(0)=\lim_{x \to 0} \dfrac{\varphi(x)-\varphi(0)}{x}=\lim_{x \to 0} \dfrac{x - \sin x}{x - \ln(1 + x)}=\lim_{x \to 0} \dfrac{\dfrac{1}{6}x^{3}}{\dfrac{1}{2}x^{3}}=\dfrac{1}{3}
+\]</div>
+<div class="arithmatex">\[
+f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos u^{2} \mathrm{d}u(令u = x-t)
+\]</div>
+<p>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\cos x^{2},\varphi(0) = 0\)</span></span>，因此<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)</span></span></p>
+</div>
 <hr/>
 <p><span>5.<span class="heti-spacing"> </span></span>求不定积分</p>
 <div class="arithmatex">\[\int\ln\left(1+\sqrt{\dfrac{1+x}{x}} \right)\text{d}x \]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\sqrt{1 + x}}{x}=t\)</span></span>，得<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t^{2}-1}\)</span></span></p>
+<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(=\int \ln(1 + t)\mathrm{d}(\dfrac{1}{t^{2}-1})\)</span></span></p>
+<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{t^{2}-1}\cdot\dfrac{1}{t + 1}\mathrm{d}t\)</span></p>
+<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{4(t - 1)}+\dfrac{-1}{4(t + 1)}-\dfrac{1}{2(t + 1)^{2}}\mathrm{d}t\)</span></p>
+<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}+\dfrac{1}{4}\ln\left|\dfrac{t + 1}{t - 1}\right|-\dfrac{1}{2(t + 1)}+C\)</span></p>
+<p><span class="arithmatex">\(=x\ln(1+\dfrac{\sqrt{1 + x}}{x})+\dfrac{1}{4}\ln\dfrac{\dfrac{\sqrt{1 + x}}{x}+1}{\dfrac{\sqrt{1 + x}}{x}-1}-\dfrac{1}{2(\dfrac{\sqrt{1 + x}}{x}+1)}+C\)</span></p>
+<p><span class="arithmatex">\(=x\ln(1+\dfrac{\sqrt{1 + x}}{x})+\dfrac{1}{2}\ln(\sqrt{1 + x}+\sqrt{x})-\dfrac{1}{2}\sqrt{x}(\sqrt{1 + x}-\sqrt{x})+C\)</span></p>
+</div>
 <hr/>
 <p><span>6.<span class="heti-spacing"> </span></span>求下面的极限</p>
 <div class="arithmatex">\[
-\lim\limits_{n\to+\infty}\dfrac{1}{n^4}\prod\limits_{k = 1}^{2n}(n^2+k^2)^{\frac{1}{n}}
+\lim\limits_{n\to+\infty}\dfrac{1}{n^4}\prod\limits_{k = 1}^{2n}(n^2+k^2)^{\dfrac{1}{n}}
 \]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../image-1.png"><img alt="alt text" src="../image-1.png"/></a></p>
+</div>
 <hr/>
 <p><span>7.<span class="heti-spacing"> </span></span>求曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的弧长</p>
 <div class="arithmatex">\[
 f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}dt
 \]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><span class="arithmatex">\(y^{\prime}=\sqrt{3 - x^{2}}\)</span>，由弧长公式可得</p>
+<div class="arithmatex">\[l = \int_{-\sqrt{3}}^{\sqrt{3}}\sqrt{1 + (y^{\prime })^2}\mathrm{d}x=\int_{-\sqrt{3}}^{\sqrt{3}}\sqrt{4 - x^{2}}\mathrm{d}x = 2\int_{-\frac{\pi}{3}}^{\frac{\pi}{3}}2\cos^{2}t\mathrm{d}t(令x = 2\sin t)\]</div>
+<div class="arithmatex">\[= 2\int_{-\frac{\pi}{3}}^{\frac{\pi}{3}}(1 + \cos 2t)\mathrm{d}t=\sqrt{3}+\dfrac{4}{3}\pi\]</div>
+</div>
 <hr/>
 <p><span>8.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\dfrac{1}{x + \sqrt{1 + x^{2}}}\)</span></span>，其反函数记作<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{-1}(x)\)</span></span>，求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{0}^{+\infty}f^{-1}(x)\mathrm{d}x\)</span></span></p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>解 令<span><span class="heti-spacing"> </span><span class="arithmatex">\(y = f^{-1}(x)\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = f(y)\)</span></span>，故</p>
+<div class="arithmatex">\[
+\int_{0}^{+\infty} f^{-1}(x) \mathrm{d}x=\int_{1}^{0} y \mathrm{d}f(y)=y f(y)\left.\right|_{1} ^{0}-\int_{1}^{0} f(y) \mathrm{d}y
+\]</div>
+<div class="arithmatex">\[
+=-\dfrac{1}{\sqrt{2}+1}+\int_{0}^{1} \dfrac{1}{y+\sqrt{1+y^{2}}} \mathrm{d}y=(1-\sqrt{2})+\int_{0}^{1}\left(\sqrt{1+y^{2}}-y\right) \mathrm{d}y
+\]</div>
+<div class="arithmatex">\[
+=(1-\sqrt{2})+\left.\dfrac{1}{2} y \sqrt{1+y^{2}}\right|_{0} ^{1}+\left.\dfrac{1}{2} \ln \left(y+\sqrt{1+y^{2}}\right)\right|_{0} ^{1}-\dfrac{1}{2}=\dfrac{1}{2}(1-\sqrt{2})+\dfrac{1}{2} \ln (1+\sqrt{2})
+\]</div>
+</div>
 <hr/>
 <p><span>9.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(t &gt; 0\)</span></span>，平面有界区域<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(D\)</span><span class="heti-spacing"> </span></span>由曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(y = \sqrt{x}e^{-x}\)</span><span class="heti-spacing"> </span></span>与直线<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = t\)</span></span>，<span><span class="arithmatex">\(x = 2t\)</span><span class="heti-spacing"> </span></span>及<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>轴围成，<span><span class="arithmatex">\(D\)</span><span class="heti-spacing"> </span></span>绕<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>轴旋转一周所成旋转体的体积为<span><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span></span>，求<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span><span class="heti-spacing"> </span></span>的最大值。</p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><span class="arithmatex">\(V(t)=\int_{2t}^{2t + 1}\pi x e^{-2x}\mathrm{d}x=-\dfrac{\pi}{2}\left[(2t + \dfrac{1}{2})e^{-4t}-(t + \dfrac{1}{2})e^{-2t}\right]\)</span></p>
+<p>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)=-\pi te^{-2t}(1 - 4e^{-2t})\)</span></span>，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)=0\Rightarrow t=\ln 2\)</span></span>，</p>
+<p><span><span class="arithmatex">\(\because t\in(\ln 2-\delta,\ln 2)\)</span><span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)&gt;0\)</span></span>，<span><span class="arithmatex">\(t\in(\ln 2,\ln 2+\delta)\)</span><span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)&lt;0\)</span></span>，</p>
+<p><span><span class="arithmatex">\(\therefore t = \ln 2\)</span><span class="heti-spacing"> </span></span>为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span><span class="heti-spacing"> </span></span>的极大值点即最大值点，</p>
+<p>故最大值为<span><span class="heti-spacing"> </span><span class="arithmatex">\(V(\ln 2)=\dfrac{\pi}{16}(\ln 2+\dfrac{3}{4})\)</span></span>。</p>
+</div>
 <hr/>
 <p><span>10.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\((1+\sqrt{3})^n = a_n+\sqrt{3}b_n(a_n,b_n\in\mathbb{N}^+)\)</span></span></p>
 <p><span>(1)<span class="heti-spacing"> </span></span>证明<span><span class="heti-spacing"> </span>:<span class="arithmatex">\(a_{n+1} = a_n+3b_n,b_{n+1} = a_n+b_n\)</span></span></p>
 <p><span>(2)<span class="heti-spacing"> </span></span>求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\to+\infty}\dfrac{a_n}{b_n}\)</span></span></p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>(1)<span class="arithmatex">\((1+\sqrt{3})^{n+1} = (1+\sqrt{3})(a_n+\sqrt{3}b_n) = (a_n+3b_n)+(a_n+b_n)\sqrt{3} = a_{n+1}+b_{n+1}\sqrt{3}\)</span></p>
+<p><span class="arithmatex">\(\therefore a_{n+1} = a_n+3b_n,b_{n+1} = a_n+b_n\)</span></p>
+<p>(2)<span class="arithmatex">\(\dfrac{a_{n+1}}{b_{n+1}} = \dfrac{a_n+3b_n}{a_n+b_n}令c_n = \dfrac{a_n}{b_n}\Rightarrow c_{n+1} = \dfrac{c_n+3}{c_n+1}\Rightarrow c_n\ge1(n\ge2)\)</span></p>
+<p><span class="arithmatex">\(|c_{n+1}-\sqrt{3}| = \left|\dfrac{(1-\sqrt{3})c_n+3-\sqrt{3}}{c_n+1}\right| = \left|\dfrac{(\sqrt{3}-1)(c_n-\sqrt{3})}{c_n+1}\right|\le\dfrac{\sqrt{3}-1}{2}|c_n-\sqrt{3}|\)</span></p>
+<p><span class="arithmatex">\(\therefore0\le|c_{n}-\sqrt{3}|\le\dfrac{\sqrt{3}-1}{2}|c_{n-1}-\sqrt{3}|\le\left(\dfrac{\sqrt{3}-1}{2}\right)^2|c_{n-2}-\sqrt{3}|\le ...\le \left(\dfrac{\sqrt{3}-1}{2}\right)^{n-2}|c_2-\sqrt{3}|\to0(n\to+\infty)\)</span></p>
+<p><span class="arithmatex">\(\therefore\lim\limits_{n\to+\infty}\dfrac{a_n}{b_n} = \lim\limits_{n\to+\infty}c_n = \sqrt{3}\)</span></p>
+</div>
 <hr/>
 <p><span>11.<span class="heti-spacing"> </span></span>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([-a,a]\)</span><span class="heti-spacing"> </span></span>上具有二阶连续导数，证明：</p>
 <p><span>(1)<span class="heti-spacing"> </span></span>若<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0)=0\)</span></span>，则存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi\in(-a,a)\)</span></span>，使得<span><span class="heti-spacing"> </span><span class="arithmatex">\(f^{\prime\prime}(\xi)=\dfrac{1}{a^{2}}[f(a)+f(-a)]\)</span></span>；</p>
 <p><span>(2)<span class="heti-spacing"> </span></span>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((-a,a)\)</span><span class="heti-spacing"> </span></span>内取得极值，则存在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\eta\in(-a,a)\)</span><span class="heti-spacing"> </span></span>使得
 <span class="arithmatex">\(\left|f^{\prime\prime}(\eta)\right|\geqslant\dfrac{1}{2a^{2}}\left|f(a)-f(-a)\right|\)</span>。</p>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>由泰勒公式，有</p>
+<div class="arithmatex">\[
+f(a)=f(0)+f^{\prime}(0)a+\dfrac{1}{2}f^{\prime\prime}(\eta_{1})a^{2},\eta_{1}\in(0,a)
+\]</div>
+<div class="arithmatex">\[
+f(-a)=f(0)-f^{\prime}(0)a+\dfrac{1}{2}f^{\prime\prime}(\eta_{2})a^{2},\eta_{2}\in(-a,0)
+\]</div>
+<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0) = 0\)</span></span>，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(a)+f(-a)=\dfrac 1 2(f^{\prime\prime}(\eta_{1})a^{2}+f^{\prime\prime}(\eta_{2})a^{2})\)</span></span></p>
+<p>由介值定理<span><span class="heti-spacing"> </span>:<span class="arithmatex">\(\exists\xi\in(-a,a),f''(\xi) = \dfrac{1}{2}(f''(\xi_1)+f''(\xi_2))\)</span></span></p>
+<p>因此<span><span class="heti-spacing"> </span>,</span></p>
+<div class="arithmatex">\[
+f^{\prime\prime}(\xi)=\dfrac{1}{a^{2}}(f(a)+f(-a))
+\]</div>
+<p><span>(2)<span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_0\)</span><span class="heti-spacing"> </span></span>处将<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>展开</p>
+<div class="arithmatex">\[
+f(x)=f(x_0)+f^{\prime}(x_0)(x - x_0)+\dfrac{f^{\prime\prime}(\gamma)}{2}(x - x_0)^2=f(x_0)+\dfrac{f^{\prime\prime}(\gamma)}{2}(x - x_0)^2,\gamma \text{介于}0\text{与}x\text{之间}
+\]</div>
+<p>则</p>
+<div class="arithmatex">\[
+f(-a)=f(x_0)+\dfrac{f^{\prime\prime}(\gamma_1)}{2}(-a - x_0)^2,-a &lt; \gamma_1 &lt; 0
+\]</div>
+<div class="arithmatex">\[
+f(a)=f(x_0)+\dfrac{f^{\prime\prime}(\gamma_2)}{2}(a - x_0)^2,0 &lt; \gamma_2 &lt; a
+\]</div>
+<p>从而</p>
+<div class="arithmatex">\[
+|f(a)-f(-a)|=\left|\dfrac{1}{2}(a - x_0)^2f^{\prime\prime}(\gamma_2)-\dfrac{1}{2}(a + x_0)^2f^{\prime\prime}(\gamma_1)\right|
+\]</div>
+<div class="arithmatex">\[
+\leq\dfrac{1}{2}\left|(a - x_0)^2f^{\prime\prime}(\gamma_2)\right|+\dfrac{1}{2}\left|(a + x_0)^2f^{\prime\prime}(\gamma_1)\right|
+\]</div>
+<p>又<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\left|f^{\prime\prime}(x)\right|\)</span><span class="heti-spacing"> </span></span>连续，设<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f''(\eta)| = M = \max\left\{\left|f^{\prime\prime}(\gamma_1)\right|,\left|f^{\prime\prime}(\gamma_2)\right|\right\}\)</span></span>，则</p>
+<div class="arithmatex">\[
+|f(a)-f(-a)|\leq\dfrac{1}{2}M(a + x_0)^2+\dfrac{1}{2}M(a - x_0)^2 = M(a^2 + x_0^2)
+\]</div>
+<p>又<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_0\in(-a,a)\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f(a)-f(-a)|\leq M(a^2 + x_0^2)\leq 2Ma^2\)</span></span>，</p>
+<p>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(M\geq\dfrac{1}{2a^2}|f(a)-f(-a)|\)</span></span>，即存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\eta=\gamma_1\text{或}\eta=\gamma_2\in(-a,a)\)</span></span>，</p>
+<p>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left|f^{\prime\prime}(\eta)\right|\geq\dfrac{1}{2a^2}|f(a)-f(-a)|\)</span></span>。</p>
+</div>
 <hr/>
 <p><span>12.<span class="heti-spacing"> </span></span>设函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>具有二阶导数，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(\vert f^{\prime\prime}(x)\vert\leq1\)</span></span></p>
 <p><span>(1)<span class="heti-spacing"> </span></span>证明： 当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\in(0,1)\)</span><span class="heti-spacing"> </span></span>时，<span class="arithmatex">\(\vert f(x)-f(0)(1 - x)-f(1)x\vert\leq\dfrac{x(1 - x)}{2}\)</span></p>
 <p><span>(2)<span class="heti-spacing"> </span></span>证明：</p>
-<div class="arithmatex">\[\left\vert\int_{0}^{1}f(x)dx-\frac{f(0)+f(1)}{2}\right\vert\leq\frac{1}{12}\]</div>
+<div class="arithmatex">\[\left\vert\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\right\vert\leq\dfrac{1}{12}\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><span>(1)<span class="heti-spacing"> </span></span>证明：令<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x)=f(0)(1 - x)+f(1)x\)</span></span></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)=f(x)-g(x)-\dfrac{x(1 - x)}{2}\)</span></span>，<span class="arithmatex">\(x\in(0,1)\)</span></p>
+<p><span class="arithmatex">\(\because F(0)=0,F(1)=0\)</span></p>
+<p><span class="arithmatex">\(\because F^{\prime\prime}(x)=f^{\prime\prime}(x)+1\geq0,\left|f^{\prime\prime}(x)\right|\leq1\)</span></p>
+<p><span><span class="arithmatex">\(\therefore F(x)\)</span><span class="heti-spacing"> </span></span>为凹函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(\therefore F(x)\geq0\)</span></span></p>
+<p><span class="arithmatex">\(\therefore f(x)-f(0)(1 - x)-f(1)x\leq\dfrac{x(1 - x)}{2}\)</span></p>
+<p>类似可证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\therefore f(x)-f(0)(1 - x)-f(1)x\ge-\dfrac{x(1 - x)}{2}\)</span></span></p>
+<p>所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left| f(x)-f(0)(1 - x)-f(1)x\right|\leq\dfrac{x(1 - x)}{2}\)</span></span></p>
+<p><span>(2)<span class="heti-spacing"> </span></span>证明：由<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>中<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) - f(0)(1 - x) - f(1)x\leq\dfrac{x(1 - x)}{2}\)</span></span></p>
+<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]dx\leq\int_{0}^{1}\dfrac{x(1 - x)}{2}dx\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)</span></p>
+<p>由<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>中<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) - f(0)(1 - x) - f(1)x\geq-\dfrac{x(1 - x)}{2}\)</span></span></p>
+<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]dx\geq\int_{0}^{1}-\dfrac{x(1 - x)}{2}dx\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)</span></p>
+<p>综上：<span class="arithmatex">\(\left|\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)</span></p>
+</div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 30, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 1, 2024</span>
 </span>
 </aside>
 </article>
