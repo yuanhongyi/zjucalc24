@@ -61,9 +61,9 @@ $x(\pi-2\arctan x)\sim x\tan(\pi-2\arctan x) = -x\dfrac{2x}{1-x^2}\to2(x\to+\inf
 
    (2) 若\(\lim\limits_{x\to0}\dfrac{f(x)}{x^{3}}=\dfrac{1}{3}\)，则：\(\lim_{x\to0}\dfrac{f'(x)}{x^{2}}=1\)；
 
-   (3) 若\(\lim\limits_{x\to0}f''(x)=0\)，且\(f''(0)=1\)，则：\(\lim_{x\to0}\dfrac{f'(x)}{x}=0\)；
+   (3) 若\(\lim\limits_{x\to0}f''(x)=0\)，且\(f'''(0)=1\)，则：\(\lim\limits_{x\to0}\dfrac{f''(x)}{\sqrt[3]{x}}=0\)；
 
-   (4) 若\(\lim\limits_{x\to0}\dfrac{f'(x)}{x}=1\)，则：\(f''(0)=1\)。
+   (4) 若\(\lim\limits_{x\to0}\dfrac{f''(x)}{x}=1\)，则：\(f'''(0)=1\)。
    
    上述陈述中，正确结论的个数为【 】
    
