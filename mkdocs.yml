@@ -138,6 +138,7 @@ nav:
       - 换元法和分部积分: slides/int/indefinite/3.md
   - Quiz:
     - 24数分H第二次小测: quiz/anal_quiz2.md
+    - 24微甲小测(周三班): quiz/calc_quiz2_1.md
   - Exam:
     - 考情分析: exam/final_exam_analysis.md
     - 24微甲期末模拟: exam/24final_sim.md
