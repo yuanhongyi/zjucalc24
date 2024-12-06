@@ -118,6 +118,7 @@ plugins:
         - arithmatex
       disable_serve: false
   - git-revision-date-localized
+  - mkdocs-pdf
   # x- table-reader
   # - git-authors
   # - git-committers
@@ -143,3 +144,11 @@ nav:
     - 考情分析: exam/final_exam_analysis.md
     - 24微甲期末模拟: exam/24final_sim.md
     - 模拟题分析与解答: exam/report&ans.md
+  - PDF: 
+    - Index: pdf/index.md
+    - 数列极限: pdf/seq_lim/1.md
+    - 函数与导数(期中复习I): pdf/func_diff/1.md
+    - 期中复习: pdf/midterm/1.md
+    - 微分中值定理: pdf/diff_mean/1.md
+    - 不定积分: pdf/indef_int/1.md
+    - 定积分: pdf/def_int/1.md
