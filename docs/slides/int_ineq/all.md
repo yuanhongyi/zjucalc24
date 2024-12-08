@@ -12,27 +12,27 @@ $$
 **证明：设辅助函数**
 
 \[
-F(t)=\int_{a}^{t}xf(x)dx-\frac{a + t}{2}\int_{a}^{t}f(x)dx
+F(t)=\int_{a}^{t}xf(x)\mathrm{d}x-\frac{a + t}{2}\int_{a}^{t}f(x)\mathrm{d}x
 \]
 
 显然\(F(a) = 0\)。对任意\(t\in[a,b]\)，有
 
 $$
-F^{\prime}(t)=tf(t)-\frac{1}{2}\int_{a}^{t}f(x)dx-\frac{a + t}{2}f(t)\\
+F^{\prime}(t)=tf(t)-\frac{1}{2}\int_{a}^{t}f(x)\mathrm{d}x-\frac{a + t}{2}f(t)\\
 $$
 
 $$
-=\frac{t - a}{2}f(t)-\frac{1}{2}\int_{a}^{t}f(x)dx\\
+=\frac{t - a}{2}f(t)-\frac{1}{2}\int_{a}^{t}f(x)\mathrm{d}x\\
 $$
 
 $$
-=\frac{1}{2}\int_{a}^{t}[f(t)-f(x)]dx, \quad x\in[a,t]
+=\frac{1}{2}\int_{a}^{t}[f(t)-f(x)]\mathrm{d}x, \quad x\in[a,t]
 $$
 
 因为\(f(x)\)单调递增，则\(F^{\prime}(t)\geq0\)，则\(F(t)\)单调递增，所以\(F(b)\geq F(a) = 0(b\geq a)\)。因此
 
 \[
-\int_{a}^{b}xf(x)dx\geq\frac{a + b}{2}\int_{a}^{b}f(x)dx
+\int_{a}^{b}xf(x)\mathrm{d}x\geq\frac{a + b}{2}\int_{a}^{b}f(x)\mathrm{d}x
 \]
 
 !!! Tip
@@ -91,17 +91,17 @@ $$
 设\(f\)在\([0,1]\)有二阶连续导数，\(\vert f^{\prime\prime}(x)\vert\leqslant1\)，\(\forall x\in[0,1]\)。证明:
 
 $$
-\left|\int_{0}^{1}f(x)dx-\frac{f(0)+f(1)}{2}\right|\leqslant\frac{1}{24}
+\left|\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right|\leqslant\frac{1}{24}
 $$
 
 **我们注意到：**
 
 \[
-\left|\int_{0}^{1}f(x)dx-\frac{f(0)+f(1)}{2}\right|=\left|\int_{0}^{1}f(x)d\left(x-\frac{1}{2}\right)-\frac{f(0)+f(1)}{2}\right|
+\left|\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right|=\left|\int_{0}^{1}f(x)d\left(x-\frac{1}{2}\right)-\frac{f(0)+f(1)}{2}\right|
 \]
 
 \[
-=\left|\int_{0}^{1}\left(x-\frac{1}{2}\right)f^{\prime}(x)dx\right|
+=\left|\int_{0}^{1}\left(x-\frac{1}{2}\right)f^{\prime}(x)\mathrm{d}x\right|
 \]
 
 \[
@@ -109,11 +109,11 @@ $$
 \]
 
 \[
-=\frac{1}{2}\left|\int_{0}^{1}f^{\prime\prime}(x)\left(x-\frac{1}{2}\right)^{2}dx\right|
+=\frac{1}{2}\left|\int_{0}^{1}f^{\prime\prime}(x)\left(x-\frac{1}{2}\right)^{2}\mathrm{d}x\right|
 \]
 
 \[
-\leqslant\frac{1}{2}\int_{0}^{1}\left(x-\frac{1}{2}\right)^{2}dx=\frac{1}{24}
+\leqslant\frac{1}{2}\int_{0}^{1}\left(x-\frac{1}{2}\right)^{2}\mathrm{d}x=\frac{1}{24}
 \]
 
 ---
@@ -121,22 +121,22 @@ $$
 设 $f$ 在 $[0,1]$ 有一阶导数且$|f'(x) - f'(y)| \leq |x - y|$，证明：
 
 \[
-\left|\int_{0}^{1} f(x)dx - \frac{f(0) + f(1)}{2}\right| \leq \frac{1}{12}.
+\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{f(0) + f(1)}{2}\right| \leq \frac{1}{12}.
 \]
 
 
 **证明：**
 
 \[
-\left|\int_{0}^{1} f(x)dx - \frac{f(0) + f(1)}{2}\right| = \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) f'(x)dx\right|
+\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{f(0) + f(1)}{2}\right| = \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) f'(x)\mathrm{d}x\right|
 \]
 
 \[
-= \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) \left[f'(x) - f'\left(\frac{1}{2}\right)\right] dx\right|
+= \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) \left[f'(x) - f'\left(\frac{1}{2}\right)\right] \mathrm{d}x\right|
 \]
 
 \[
-\leq \int_{0}^{1} \left|x - \frac{1}{2}\right|^2 dx = \frac{1}{12}.
+\leq \int_{0}^{1} \left|x - \frac{1}{2}\right|^2 \mathrm{d}x = \frac{1}{12}.
 \]
 
 ## 利用Taylor展开式
@@ -144,7 +144,7 @@ $$
 设$f(x)$在$[0,1]$上二阶可导，$f''(x)\lt 0$，证明:
 
 $$
-\int_0^1f(x^2)dx\le f(\dfrac{1}{3})
+\int_0^1f(x^2)\mathrm{d}x\le f(\dfrac{1}{3})
 $$
 
 **证明**
@@ -164,7 +164,7 @@ f(x^2)\leq f\left(\frac{1}{3}\right)+f'\left(\frac{1}{3}\right)\left(x^2 - \frac
 积分得
 
 \[
-\int_{0}^{1}f(x^2)dx\leq f\left(\frac{1}{3}\right)
+\int_{0}^{1}f(x^2)\mathrm{d}x\leq f\left(\frac{1}{3}\right)
 \]
 
 ---
@@ -178,7 +178,7 @@ $$
 **证明**
 
 $$
-\text{ 令 } F(x)=\int_{a}^{x}f(t)dt, \quad F^{\prime}(a)=F^{\prime}(b)=0, \quad F(a)=0, \quad F(b)=\int_{a}^{b}f(x)dx.
+\text{ 令 } F(x)=\int_{a}^{x}f(t)dt, \quad F^{\prime}(a)=F^{\prime}(b)=0, \quad F(a)=0, \quad F(b)=\int_{a}^{b}f(x)\mathrm{d}x.
 $$
 
 $$
@@ -190,11 +190,11 @@ F\left(\frac{a + b}{2}\right)=F(b)+F^{\prime}(b)\left(\frac{a + b}{2}-b\right)+\
 $$
 
 $$
-\Rightarrow 0=\int_{a}^{b}f(x)dx+\frac{(b - a)^{2}}{8}\left[F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right]
+\Rightarrow 0=\int_{a}^{b}f(x)\mathrm{d}x+\frac{(b - a)^{2}}{8}\left[F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right]
 $$
 
 $$
-\Rightarrow\left|\int_{a}^{b}f(x)dx\right|=\frac{(b - a)^{2}}{8}\left|F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right|\leq\frac{M}{4}(b - a)^{2} \text{. 证毕!}
+\Rightarrow\left|\int_{a}^{b}f(x)\mathrm{d}x\right|=\frac{(b - a)^{2}}{8}\left|F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right|\leq\frac{M}{4}(b - a)^{2} \text{. 证毕!}
 $$
 
 ## 利用积分与求和统一
@@ -202,19 +202,19 @@ $$
 设$f'(x)$在$[0,1]$上连续，$|f'(x)|\le M$，证明：
 
 $$
-\left|\int_0^1f(x)dx-\dfrac{1}{n}\sum_{k=1}^{n}f\left(\dfrac{k}{n}\right)\right|\le \dfrac{M}{2n}
+\left|\int_0^1f(x)\mathrm{d}x-\dfrac{1}{n}\sum_{k=1}^{n}f\left(\dfrac{k}{n}\right)\right|\le \dfrac{M}{2n}
 $$
 
 **证明：**
 
 $$
-\left|\int_{0}^{1} f(x)dx - \frac{1}{n} \sum_{k = 1}^{n} f\left(\frac{k}{n}\right)\right| = \left|\sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f(x)dx - \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f\left(\frac{i}{n}\right)dx\right|
+\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{1}{n} \sum_{k = 1}^{n} f\left(\frac{k}{n}\right)\right| = \left|\sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f(x)\mathrm{d}x - \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f\left(\frac{i}{n}\right)\mathrm{d}x\right|
 $$
 
 用Lagrange中值定理
 
 $$
-\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} \left|f(x) - f\left(\frac{i}{n}\right)\right|\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} M\left(\dfrac{i}{n}-x\right)dx = \dfrac{M}{2n}
+\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} \left|f(x) - f\left(\frac{i}{n}\right)\right|\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} M\left(\dfrac{i}{n}-x\right)\mathrm{d}x = \dfrac{M}{2n}
 $$
 
 !!! Tip
