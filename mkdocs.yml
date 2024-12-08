@@ -137,6 +137,8 @@ nav:
       - 有理函数: slides/int/indefinite/1.md
       - 有理三角函数: slides/int/indefinite/2.md
       - 换元法和分部积分: slides/int/indefinite/3.md
+    - 积分不等式:
+      - 方法汇总: slides/int_ineq/all.md
   - Quiz:
     - 24数分H第二次小测: quiz/anal_quiz2.md
     - 24微甲小测(周三班): quiz/calc_quiz2_1.md
