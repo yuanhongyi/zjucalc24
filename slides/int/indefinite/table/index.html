@@ -4,23 +4,23 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="yuanhongyi2004" name="author"/>
-<link href="https://zjucalc24.github.io/slides/int_ineq/all/" rel="canonical"/>
-<link href="../../int/indefinite/3/" rel="prev"/>
-<link href="../../../quiz/anal_quiz2/" rel="next"/>
-<link href="../../../graph/ZJU-logo.svg" rel="icon"/>
+<link href="https://zjucalc24.github.io/slides/int/indefinite/table/" rel="canonical"/>
+<link href="../../../diff/constK/slides_constK/" rel="prev"/>
+<link href="../1/" rel="next"/>
+<link href="../../../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.48" name="generator"/>
-<title>方法汇总 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
-<link href="../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>积分表 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
+<link href="../../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
+<link href="../../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"JetBrains Mono"}</style>
-<link href="../../../css/heti.css" rel="stylesheet"/>
-<link href="../../../stylesheets/neoteroi-mkdocs.css" rel="stylesheet"/>
-<link href="../../../stylesheets/custom.css" rel="stylesheet"/>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../../../css/heti.css" rel="stylesheet"/>
+<link href="../../../../stylesheets/neoteroi-mkdocs.css" rel="stylesheet"/>
+<link href="../../../../stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -29,7 +29,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -43,8 +43,8 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
-<img alt="logo" src="../../../graph/ZJU-logo.svg"/>
+<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-header__button md-logo" data-md-component="logo" href="../../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
+<img alt="logo" src="../../../../graph/ZJU-logo.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
@@ -59,7 +59,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              方法汇总
+              积分表
             
           </span>
 </div>
@@ -113,7 +113,7 @@
 <div class="md-grid">
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../..">
+<a class="md-tabs__link" href="../../../..">
           
   
     
@@ -123,7 +123,7 @@
         </a>
 </li>
 <li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href="../../diff/Taylor/slides_Taylor/">
+<a class="md-tabs__link" href="../../../diff/Taylor/slides_Taylor/">
           
   
     
@@ -133,7 +133,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../quiz/anal_quiz2/">
+<a class="md-tabs__link" href="../../../../quiz/anal_quiz2/">
           
   
     
@@ -143,7 +143,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../exam/final_exam_analysis/">
+<a class="md-tabs__link" href="../../../../exam/final_exam_analysis/">
           
   
     
@@ -153,7 +153,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../pdf/">
+<a class="md-tabs__link" href="../../../../pdf/">
           
   
     
@@ -163,7 +163,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../misc/">
+<a class="md-tabs__link" href="../../../../misc/">
           
   
     
@@ -182,8 +182,8 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
-<img alt="logo" src="../../../graph/ZJU-logo.svg"/>
+<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-nav__button md-logo" data-md-component="logo" href="../../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
+<img alt="logo" src="../../../../graph/ZJU-logo.svg"/>
 </a>
     浙江大学2024-2025学年秋冬学期微积分（甲）I辅学
   </label>
@@ -191,7 +191,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../..">
+<a class="md-nav__link" href="../../../..">
 <span class="md-ellipsis">
     Preface
   </span>
@@ -235,14 +235,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../diff/Taylor/slides_Taylor/">
+<a class="md-nav__link" href="../../../diff/Taylor/slides_Taylor/">
 <span class="md-ellipsis">
     泰勒展开式
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../diff/constK/slides_constK/">
+<a class="md-nav__link" href="../../../diff/constK/slides_constK/">
 <span class="md-ellipsis">
     常数K值法
   </span>
@@ -251,76 +251,31 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--section md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
 <span class="md-ellipsis">
     不定积分
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             不定积分
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../int/indefinite/table/">
-<span class="md-ellipsis">
-    积分表
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../int/indefinite/1/">
-<span class="md-ellipsis">
-    有理函数
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../int/indefinite/2/">
-<span class="md-ellipsis">
-    有理三角函数
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../int/indefinite/3/">
-<span class="md-ellipsis">
-    换元法和分部积分
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-<span class="md-ellipsis">
-    积分不等式
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_2_3">
-<span class="md-nav__icon md-icon"></span>
-            积分不等式
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    方法汇总
+    积分表
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
-    方法汇总
+    积分表
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -332,47 +287,82 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      构造积分上限函数
+      背景补充
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#lagrange">
-<span class="md-ellipsis">
-      利用Lagrange
-    </span>
-</a>
-</li>
+<nav aria-label="背景补充" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      利用分部积分
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#taylor">
-<span class="md-ellipsis">
-      利用Taylor展开式
+      双曲正弦函数
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      利用积分与求和统一
+      双曲余弦函数
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cauchy">
+<a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      Cauchy不等式
+      双曲正切函数
     </span>
 </a>
 </li>
 </ul>
 </nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../1/">
+<span class="md-ellipsis">
+    有理函数
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2/">
+<span class="md-ellipsis">
+    有理三角函数
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3/">
+<span class="md-ellipsis">
+    换元法和分部积分
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+<span class="md-ellipsis">
+    积分不等式
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            积分不等式
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../int_ineq/all/">
+<span class="md-ellipsis">
+    方法汇总
+  </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -395,14 +385,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../quiz/anal_quiz2/">
+<a class="md-nav__link" href="../../../../quiz/anal_quiz2/">
 <span class="md-ellipsis">
     24数分H第二次小测
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../quiz/calc_quiz2_1/">
+<a class="md-nav__link" href="../../../../quiz/calc_quiz2_1/">
 <span class="md-ellipsis">
     24微甲小测(周三班)
   </span>
@@ -426,21 +416,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../exam/final_exam_analysis/">
+<a class="md-nav__link" href="../../../../exam/final_exam_analysis/">
 <span class="md-ellipsis">
     考情分析
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../exam/24final_sim/">
+<a class="md-nav__link" href="../../../../exam/24final_sim/">
 <span class="md-ellipsis">
     24微甲期末模拟
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../exam/report%26ans/">
+<a class="md-nav__link" href="../../../../exam/report%26ans/">
 <span class="md-ellipsis">
     模拟题分析与解答
   </span>
@@ -452,7 +442,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../pdf/">
+<a class="md-nav__link" href="../../../../pdf/">
 <span class="md-ellipsis">
     PDF
   </span>
@@ -468,49 +458,49 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/seq_lim/1/">
+<a class="md-nav__link" href="../../../../pdf/seq_lim/1/">
 <span class="md-ellipsis">
     数列极限
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/func_diff/1/">
+<a class="md-nav__link" href="../../../../pdf/func_diff/1/">
 <span class="md-ellipsis">
     函数与导数(期中复习I)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/midterm/1/">
+<a class="md-nav__link" href="../../../../pdf/midterm/1/">
 <span class="md-ellipsis">
     期中复习
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/diff_mean/1/">
+<a class="md-nav__link" href="../../../../pdf/diff_mean/1/">
 <span class="md-ellipsis">
     微分中值定理
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/indef_int/1/">
+<a class="md-nav__link" href="../../../../pdf/indef_int/1/">
 <span class="md-ellipsis">
     不定积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/def_int/1/">
+<a class="md-nav__link" href="../../../../pdf/def_int/1/">
 <span class="md-ellipsis">
     定积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../pdf/int_ineq/1/">
+<a class="md-nav__link" href="../../../../pdf/int_ineq/1/">
 <span class="md-ellipsis">
     积分不等式
   </span>
@@ -522,7 +512,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../misc/">
+<a class="md-nav__link" href="../../../../misc/">
 <span class="md-ellipsis">
     Misc
   </span>
@@ -538,14 +528,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../misc/20241205/">
+<a class="md-nav__link" href="../../../../misc/20241205/">
 <span class="md-ellipsis">
     20241205
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../misc/20241209/">
+<a class="md-nav__link" href="../../../../misc/20241209/">
 <span class="md-ellipsis">
     20241209
   </span>
@@ -571,44 +561,34 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      构造积分上限函数
+      背景补充
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#lagrange">
-<span class="md-ellipsis">
-      利用Lagrange
-    </span>
-</a>
-</li>
+<nav aria-label="背景补充" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      利用分部积分
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#taylor">
-<span class="md-ellipsis">
-      利用Taylor展开式
+      双曲正弦函数
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      利用积分与求和统一
+      双曲余弦函数
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cauchy">
+<a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      Cauchy不等式
+      双曲正切函数
     </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -617,180 +597,33 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<div><h1 id="_1">积分不等式 总纲<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
-<h2 id="_2">构造积分上限函数<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续、递增，证明：</p>
-<div class="arithmatex">\[
-\int_a^b xf(x)\mathrm{d}x \geq \dfrac{a+b}{2}\int_a^b f(x)\mathrm{d}x
-\]</div>
-<p><strong>证明：设辅助函数</strong></p>
-<div class="arithmatex">\[
-F(t)=\int_{a}^{t}xf(x)\mathrm{d}x-\frac{a + t}{2}\int_{a}^{t}f(x)\mathrm{d}x
-\]</div>
-<p>显然<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(a) = 0\)</span></span>。对任意<span><span class="heti-spacing"> </span><span class="arithmatex">\(t\in[a,b]\)</span></span>，有</p>
-<div class="arithmatex">\[
-F^{\prime}(t)=tf(t)-\frac{1}{2}\int_{a}^{t}f(x)\mathrm{d}x-\frac{a + t}{2}f(t)\\
-\]</div>
-<div class="arithmatex">\[
-=\frac{t - a}{2}f(t)-\frac{1}{2}\int_{a}^{t}f(x)\mathrm{d}x\\
-\]</div>
-<div class="arithmatex">\[
-=\frac{1}{2}\int_{a}^{t}[f(t)-f(x)]\mathrm{d}x, \quad x\in[a,t]
-\]</div>
-<p>因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>单调递增，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(F^{\prime}(t)\geq0\)</span></span>，则<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(t)\)</span><span class="heti-spacing"> </span></span>单调递增，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(b)\geq F(a) = 0(b\geq a)\)</span></span>。因此</p>
-<div class="arithmatex">\[
-\int_{a}^{b}xf(x)\mathrm{d}x\geq\frac{a + b}{2}\int_{a}^{b}f(x)\mathrm{d}x
-\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>也可以用积分中值定理</p>
-</div>
-<h2 id="lagrange">利用<span><span class="heti-spacing"> </span>Lagrange</span><a class="headerlink" href="#lagrange" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,a]\)</span><span class="heti-spacing"> </span></span>上一阶连续可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0)=0\)</span></span>，<span class="arithmatex">\(f'(x)\le M\)</span>，证明：</p>
-<div class="arithmatex">\[
-\left|\int_0^af(x)\mathrm{d}x\right|\le \dfrac{M}{2}a^2
-\]</div>
-<p><strong>证明：</strong></p>
-<div class="arithmatex">\[
-\left|\int_0^af(x)\mathrm{d}x\right|\le \int_0^a|f(x)|\mathrm{d}x = \int_0^a|f(x)-f(0)|\mathrm{d}x = \int_0^a|f'(\xi)x|\mathrm{d}x
-\]</div>
-<div class="arithmatex">\[
-\le M\int_0^a|x|\mathrm{d}x = \dfrac{M}{2}a^2
-\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>本题用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理来联系函数值和导数值</p>
-</div>
-<h2 id="_3">利用分部积分<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,a]\)</span><span class="heti-spacing"> </span></span>上一阶连续可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0)=0\)</span></span>，<span class="arithmatex">\(f'(x)\le M\)</span>，证明：</p>
-<div class="arithmatex">\[
-\left|\int_0^af(x)\mathrm{d}x\right|\le \dfrac{M}{2}a^2
-\]</div>
-<p><strong>证明：</strong></p>
-<div class="arithmatex">\[
-\int_0^af(x)\mathrm{d}x = \int_0^af(x)\mathrm{d}(x-a) = \int_0^a(a-x)f'(x)\mathrm{d}x
-\]</div>
-<div class="arithmatex">\[
-\left|\int_0^af(x)\mathrm{d}x\right| = \left|\int_0^a(a-x)f'(x)\mathrm{d}x\right| \le \int_0^a(a-x)|f'(x)|\mathrm{d}x \le \dfrac{M}{2}a^2
-\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>本题用分部积分来联系函数值和导数值
-增加常数让分部积分第一项等于0也是在定积分有关题目中经常使用的技巧</p>
-</div>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>有二阶连续导数，<span class="arithmatex">\(\vert f^{\prime\prime}(x)\vert\leqslant1\)</span>，<span class="arithmatex">\(\forall x\in[0,1]\)</span>。证明<span><span class="heti-spacing"> </span>:</span></p>
-<div class="arithmatex">\[
-\left|\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right|\leqslant\frac{1}{24}
-\]</div>
-<p><strong>我们注意到：</strong></p>
-<div class="arithmatex">\[
-\left|\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right|=\left|\int_{0}^{1}f(x)d\left(x-\frac{1}{2}\right)-\frac{f(0)+f(1)}{2}\right|
-\]</div>
-<div class="arithmatex">\[
-=\left|\int_{0}^{1}\left(x-\frac{1}{2}\right)f^{\prime}(x)\mathrm{d}x\right|
-\]</div>
-<div class="arithmatex">\[
-=\frac{1}{2}\left|\int_{0}^{1}f^{\prime}(x)d\left(x-\frac{1}{2}\right)^{2}\right|
-\]</div>
-<div class="arithmatex">\[
-=\frac{1}{2}\left|\int_{0}^{1}f^{\prime\prime}(x)\left(x-\frac{1}{2}\right)^{2}\mathrm{d}x\right|
-\]</div>
-<div class="arithmatex">\[
-\leqslant\frac{1}{2}\int_{0}^{1}\left(x-\frac{1}{2}\right)^{2}\mathrm{d}x=\frac{1}{24}
-\]</div>
+<div><h1 id="_1">不定积分表<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">背景补充<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_3">双曲正弦函数<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><span class="arithmatex">\(y = \sinh x = \dfrac{e^x - e^{-x}}{2}\)</span></p>
+<p>反函数</p>
+<p><span class="arithmatex">\(y = \ln(x + \sqrt{x^2 + 1})\)</span></p>
+<h3 id="_4">双曲余弦函数<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><span class="arithmatex">\(y = \cosh x = \dfrac{e^x + e^{-x}}{2}\)</span></p>
+<p>反函数</p>
+<p><span class="arithmatex">\(y = \ln(x + \sqrt{x^2 - 1})\)</span></p>
+<h3 id="_5">双曲正切函数<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><span class="arithmatex">\(y = \tanh x = \dfrac{\sinh x}{\cosh x} = \dfrac{e^x - e^{-x}}{e^x + e^{-x}}\)</span></p>
+<p>反函数</p>
+<p><span class="arithmatex">\(y = \dfrac{1}{2}\ln\dfrac{1 + x}{1 - x}\)</span></p>
 <hr/>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>有一阶导数且<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f'(x) - f'(y)| \leq |x - y|\)</span></span>，证明：</p>
-<div class="arithmatex">\[
-\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{f(0) + f(1)}{2}\right| \leq \frac{1}{12}.
-\]</div>
-<p><strong>证明：</strong></p>
-<div class="arithmatex">\[
-\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{f(0) + f(1)}{2}\right| = \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) f'(x)\mathrm{d}x\right|
-\]</div>
-<div class="arithmatex">\[
-= \left|\int_{0}^{1} \left(x - \frac{1}{2}\right) \left[f'(x) - f'\left(\frac{1}{2}\right)\right] \mathrm{d}x\right|
-\]</div>
-<div class="arithmatex">\[
-\leq \int_{0}^{1} \left|x - \frac{1}{2}\right|^2 \mathrm{d}x = \frac{1}{12}.
-\]</div>
-<h2 id="taylor">利用<span class="heti-skip"><span class="heti-spacing"> </span>Taylor<span class="heti-spacing"> </span></span>展开式<a class="headerlink" href="#taylor" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>上二阶可导，<span class="arithmatex">\(f''(x)\lt 0\)</span>，证明<span><span class="heti-spacing"> </span>:</span></p>
-<div class="arithmatex">\[
-\int_0^1f(x^2)\mathrm{d}x\le f(\dfrac{1}{3})
-\]</div>
-<p><strong>证明</strong></p>
-<p>由泰勒公式，得</p>
-<div class="arithmatex">\[
-f(t)=f\left(\frac{1}{3}\right)+f'\left(\frac{1}{3}\right)\left(t - \frac{1}{3}\right)+\frac{f''(\xi)}{2!}\left(t - \frac{1}{3}\right)^2
-\]</div>
-<p>其中<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\xi\)</span><span class="heti-spacing"> </span></span>介于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{1}{3}\)</span><span class="heti-spacing"> </span></span>与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(t\)</span><span class="heti-spacing"> </span></span>之间，从而</p>
-<div class="arithmatex">\[
-f(x^2)\leq f\left(\frac{1}{3}\right)+f'\left(\frac{1}{3}\right)\left(x^2 - \frac{1}{3}\right)
-\]</div>
-<p>积分得</p>
-<div class="arithmatex">\[
-\int_{0}^{1}f(x^2)\mathrm{d}x\leq f\left(\frac{1}{3}\right)
-\]</div>
-<hr/>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>连续可导，<span class="arithmatex">\(f(a) = f(b) = 0,f'(x)\le M\)</span>，证明<span><span class="heti-spacing"> </span>:</span></p>
-<div class="arithmatex">\[
-\int_a^bf(x)\mathrm{d}x\le \dfrac{M}{4}(b-a)^2
-\]</div>
-<p><strong>证明</strong></p>
-<div class="arithmatex">\[
-\text{ 令 } F(x)=\int_{a}^{x}f(t)dt, \quad F^{\prime}(a)=F^{\prime}(b)=0, \quad F(a)=0, \quad F(b)=\int_{a}^{b}f(x)\mathrm{d}x.
-\]</div>
-<div class="arithmatex">\[
-F\left(\frac{a + b}{2}\right)=F(a)+F^{\prime}(a)\left(\frac{a + b}{2}-a\right)+\frac{F^{\prime \prime}(\xi_{1})}{2!}\left(\frac{a + b}{2}-a\right)^{2}
-\]</div>
-<div class="arithmatex">\[
-F\left(\frac{a + b}{2}\right)=F(b)+F^{\prime}(b)\left(\frac{a + b}{2}-b\right)+\frac{F^{\prime \prime}(\xi_{2})}{2!}\left(\frac{a + b}{2}-b\right)^{2}
-\]</div>
-<div class="arithmatex">\[
-\Rightarrow 0=\int_{a}^{b}f(x)\mathrm{d}x+\frac{(b - a)^{2}}{8}\left[F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right]
-\]</div>
-<div class="arithmatex">\[
-\Rightarrow\left|\int_{a}^{b}f(x)\mathrm{d}x\right|=\frac{(b - a)^{2}}{8}\left|F^{\prime \prime}(\xi_{2})-F^{\prime \prime}(\xi_{1})\right|\leq\frac{M}{4}(b - a)^{2} \text{. 证毕!}
-\]</div>
-<h2 id="_4">利用积分与求和统一<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>上连续，<span class="arithmatex">\(|f'(x)|\le M\)</span>，证明：</p>
-<div class="arithmatex">\[
-\left|\int_0^1f(x)\mathrm{d}x-\dfrac{1}{n}\sum_{k=1}^{n}f\left(\dfrac{k}{n}\right)\right|\le \dfrac{M}{2n}
-\]</div>
-<p><strong>证明：</strong></p>
-<div class="arithmatex">\[
-\left|\int_{0}^{1} f(x)\mathrm{d}x - \frac{1}{n} \sum_{k = 1}^{n} f\left(\frac{k}{n}\right)\right| = \left|\sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f(x)\mathrm{d}x - \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} f\left(\frac{i}{n}\right)\mathrm{d}x\right|
-\]</div>
-<p>用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理</p>
-<div class="arithmatex">\[
-\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} \left|f(x) - f\left(\frac{i}{n}\right)\right|\le \sum_{i = 1}^{n} \int_{\frac{i - 1}{n}}^{\frac{i}{n}} M\left(\dfrac{i}{n}-x\right)\mathrm{d}x = \dfrac{M}{2n}
-\]</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>把积分变成求和，把求和变成积分，统一以后用拉格朗日。</p>
-</div>
-<h2 id="cauchy"><span>Cauchy<span class="heti-spacing"> </span></span>不等式<a class="headerlink" href="#cauchy" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<div class="admonition cauchy不等式">
-<p class="admonition-title"><span>Cauchy<span class="heti-spacing"> </span></span>不等式</p>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)、g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续，我们有柯西不等式：</p>
-<div class="arithmatex">\[
-\int_a^bf^2(x)\mathrm{d}x\int_a^bg^2(x)\mathrm{d}x\ge\left(\int_a^bf(x)g(x)\mathrm{d}x\right)^2
-\]</div>
-</div>
-<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>连续，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(1)-f(0)=1\)</span></span>，证明：</p>
-<div class="arithmatex">\[
-\int_0^1(f'(x))^2\mathrm{d}x\ge 1
-\]</div>
-<p><strong>证明：</strong></p>
-<div class="arithmatex">\[
-\int_0^1(f'(x))^2\mathrm{d}x\int_0^1 1\mathrm{d}x\ge\left(\int_0^1f'(x)\mathrm{d}x\right)^2 = (f(1)-f(0))^2 = 1
-\]</div></div>
+<p>为何叫双曲三角函数呢，是因为他们跟三角函数有类似的性质，甚至存在双曲三角函数线，有兴趣的同学可以参考知乎的两篇文章</p>
+<p><a href="https://zhuanlan.zhihu.com/p/398460302">三角函数的孪生兄弟，双曲函数</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/338449318">双曲函数的一些公式</a></p>
+<p>了解了双曲三角函数以后，一些不定积分公式也容易理解了</p>
+<p>贴一张我在大一抄写的不定积分表</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../852693d64a7a305366950f2a171fbb8.png"><img alt="alt text" src="../852693d64a7a305366950f2a171fbb8.png"/></a></p></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2024</span>
 </span>
 </aside>
 </article>
@@ -805,7 +638,7 @@ F\left(\frac{a + b}{2}\right)=F(b)+F^{\prime}(b)\left(\frac{a + b}{2}-b\right)+\
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: 换元法和分部积分" class="md-footer__link md-footer__link--prev" href="../../int/indefinite/3/">
+<a aria-label="Previous: 常数K值法" class="md-footer__link md-footer__link--prev" href="../../../diff/constK/slides_constK/">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
 </div>
@@ -814,17 +647,17 @@ F\left(\frac{a + b}{2}\right)=F(b)+F^{\prime}(b)\left(\frac{a + b}{2}-b\right)+\
                 Previous
               </span>
 <div class="md-ellipsis">
-                换元法和分部积分
+                常数K值法
               </div>
 </div>
 </a>
-<a aria-label="Next: 24数分H第二次小测" class="md-footer__link md-footer__link--next" href="../../../quiz/anal_quiz2/">
+<a aria-label="Next: 有理函数" class="md-footer__link md-footer__link--next" href="../1/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                24数分H第二次小测
+                有理函数
               </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -857,9 +690,9 @@ F\left(\frac{a + b}{2}\right)=F(b)+F^{\prime}(b)\left(\frac{a + b}{2}-b\right)+\
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.expand", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "header.autohide", "content.code.copy", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../../../..", "features": ["search.highlight", "navigation.expand", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "header.autohide", "content.code.copy", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+<script src="../../../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
