@@ -155,3 +155,6 @@ nav:
     - 不定积分: pdf/indef_int/1.md
     - 定积分: pdf/def_int/1.md
     - 积分不等式: pdf/int_ineq/1.md
+  - Misc:
+    - Index: misc/index.md
+    - 20241209: misc/20241209.md
