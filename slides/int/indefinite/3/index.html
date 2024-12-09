@@ -6,7 +6,7 @@
 <meta content="yuanhongyi2004" name="author"/>
 <link href="https://zjucalc24.github.io/slides/int/indefinite/3/" rel="canonical"/>
 <link href="../2/" rel="prev"/>
-<link href="../../../int_ineq/all/" rel="next"/>
+<link href="../../definite/1/" rel="next"/>
 <link href="../../../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.48" name="generator"/>
 <title>换元法和分部积分 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#3">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -285,11 +288,85 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    换元法和分部积分
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     换元法和分部积分
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      换元法、分部积分、综合题
+    </span>
+</a>
+<nav aria-label="换元法、分部积分、综合题" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      根式换元
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      三角换元
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      分部积分法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      换元法 + 分部积分
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      利用分部积分对分母进行降阶
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      利用分部积分实现“积分抵消”
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      对复杂因子求导，期待出现奇迹
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -298,12 +375,50 @@
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
 <span class="md-ellipsis">
-    积分不等式
+    定积分
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            定积分
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../definite/1/">
+<span class="md-ellipsis">
+    定积分基础
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../definite/2/">
+<span class="md-ellipsis">
+    定积分其他
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../definite/3/">
+<span class="md-ellipsis">
+    区间再现公式
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+<span class="md-ellipsis">
+    积分不等式
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_4">
 <span class="md-nav__icon md-icon"></span>
             积分不等式
           </label>
@@ -504,19 +619,280 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      换元法、分部积分、综合题
+    </span>
+</a>
+<nav aria-label="换元法、分部积分、综合题" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      根式换元
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      三角换元
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      分部积分法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      换元法 + 分部积分
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      利用分部积分对分母进行降阶
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      利用分部积分实现“积分抵消”
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      对复杂因子求导，期待出现奇迹
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>换元法和分部积分</h1>
+<div><h1 id="3">不定积分<span><span class="heti-spacing"> </span>3</span><a class="headerlink" href="#3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_1">换元法、分部积分、综合题<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="_2">根式换元<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>见到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\frac{一次函数}{一次函数}}\)</span></span>、<span class="arithmatex">\(\sqrt{e^{ax}+b}\)</span>、<span><span class="arithmatex">\(\sqrt{\frac{e^{ax}+b}{e^{ax}-b}}\)</span><span class="heti-spacing"> </span></span>等形式，可直接将整个根号令成<span><span class="heti-spacing"> </span><span class="arithmatex">\(t\)</span></span>，以消去根号。但此方法不一定是最简方法，需具体问题具体分析。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \sqrt{\dfrac{x}{x + 1}}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：换元后不要解出<span><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span></span>，应直接分部积分，否则会升高分母阶数，使积分次数变高。</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x}\sqrt{\dfrac{x + 1}{x}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong>
+计算</p>
+<div class="arithmatex">\[\int \sqrt{\dfrac{1 - x}{1 + x}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[\int(\sqrt{\dfrac{1 - x}{1 + x}}+\sqrt{\dfrac{1 + x}{1 - x}})\mathrm{d}x\]</div>
+<blockquote>
+<p>注：换元法可行，但思考有无简便方法（提示：分子有理化，然后裂开，拆成<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>个积分）</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{\sqrt{e^{x}-2}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt[3]{(x + 1)^{2}(x - 1)^{4}}}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：第一次做想不到正常（本题是同济版高等数学教材课后习题）</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>为消去多个根号，需具体问题具体分析换元方式。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{(1+\sqrt[3]{x})\sqrt{x}}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：为消去<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt[3]{x}\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{x}\)</span><span class="heti-spacing"> </span></span>的根号，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = t^{6}\)</span></span>。</p>
+</blockquote>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{1 + e^{\frac{x}{2}} + e^{\frac{x}{3}} + e^{\frac{x}{6}}}\mathrm{d}x\]</div>
+<blockquote>
+<p>（提示：令<span><span class="heti-spacing"> </span><span class="arithmatex">\(e^{\frac{x}{6}} = t\)</span></span>，转化为有理函数积分）</p>
+</blockquote>
+<h3 id="_3">三角换元<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>若根号里面没有一次项，只有平方项和常数项：</p>
+<ul>
+<li>形如“<span class="arithmatex">\(\sqrt{a^{2}-x^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\sin t\)</span></span>。</li>
+<li>形如“<span class="arithmatex">\(\sqrt{a^{2}+x^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\tan t\)</span></span>。</li>
+<li>形如“<span class="arithmatex">\(\sqrt{x^{2}-a^{2}}\)</span>”，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = a\sec t\)</span></span>。<ul>
+<li>注：有时不一定非要出现根号才用三角换元，如<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x^{2}+1)^{2}}\mathrm{d}x\)</span></span>，可用三角换元<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>二倍角处理。</li>
+</ul>
+</li>
+</ul>
+<p>若根号里面含有一次项，先对根号里面的二次函数配方，消去一次项后转化为上述问题。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x^{4}}\sqrt{4 - x^{2}}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt{(x^{2}+1)^{3}}}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{\sqrt{x(4 - x)}}\mathrm{d}x\]</div>
+<blockquote>
+<p>提示：先配方，变形为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{\sqrt{x(4 - x)}}\mathrm{d}x=\int \dfrac{1}{\sqrt{4x - x^{2}}}\mathrm{d}x=\int \dfrac{1}{\sqrt{4-(x - 2)^{2}}}\mathrm{d}x\)</span></span>，再令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x - 2 = 2\sin t\)</span></span>。</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>6</span></strong></p>
+<div class="arithmatex">\[\int x\sqrt{2x - x^{2}}\mathrm{d}x\]</div>
+<blockquote>
+<p>提示：先配方，变形为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int x\sqrt{2x - x^{2}}\mathrm{d}x=\int x\sqrt{1-(x - 1)^{2}}\mathrm{d}x\)</span></span>，再令<span><span class="heti-spacing"> </span><span class="arithmatex">\(x - 1 = \sin t\)</span></span>。</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>7</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x^{2}\sqrt{x^{2}-1}}\mathrm{d}x\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注：令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = \sec t\)</span><span class="heti-spacing"> </span></span>可行，但本题可归为一种模型，即一切可化为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x + d)\sqrt{ax^{2}+bx + c}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{(x + d)^{2}\sqrt{ax^{2}+bx + c}}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>的不定积分，可用倒代换<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x + d=\dfrac{1}{t}\)</span><span class="heti-spacing"> </span></span>简化后积分。</p>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int \dfrac{1}{x\sqrt{2x^{2}+2x + 1}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[\int \dfrac{1}{x^{2}\sqrt{2x^{2}+2x + 1}}\mathrm{d}x\]</div>
+</div>
+<h3 id="_4">分部积分法<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>见到不同种类函数相乘，一般用分部积分公式<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int udv = uv-\int vdu\)</span></span>。</p>
+<p>分部积分使用原则：
+- 口诀：按“反对幂指三”顺序，谁排在后面，就把谁凑到微分符号<span class="arithmatex">\(\mathrm{d}\)</span>后面，然后分部积分。
+- 思想：“对/反”函数求导后不再是同类函数，所以要把其他函数凑到<span class="arithmatex">\(\mathrm{d}\)</span>后分部积分，使<span class="arithmatex">\(\mathrm{d}\)</span>对“对/反”函数求导；指数函数与幂函数相乘时，幂函数怕求导，指数函数不怕，所以把指数函数凑到<span class="arithmatex">\(d\)</span>后。总之，谁怕求导，就把其余部分凑到<span class="arithmatex">\(\mathrm{d}\)</span>后。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int x\arctan x\mathrm{d}x\]</div>
+<blockquote>
+<p>注：分部积分时，善于在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后增减常数使式子更简洁。</p>
+</blockquote>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int x\cdot\ln(1 + x^{2}) \arctan x\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int e^{x}\sin x\mathrm{d}x\]</div>
+<blockquote>
+<p>注：被积函数为指数函数和三角函数相乘时，需连续两次分部积分，出现“积分重现”后解决问题，且两次分部积分凑到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(d\)</span><span class="heti-spacing"> </span></span>后的函数必须同类，否则原路返回。</p>
+</blockquote>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int x\cdot e^{x}\sin x\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int\ln^{2}(x+\sqrt{1 + x^{2}})\mathrm{d}x\]</div>
+<h3 id="_5">换元法<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>分部积分<a class="headerlink" href="#_5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>换元后分部积分是常见出题风格，需熟练掌握。若预判需换元与分部积分，建议先换元，因其可使被积表达式更“清爽”利于后续操作。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int e^{2x}\arctan\sqrt{e^{x}-1}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x\cdot e^{\arctan x}}{(1 + x^{2})^{\frac{3}{2}}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[\int \dfrac{e^{\arctan x}}{(1 + x^{2})^{\frac{3}{2}}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{\ln x}{(1 + x^{2})^{\dfrac{3}{2}}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{\arctan\sqrt{x - 1}}{x\sqrt{x - 1}}\mathrm{d}x\]</div>
+<div class="arithmatex">\[\int \dfrac{\sqrt{x - 1}\arctan\sqrt{x - 1}}{x}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int\ln(1+\sqrt{\dfrac{1 + x}{x}})\mathrm{d}x\]</div>
+<blockquote>
+<p>注：换元后不解出<span><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span></span>，直接分部积分消去对数符号。若解出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>再代入，计算更繁琐。类似题目还有：</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int\arctan(1+\sqrt{x})\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int\sqrt{1 + x^{2}}\ln x\mathrm{d}x\]</div>
+<h3 id="_6">利用分部积分对分母进行降阶<a class="headerlink" href="#_6" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>分母次数高时，除倒代换外，可用分部积分降阶，核心是将分母凑到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后分部积分。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + x)^{2}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}e^{x}}{(x + 2)^{2}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + e^{x})^{2}}\mathrm{d}x\]</div>
+<p>以下例题需用“强制凑微分”技巧，核心仍是对分母降阶。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}}{(x\sin x+\cos x)^{2}}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int_{0}^{+\infty} \dfrac{e^{-x^{2}}}{(x^{2}+\frac{1}{2})^{2}}\mathrm{d}x\]</div>
+<h3 id="_7">利用分部积分实现“积分抵消”<a class="headerlink" href="#_7" title="Permanent link">¶</a></h3>
+<p>有些题目将积分拆成两个，对其中一个积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{2}\)</span><span class="heti-spacing"> </span></span>用分部积分，使其与另一个积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(I_{1}\)</span><span class="heti-spacing"> </span></span>抵消。被积函数一般含指数函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(e^{x}\)</span></span>。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{xe^{x}}{(1 + x)^{2}}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：题源为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int e^{x}[f(x)+f'(x)]\mathrm{d}x\)</span></span>，可拆开用“分部积分<span class="heti-skip"><span class="heti-spacing"> </span>+<span class="heti-spacing"> </span></span>积分抵消”思想，也可用基本公式<span><span class="heti-spacing"> </span><span class="arithmatex">\([e^{x}f(x)]'=e^{x}[f(x)+f'(x)]\)</span></span>。</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{(1+\sin x)e^{x}}{1+\cos x}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int e^{x}(\dfrac{1 - x}{1 + x^{2}})^{2}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x^{2}e^{x}}{(x + 2)^{2}}\mathrm{d}x\]</div>
+<blockquote>
+<p>被积函数含<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(e^{f(x)}\)</span><span class="heti-spacing"> </span></span>也可用此方法。</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{e^{-\sin x}\cdot\sin 2x}{\sin^{4}(\dfrac{\pi}{4}-\dfrac{x}{2})}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int e^{-\dfrac{x}{2}}\dfrac{\cos x-\sin x}{\sqrt{\sin x}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int e^{\sin x}\dfrac{x\cos^{3}x-\sin x}{\cos^{2}x}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：有时需对两个积分同时用分部积分使其抵消。</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int(1 + x-\dfrac{1}{x})e^{x+\frac{1}{x}}\mathrm{d}x\]</div>
+<blockquote>
+<p>不含指数类函数的题目也可能用此思想。</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int(\ln\ln x+\dfrac{1}{\ln x})\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<p>已知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\)</span><span class="heti-spacing"> </span></span>连续，<span class="arithmatex">\(f'(x)\neq0\)</span>，求</p>
+<div class="arithmatex">\[\int\left[\dfrac{f(x)}{f'(x)}-\dfrac{f^{2}(x)f''(x)}{(f'(x))^{3}}\right]\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1-\ln x}{(x-\ln x)^{2}}\mathrm{d}x\]</div>
+<h3 id="_8">对复杂因子求导，期待出现奇迹<a class="headerlink" href="#_8" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>被积函数某部分出现复杂“整体”（复合函数或两函数乘积）时，对其求导看特点，便于后续凑微分等操作。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{\ln x}{\sqrt{1 + [x(\ln x - 1)]^{2}}}\mathrm{d}x\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x + 1}{x(1 + xe^{x})}\mathrm{d}x\]</div>
+<p><strong>类题</strong></p>
+<div class="arithmatex">\[\int \dfrac{1 + x\cos x}{x(1 + xe^{\sin x})}\mathrm{d}x\]</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注<span><span class="heti-spacing"> </span>1</span>：通过例题<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>和类题可总结出题模板<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1 + xf'(x)}{x(1 + xe^{f(x)})}\mathrm{d}x=\int \dfrac{[1 + xf'(x)]e^{f(x)}}{xe^{f(x)}(1 + xe^{f(x)})}\mathrm{d}x=\int \dfrac{[xe^{f(x)}]'}{xe^{f(x)}(1 + xe^{f(x)})}\mathrm{d}x=\ln|\dfrac{xe^{f(x)}}{1 + xe^{f(x)}}| + C\)</span></span>，取定<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\arctan x\)</span><span class="heti-spacing"> </span></span>可原创题目。
+注2：以下题目难倒很多学生，将其与前面题目对比，猜测第一步操作，可转化为上述题型或类似题型。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{1-\ln x}{(x-\ln x)^{2}}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：看到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{1-\ln x}{(x-\ln x)^{2}}\)</span><span class="heti-spacing"> </span></span>应想到<span><span class="heti-spacing"> </span><span class="arithmatex">\((\dfrac{\ln x}{x})'\)</span></span>，如同看到某些式子联想其他式子一样。</p>
+</blockquote>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{e^{x}(x - 1)}{(x - e^{x})^{2}}\mathrm{d}x\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int \dfrac{x+\sin x\cdot\cos x}{(\cos x - x\cdot\sin x)^{2}}\mathrm{d}x\]</div></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 28, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2024</span>
 </span>
 </aside>
 </article>
@@ -544,13 +920,13 @@
               </div>
 </div>
 </a>
-<a aria-label="Next: 方法汇总" class="md-footer__link md-footer__link--next" href="../../../int_ineq/all/">
+<a aria-label="Next: 定积分基础" class="md-footer__link md-footer__link--next" href="../../definite/1/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                方法汇总
+                定积分基础
               </div>
 </div>
 <div class="md-footer__button md-icon">
