@@ -128,7 +128,6 @@ plugins:
 nav:
   - Preface: 
     - Preface: index.md
-    # - Ciallo～(∠・ω< )⌒★: ciallo.md
   - Slides:
     - 微分中值定理:
       - 泰勒展开式: slides/diff/Taylor/slides_Taylor.md
@@ -160,6 +159,7 @@ nav:
     - 不定积分: pdf/indef_int/1.md
     - 定积分: pdf/def_int/1.md
     - 积分不等式: pdf/int_ineq/1.md
+    - 反常积分: pdf/imp_int/1.md
   - Misc:
     - Index: misc/index.md
     - 20241205: misc/20241205.md
