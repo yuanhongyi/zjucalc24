@@ -4,22 +4,23 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="yuanhongyi2004" name="author"/>
-<link href="https://zjucalc24.github.io/" rel="canonical"/>
-<link href="slides/diff/Taylor/slides_Taylor/" rel="next"/>
-<link href="graph/ZJU-logo.svg" rel="icon"/>
+<link href="https://zjucalc24.github.io/pdf/imp_int/1/" rel="canonical"/>
+<link href="../../int_ineq/1/" rel="prev"/>
+<link href="../../../misc/" rel="next"/>
+<link href="../../../graph/ZJU-logo.svg" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.5.48" name="generator"/>
-<title>Preface - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
-<link href="assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
-<link href="assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>反常积分 - 浙江大学2024-2025学年秋冬学期微积分（甲）I辅学</title>
+<link href="../../../assets/stylesheets/main.6f8fc17f.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"JetBrains Mono"}</style>
-<link href="css/heti.css" rel="stylesheet"/>
-<link href="stylesheets/neoteroi-mkdocs.css" rel="stylesheet"/>
-<link href="stylesheets/custom.css" rel="stylesheet"/>
-<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-<link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+<link href="../../../css/heti.css" rel="stylesheet"/>
+<link href="../../../stylesheets/neoteroi-mkdocs.css" rel="stylesheet"/>
+<link href="../../../stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -28,13 +29,13 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#24-25i">
+<a class="md-skip" href="#_1">
           Skip to content
         </a>
 </div>
@@ -42,8 +43,8 @@
 </div>
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-header__button md-logo" data-md-component="logo" href="." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
-<img alt="logo" src="graph/ZJU-logo.svg"/>
+<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
+<img alt="logo" src="../../../graph/ZJU-logo.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
@@ -58,7 +59,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Preface
+              反常积分
             
           </span>
 </div>
@@ -111,8 +112,8 @@
 <nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
 <div class="md-grid">
 <ul class="md-tabs__list">
-<li class="md-tabs__item md-tabs__item--active">
-<a class="md-tabs__link" href=".">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
           
   
     
@@ -122,7 +123,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="slides/diff/Taylor/slides_Taylor/">
+<a class="md-tabs__link" href="../../../slides/diff/Taylor/slides_Taylor/">
           
   
     
@@ -132,7 +133,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="quiz/anal_quiz2/">
+<a class="md-tabs__link" href="../../../quiz/anal_quiz2/">
           
   
     
@@ -142,7 +143,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="exam/final_exam_analysis/">
+<a class="md-tabs__link" href="../../../exam/final_exam_analysis/">
           
   
     
@@ -151,8 +152,8 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="pdf/">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../">
           
   
     
@@ -162,7 +163,7 @@
         </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="misc/">
+<a class="md-tabs__link" href="../../../misc/">
           
   
     
@@ -181,22 +182,22 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-nav__button md-logo" data-md-component="logo" href="." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
-<img alt="logo" src="graph/ZJU-logo.svg"/>
+<a aria-label="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="浙江大学2024-2025学年秋冬学期微积分（甲）I辅学">
+<img alt="logo" src="../../../graph/ZJU-logo.svg"/>
 </a>
     浙江大学2024-2025学年秋冬学期微积分（甲）I辅学
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link md-nav__link--active" href=".">
+<a class="md-nav__link" href="../../..">
 <span class="md-ellipsis">
     Preface
   </span>
 </a>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_1">
 <span class="md-nav__icon md-icon"></span>
             Preface
@@ -234,14 +235,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/diff/Taylor/slides_Taylor/">
+<a class="md-nav__link" href="../../../slides/diff/Taylor/slides_Taylor/">
 <span class="md-ellipsis">
     泰勒展开式
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/diff/constK/slides_constK/">
+<a class="md-nav__link" href="../../../slides/diff/constK/slides_constK/">
 <span class="md-ellipsis">
     常数K值法
   </span>
@@ -265,28 +266,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/indefinite/table/">
+<a class="md-nav__link" href="../../../slides/int/indefinite/table/">
 <span class="md-ellipsis">
     积分表
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/indefinite/1/">
+<a class="md-nav__link" href="../../../slides/int/indefinite/1/">
 <span class="md-ellipsis">
     有理函数
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/indefinite/2/">
+<a class="md-nav__link" href="../../../slides/int/indefinite/2/">
 <span class="md-ellipsis">
     有理三角函数
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/indefinite/3/">
+<a class="md-nav__link" href="../../../slides/int/indefinite/3/">
 <span class="md-ellipsis">
     换元法和分部积分
   </span>
@@ -310,21 +311,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/definite/1/">
+<a class="md-nav__link" href="../../../slides/int/definite/1/">
 <span class="md-ellipsis">
     定积分基础
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/definite/2/">
+<a class="md-nav__link" href="../../../slides/int/definite/2/">
 <span class="md-ellipsis">
     定积分其他
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int/definite/3/">
+<a class="md-nav__link" href="../../../slides/int/definite/3/">
 <span class="md-ellipsis">
     区间再现公式
   </span>
@@ -348,7 +349,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="slides/int_ineq/all/">
+<a class="md-nav__link" href="../../../slides/int_ineq/all/">
 <span class="md-ellipsis">
     方法汇总
   </span>
@@ -375,14 +376,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="quiz/anal_quiz2/">
+<a class="md-nav__link" href="../../../quiz/anal_quiz2/">
 <span class="md-ellipsis">
     24数分H第二次小测
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="quiz/calc_quiz2_1/">
+<a class="md-nav__link" href="../../../quiz/calc_quiz2_1/">
 <span class="md-ellipsis">
     24微甲小测(周三班)
   </span>
@@ -406,21 +407,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="exam/final_exam_analysis/">
+<a class="md-nav__link" href="../../../exam/final_exam_analysis/">
 <span class="md-ellipsis">
     考情分析
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="exam/24final_sim/">
+<a class="md-nav__link" href="../../../exam/24final_sim/">
 <span class="md-ellipsis">
     24微甲期末模拟
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="exam/report%26ans/">
+<a class="md-nav__link" href="../../../exam/report%26ans/">
 <span class="md-ellipsis">
     模拟题分析与解答
   </span>
@@ -429,79 +430,108 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="pdf/">
+<a class="md-nav__link" href="../../">
 <span class="md-ellipsis">
     PDF
   </span>
 </a>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             PDF
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/seq_lim/1/">
+<a class="md-nav__link" href="../../seq_lim/1/">
 <span class="md-ellipsis">
     数列极限
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/func_diff/1/">
+<a class="md-nav__link" href="../../func_diff/1/">
 <span class="md-ellipsis">
     函数与导数(期中复习I)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/midterm/1/">
+<a class="md-nav__link" href="../../midterm/1/">
 <span class="md-ellipsis">
     期中复习
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/diff_mean/1/">
+<a class="md-nav__link" href="../../diff_mean/1/">
 <span class="md-ellipsis">
     微分中值定理
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/indef_int/1/">
+<a class="md-nav__link" href="../../indef_int/1/">
 <span class="md-ellipsis">
     不定积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/def_int/1/">
+<a class="md-nav__link" href="../../def_int/1/">
 <span class="md-ellipsis">
     定积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="pdf/int_ineq/1/">
+<a class="md-nav__link" href="../../int_ineq/1/">
 <span class="md-ellipsis">
     积分不等式
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="pdf/imp_int/1/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    反常积分
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     反常积分
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      反常积分敛散性(解析版)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      反常积分计算(解析版)
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -509,7 +539,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="misc/">
+<a class="md-nav__link" href="../../../misc/">
 <span class="md-ellipsis">
     Misc
   </span>
@@ -525,42 +555,42 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241205/">
+<a class="md-nav__link" href="../../../misc/20241205/">
 <span class="md-ellipsis">
     20241205
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241209/">
+<a class="md-nav__link" href="../../../misc/20241209/">
 <span class="md-ellipsis">
     20241209
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241210/">
+<a class="md-nav__link" href="../../../misc/20241210/">
 <span class="md-ellipsis">
     20241210
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241211/">
+<a class="md-nav__link" href="../../../misc/20241211/">
 <span class="md-ellipsis">
     20241211
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241212/">
+<a class="md-nav__link" href="../../../misc/20241212/">
 <span class="md-ellipsis">
     20241212
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="misc/20241213/">
+<a class="md-nav__link" href="../../../misc/20241213/">
 <span class="md-ellipsis">
     20241213
   </span>
@@ -584,30 +614,16 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      课程说明
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      参考资料
+      反常积分敛散性(解析版)
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      课程大纲
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      友链
+      反常积分计算(解析版)
     </span>
 </a>
 </li>
@@ -618,81 +634,11 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<div><h1 id="24-25i">浙江大学<span class="heti-skip"><span class="heti-spacing"> </span>24-25<span class="heti-spacing"> </span></span>秋冬学期微积分（甲）<span>I<span class="heti-spacing"> </span></span>辅学<a class="headerlink" href="#24-25i" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
-<p>欢迎来到微积分辅学网站喵ฅ՞o _ o՞ฅ</p>
-<h2 id="_1">课程说明<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p>本学期辅学涉及的主要内容：<strong>数列、函数极限，一元函数的微分学、积分学</strong>。涵盖校内微积分<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>甲<span class="heti-skip"><span class="heti-spacing"> </span>) I<span class="heti-spacing"> </span></span>课程的<strong>两次小测、期中考以及期末考试</strong>。虽然是面向校内课程的辅学，但是笔者在上大学的时候一位老师曾教导我</p>
-<blockquote>
-<p><strong>要超越绩点和考试去学习与思考</strong></p>
-</blockquote>
-<p>所以会有一些额外的内容</p>
-<p>如果有任何问题，可以通过邮箱联系我：zjullk@zju.edu.cn</p>
-<h2 id="_2">参考资料<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<ul>
-<li>卢兴江、苏德矿老师编写的微积分教材</li>
-<li>陈纪修老师编写的数学分析教材</li>
-<li>众多<span class="heti-skip"><span class="heti-spacing"> </span>B<span class="heti-spacing"> </span></span>站考研竞赛<span class="heti-skip"><span class="heti-spacing"> </span>up<span class="heti-spacing"> </span></span>主的视频和资料，如<strong>考研竞赛凯哥、清疏数学</strong>……不胜枚举</li>
-<li>众多微信公众号资料，如<strong>路老师的<span><span class="heti-spacing"> </span>nonsense collection</span>、数学考研李扬、清疏数学、数海钓鱼</strong>……不胜枚举</li>
-<li>暂时想不起来了，以后再补充</li>
-</ul>
-<h2 id="_3">课程大纲<a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p><strong>本学期虽然能上<span class="heti-skip"><span class="heti-spacing"> </span>10<span class="heti-spacing"> </span></span>次课左右，但是辅学开的比较晚，也受限于课内进度，所以其实更多的资料是需要同学们自己研读的</strong></p>
-<table>
-<thead>
-<tr>
-<th>课次</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>数列极限</td>
-</tr>
-<tr>
-<td>2</td>
-<td>函数、导数、期中复习<span><span class="heti-spacing"> </span>I</span></td>
-</tr>
-<tr>
-<td>3</td>
-<td>期中复习<span><span class="heti-spacing"> </span>II</span></td>
-</tr>
-<tr>
-<td>4</td>
-<td>微分中值定理<span><span class="heti-spacing"> </span>I Rolle</span>、辅助多项式</td>
-</tr>
-<tr>
-<td>5</td>
-<td>微分中值定理<span class="heti-skip"><span class="heti-spacing"> </span>II Taylor<span class="heti-spacing"> </span></span>证明题</td>
-</tr>
-<tr>
-<td>6</td>
-<td>微分中值定理<span class="heti-skip"><span class="heti-spacing"> </span>III<span class="heti-spacing"> </span></span>中值极限、构造函数</td>
-</tr>
-<tr>
-<td>7</td>
-<td>不定积分<span class="heti-skip"><span class="heti-spacing"> </span>I<span class="heti-spacing"> </span></span>有理函数和三角有理函数</td>
-</tr>
-<tr>
-<td>8</td>
-<td>不定积分<span class="heti-skip"><span class="heti-spacing"> </span>II<span class="heti-spacing"> </span></span>换元法和分部积分法</td>
-</tr>
-<tr>
-<td>9</td>
-<td>定积分综合</td>
-</tr>
-<tr>
-<td>10</td>
-<td>积分不等式、反常积分、期末复习提醒</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_4">友链<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<ul>
-<li><a href="https://ckc-agc.bowling233.top/">竺院辅学</a> </li>
-<li><a href="https://zju-turing.github.io/TuringCourses/">图灵班学习指南</a></li>
-<li><a href="https://space.bilibili.com/389626435">丹青学指<span class="heti-skip"><span class="heti-spacing"> </span>B<span class="heti-spacing"> </span></span>站号</a></li>
-</ul></div>
+<div><h1 id="_1">反常积分<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_2">反常积分敛散性<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>解析版<span><span class="heti-spacing"> </span>)</span><a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../imp_1.pdf"><embed alt="Alt text" src="../imp_1.pdf" style="min-height:100vh;width:125%" type="application/pdf"/></a></p>
+<h2 id="_3">反常积分计算<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>解析版<span><span class="heti-spacing"> </span>)</span><a class="headerlink" href="#_3" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../imp_2.pdf"><embed alt="Alt text" src="../imp_2.pdf" style="min-height:100vh;width:125%" type="application/pdf"/></a></p></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
@@ -713,13 +659,26 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Next: 泰勒展开式" class="md-footer__link md-footer__link--next" href="slides/diff/Taylor/slides_Taylor/">
+<a aria-label="Previous: 积分不等式" class="md-footer__link md-footer__link--prev" href="../../int_ineq/1/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                积分不等式
+              </div>
+</div>
+</a>
+<a aria-label="Next: Index" class="md-footer__link md-footer__link--next" href="../../../misc/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 Next
               </span>
 <div class="md-ellipsis">
-                泰勒展开式
+                Index
               </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -752,9 +711,9 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": ".", "features": ["search.highlight", "navigation.expand", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "header.autohide", "content.code.copy", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="assets/javascripts/bundle.83f73b43.min.js"></script>
-<script src="javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "navigation.expand", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.indexes", "navigation.top", "header.autohide", "content.code.copy", "content.code.annotate", "content.action.edit", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
