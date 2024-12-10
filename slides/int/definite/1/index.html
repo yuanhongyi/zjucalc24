@@ -312,11 +312,32 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    定积分基础
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./">
 <span class="md-ellipsis">
     定积分基础
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      练习与拓展
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../2/">
@@ -559,19 +580,174 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      练习与拓展
+    </span>
+</a>
+</li>
+</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="1">定积分<span><span class="heti-spacing"> </span>1</span><a class="headerlink" href="#1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<div><h1 id="1">定积分<span><span class="heti-spacing"> </span>1</span><a class="headerlink" href="#1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<p>定积分的计算依赖于不定积分的计算，其基本方法是利用<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式</p>
+<div class="arithmatex">\[\int_{a}^{b} f(x) \mathrm{d}x = F(b) - F(a)\]</div>
+<p>即算出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的原函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>后，在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>的端点上作差即可。</p>
+<p>但是，<strong>一个函数在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上可积与在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上存在原函数</strong>是两个截然不同的概念。</p>
+<p>有些函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上可积，但是却不存在原函数；有的函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上存在原函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span></span>，但是却不可积。</p>
+<p>所以，利用<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式计算定积分的前提是——函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a, b]\)</span><span class="heti-spacing"> </span></span>上不仅存在原函数，而且还可积。</p>
+<p>显然，对于那些可积却又不存在原函数的函数<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span></span>，在求其定积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{a}^{b} f(x) \mathrm{d}x\)</span><span class="heti-spacing"> </span></span>时，无法使用<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式。并且，即便一个函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>既存在原函数，也可积，但是其原函数很有可能不是初等函数（通俗一点来说，指的是这种函数的原函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>理论上是存在的，但是你求不出它的具体表达式，比如</p>
+<div class="arithmatex">\[\int \dfrac{\sin x}{x} \mathrm{d}x\ 、 \int e^{-x^{2}} \mathrm{d}x\]</div>
+<p>所以虽然<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式理论上是成立的，但是却无法用其进行定积分的计算（因为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(F(x)\)</span><span class="heti-spacing"> </span></span>的表示你都求不出来<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+<p>基于以上种种原因，我们需要找到一些其它的方法来计算定积分的值，常用的技巧有如下几个：</p>
+<div class="admonition 利用几何意义">
+<p class="admonition-title">利用几何意义</p>
+<p>如计算</p>
+<div class="arithmatex">\[\int_{0}^{2} \sqrt{4 - x^{2}} \mathrm{d}x\]</div>
+</div>
+<div class="admonition 利用奇偶性">
+<p class="admonition-title">利用奇偶性</p>
+<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>为奇函数，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{-a}^{a} f(x) \mathrm{d}x = 0\)</span></span>；若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>为偶函数，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{-a}^{a} f(x) \mathrm{d}x = 2\int_{0}^{a} f(x) \mathrm{d}x\)</span></span></p>
+<p>如计算</p>
+<div class="arithmatex">\[\int_{-1}^{1} \sin^{2}x \cdot \ln(x + \sqrt{1 + x^{2}}) \mathrm{d}x 、 \int_{-1}^{1} \frac{x + 1}{1 + \sqrt[3]{x^{2}}} \mathrm{d}x\]</div>
+</div>
+<div class="admonition 利用周期性">
+<p class="admonition-title">利用周期性</p>
+<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>可积且周期为<span><span class="heti-spacing"> </span><span class="arithmatex">\(T\)</span></span>，则</p>
+<div class="arithmatex">\[\int_{a}^{a + nT} f(x) \mathrm{d}x = n\int_{0}^{T} f(x) \mathrm{d}x\]</div>
+<p>（其中<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span><span class="heti-spacing"> </span></span>可取任意的实数<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。请证明该结论，并计算</p>
+<div class="arithmatex">\[\int_{2}^{2 + 10\pi}|\sin x| \mathrm{d}x 、 \int_{0}^{\pi} \sqrt{1 - \sin x} \mathrm{d}x 、 \int_{e^{-2n\pi}}^{1}|\frac{\mathrm{d}}{\mathrm{d}x} \cos(\ln\frac{1}{x})| \mathrm{d}x\]</div>
+</div>
+<div class="admonition 利用区间再现公式">
+<p class="admonition-title">利用区间再现公式</p>
+<div class="arithmatex">\[ \int_{a}^{b} f(x) \mathrm{d}x=\int_{a}^{b} f(a + b - x) \mathrm{d}x=\frac{1}{2} \int_{a}^{b}[f(x)+f(a + b - x)] \mathrm{d}x\]</div>
+<p>请证明该公式，并给出该公式的几何意义，然后计算</p>
+<div class="arithmatex">\[\int_{0}^{\frac{\pi}{2}} \frac{\sin x}{\sin x + \cos x} \mathrm{d}x\]</div>
+</div>
+<div class="admonition 利用华莱士公式">
+<p class="admonition-title">利用华莱士公式</p>
+<div class="arithmatex">\[\int_{0}^{\frac{\pi}{2}} \sin^{n}x \mathrm{d}x=\int_{0}^{\frac{\pi}{2}} \cos^{n}x \mathrm{d}x=\begin{cases}\frac{n - 1}{n} \frac{n - 3}{n - 2} \cdots \frac{1}{2} \cdot \frac{\pi}{2} &amp; (n为偶数)\\\frac{n - 1}{n} \frac{n - 3}{n - 2} \cdots \frac{2}{3} &amp; (n为奇数)\end{cases}\]</div>
+<p>如计算</p>
+<div class="arithmatex">\[\int_{0}^{\pi} \sin^{4}x \mathrm{d}x\]</div>
+<p>请思考</p>
+<div class="arithmatex">\[\int_{0}^{\pi} \sin^{n}x \mathrm{d}x 、\int_{0}^{\pi} \cos^{n}x \mathrm{d}x、\int_{0}^{2\pi} \sin^{n}x \mathrm{d}x、\int_{0}^{2\pi} \cos^{n}x \mathrm{d}x、\int_{-\pi}^{\pi} \sin^{n}x \mathrm{d}x\]</div>
+<p>等积分，该如何计算</p>
+</div>
+<div class="admonition 利用一个常见的积分公式">
+<p class="admonition-title">利用一个常见的积分公式</p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>连续，则</p>
+<div class="arithmatex">\[\int_{0}^{\pi} x f(\sin x) \mathrm{d}x=\pi \int_{0}^{\frac{\pi}{2}} f(\sin x) \mathrm{d}x\]</div>
+<p>可简化计算。请利用区间再现公式证明本公式，并计算</p>
+<div class="arithmatex">\[\int_{0}^{\pi} x \sqrt{\sin^{2}x - \sin^{4}x} \mathrm{d}x 、 \int_{0}^{\pi} \frac{x \sin x}{1 + \cos^{2}x} \mathrm{d}x\]</div>
+</div>
+<h2 id="_1">练习与拓展<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<p>下面这几个题，都是比较常规的题目，要么直接利用<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式，要么利用上文中介绍的几个基本技巧。</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<div class="arithmatex">\[\int_{0}^{1} \dfrac{x^{2} \arcsin x}{\sqrt{1 - x^{2}}}\mathrm{d}x\]</div>
+<p><br/><br/><br/></p>
+<div class="arithmatex">\[\int_{0}^{3} \arcsin\sqrt{\dfrac{x}{1 + x}}\mathrm{d}x\]</div>
+<p><br/><br/><br/></p>
+<div class="arithmatex">\[\int_{1}^{16} \arctan\sqrt{\sqrt{x} - 1}\mathrm{d}x\]</div>
+<p><br/><br/><br/></p>
+<div class="arithmatex">\[\int_{0}^{\frac{\pi}{2}} \sin x\ln \sin x\mathrm{d}x\]</div>
+<p><br/><br/><br/></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>本题被积函数出现瑕点<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = 0\)</span></span>，本质是收敛的反常积分</p>
+<p>直接分部积分代入上下限无法计算，解决方法有两种：
+- 一是先计算不定积分再整体带入上下限，用“推广的N - L公式”
+- 二是分部积分前在后面<strong>加减恰当常数</strong>使计算出的极限收敛<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<div class="arithmatex">\[\int_{0}^{2\pi} \dfrac{1}{1 + \cos^{2}x}\mathrm{d}x\]</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>利用<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式计算定积分时，原函数必须连续，若积分区间内部存在原函数无定义点，需将积分区间从无定义点处拆开，用“推广的<span class="heti-skip"><span class="heti-spacing"> </span>N - L<span class="heti-spacing"> </span></span>公式”计算</p>
+<p>也可利用周期性和对称性提前将无定义点移出积分区间，如</p>
+<div class="arithmatex">\[\int_{0}^{2\pi} \dfrac{1}{1 + \cos^{2}x}\mathrm{d}x = 4\int_{0}^{\frac{\pi}{2}} \dfrac{1}{1 + \cos^{2}x}\mathrm{d}x\]</div>
+<p>类似题目</p>
+<div class="arithmatex">\[\int_{0}^{\pi} \dfrac{1}{1 + \sin^{2}x}\mathrm{d}x\]</div>
+<p>可自行练习</p>
+<p>求不定积分<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int \dfrac{1}{1 + \cos^{2}x}\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>时可不考虑变形产生的无定义点，但定积分计算中此问题不能忽略<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>。</p>
+</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<p>判断以下计算是否正确并说明原因，若错请更正：</p>
+<div class="arithmatex">\[\int_{-1}^{1}(\arctan\dfrac{1}{x})'\mathrm{d}x=\left.\arctan\dfrac{1}{x}\right|_{-1}^{1}=\arctan1 - \arctan(-1)=\dfrac{\pi}{4}-(-\dfrac{\pi}{4})=\dfrac{\pi}{2}\]</div>
+<p><strong>类题<span><span class="heti-spacing"> </span>2</span></strong>
+设<span class="arithmatex">\(f(x)=\dfrac{(x + 1)^{2}(x - 1)}{x^{3}(x - 2)}\)</span>，计算</p>
+<div class="arithmatex">\[I=\int_{-1}^{3} \dfrac{f'(x)}{1 + f^{2}(x)}\]</div>
+<blockquote>
+<p>方法与前两题类似，需拆分区间分别计算，答案为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{32}{27}-2\pi\)</span></span></p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong>
+设</p>
+<div class="arithmatex">\[I_{n}=\int_{0}^{2\pi} \sin^{n}x\mathrm{d}x，J_{n}=\int_{0}^{2\pi} \cos^{n}x\mathrm{d}x\]</div>
+<p>（1）对于任意正整数<span><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span></span>，均有<span><span class="heti-spacing"> </span><span class="arithmatex">\(I_{n}=J_{n}\)</span></span>。</p>
+<p>（2）当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>是偶数时</p>
+<div class="arithmatex">\[I_{n}=4\int_{0}^{\frac{\pi}{2}} \sin^{n}x\mathrm{d}x\]</div>
+<p>（3）当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>是奇数时，<span class="arithmatex">\(I_{n}=0\)</span></p>
+<p><br/><br/><br/><br/><br/><br/></p>
+<blockquote>
+<p>注：可直接当结论在考试中使用，类似结论在三角函数积分中常见，利用周期性和对称性可看出其成立</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<p>计算</p>
+<div class="arithmatex">\[\int \dfrac{\sin10x}{\sin x}\mathrm{d}x\]</div>
+<blockquote>
+<p>注：一般有公式<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\sin2nx}{\sin x}=2\sum\limits_{k = 1}^{n} \cos(2k - 1)x\)</span></span>，<span class="arithmatex">\(\dfrac{\sin(2n + 1)x}{\sin x}=1+\sum\limits_{k = 1}^{n} \cos2kx\)</span></p>
+<p>可通过分子添项减项积化和差约分得到，利用此公式可求相应定积分。</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<p>计算</p>
+<div class="arithmatex">\[I_{n}=\int_{0}^{\pi} \dfrac{\sin(2n + 1)x}{\sin x}\mathrm{d}x\]</div>
+<p><br/><br/><br/></p>
+<p>可将此题改编为证明</p>
+<div class="arithmatex">\[a_{n}=\int_{0}^{\pi} \dfrac{\sin(2n + 1)x}{\sin x}\mathrm{d}x=\pi\]</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>6</span></strong></p>
+<div class="arithmatex">\[a_{n}=\int_{0}^{\frac{\pi}{2}}(\dfrac{\sin nx}{\sin x})^{2}\mathrm{d}x\]</div>
+<p>求<span><span class="heti-spacing"> </span><span class="arithmatex">\(a_{n}\)</span></span></p>
+<hr/>
+<p>【区间再现公式】</p>
+<p>将积分</p>
+<div class="arithmatex">\[\int_{a}^{b} f(x)\mathrm{d}x=\int_{a}^{b} f(a + b - x)\mathrm{d}x\]</div>
+<p>相加除以<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>得到</p>
+<div class="arithmatex">\[\int_{a}^{b} f(x)\mathrm{d}x=\int_{a}^{b} f(a + b - x)\mathrm{d}x=\dfrac{1}{2}\int_{a}^{b}[f(x)+f(a + b - x)]\mathrm{d}x\]</div>
+<p>后者往往更好算，但也有例外，有的题目直接用</p>
+<div class="arithmatex">\[\int_{a}^{b} f(x)\mathrm{d}x=\int_{a}^{b} f(a + b - x)\mathrm{d}x\]</div>
+<p>可简化积分</p>
+<p><strong>例题<span><span class="heti-spacing"> </span>7</span></strong></p>
+<p>计算积分</p>
+<div class="arithmatex">\[\int_{0}^{1}(1 - x)^{100}x\mathrm{d}x\]</div>
+<blockquote>
+<p>注：本题代表一种模型，对于积分</p>
+<div class="arithmatex">\[\int_{a}^{b} x^{m}(a + b - x)^{n}\mathrm{d}x\]</div>
+<p>（<span><span class="arithmatex">\(m,n\)</span><span class="heti-spacing"> </span></span>为正整数<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(m\)</span><span class="heti-spacing"> </span></span>小<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(n\)</span><span class="heti-spacing"> </span></span>大时，利用区间再现可简化计算</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>8</span></strong></p>
+<p>计算积分</p>
+<div class="arithmatex">\[\int_{0}^{2} x(x - 1)(x - 2)\mathrm{d}x\]</div>
+<blockquote>
+<p>注：本题几何意义是广义奇偶性，利用被积函数中心对称特点可简化计算</p>
+</blockquote>
+<p><strong>例题<span><span class="heti-spacing"> </span>9</span></strong></p>
+<p>计算</p>
+<div class="arithmatex">\[\int_{0}^{1}|x - \dfrac{1}{2}|^{5}x^{n}(1 - x)^{n}\mathrm{d}x\]</div></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 10, 2024</span>
 </span>
 </aside>
 </article>
