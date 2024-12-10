@@ -1,6 +1,6 @@
 # PDF讲义
 
-先发PDF版本的讲义，有空再做成mkdocs支持的markdown喵~~太忙了，没空码字~~
+先发PDF版本的讲义，有空再做成mkdocs支持的markdown喵 ~~太忙了，没空码字~~
 
 讲义主要参考来源：
 
