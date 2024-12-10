@@ -231,6 +231,24 @@ $$
     \int_a^bf^2(x)\mathrm{d}x\int_a^bg^2(x)\mathrm{d}x\ge\left(\int_a^bf(x)g(x)\mathrm{d}x\right)^2
     $$
 
+    证明: 方法很多，这里构造积分上限函数
+
+    $$
+    F(x)=\int_{a}^{x} f(t)dt\cdot \int_{a}^{x} g(t)dt - \left(\int_{a}^{x} f(t)g(t) dt\right)^2, \quad F(a) = 0.
+    $$
+
+    $$
+    \Rightarrow F^{\prime}(x)= f^2(x)\cdot \int_{a}^{x} g^2(t)dt + \int_{a}^{x} f^2(t)dt\cdot g^2(x) - 2\cdot \int_{a}^{x} f(t)g(t)dt\cdot f(x)\cdot g(x)
+    $$
+
+    $$
+    =\int_{a}^{x} \left(f^2(x)g^2(t)+f^2(t)g^2(x)-2f(t)g(t)f(x)g(x)\right) dt=\int_{a}^{x} \left(f(x)g(t)-f(t)g(x)\right)^2 dt \geq 0
+    $$
+
+    $$
+    \Rightarrow F(x)  \geq F(a) = 0. 证毕！
+    $$
+
 
 设$f'(x)$在$[0,1]$连续，且$f(1)-f(0)=1$，证明：
 
