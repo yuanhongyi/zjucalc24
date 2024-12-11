@@ -220,6 +220,7 @@ $$
 !!! Tip
     把积分变成求和，把求和变成积分，统一以后用拉格朗日。
 
+<div STYLE="page-break-after: always;"></div>
 
 ## Cauchy不等式
 
