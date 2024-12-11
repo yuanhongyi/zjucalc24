@@ -40,6 +40,8 @@ $由罗尔定理: \exists\varepsilon\in(a,b)，F'(\varepsilon) = 0\iff f'(\varep
     构造对称式，有点像高中学的"同构"
 
 
+---
+
 #### 例2
 
 $b>a>0，设f(x)为[a,b]上的可导函数，求证：\exists\varepsilon\in (a,b)满足：$
@@ -109,6 +111,8 @@ $$
     $设F(x) = f(x)+\dfrac{k}{x}\Rightarrow F(a) = F(b)\Rightarrow$
     $\exists\varepsilon\ s.t.\ F'(\varepsilon) = 0 \Rightarrow f'(\varepsilon) - \dfrac{k}{\varepsilon^2} = 0\Rightarrow k = \varepsilon^2f'(\varepsilon)$
 
+---
+
 #### 例3
 
 $已知a<b<c, f(x)二阶可导，证明\exists\xi\in(a,b)，使$
@@ -131,6 +135,8 @@ $由罗尔定理\exists\xi\in(m_1,m_2),F''(\xi) = 0$​
 
 $F''(x) = (c-b)f''(x) - (c-b)2k \Rightarrow f''(\xi) = 2k$
 
+---
+
 #### 例4
 
 $设f在[a,b]上二阶可导，f(a) = f(b) = 0 求证：对于某个x\in(a,b)，存在\xi\in(a,b)，使得：$
@@ -145,6 +151,8 @@ $令F(t) = f(t) - k(t-a)(t-b)$
 $F(a) = F(x) = F(b) = 0\Rightarrow \exists m_1\in(a,x),m_2\in(x,b)\ s.t.F'(m_1) = F'(m_2) = 0$
 
 $\therefore\exists\xi\in(a,b) \Rightarrow F''(\xi) = 0即f''(\xi) = 2k$
+
+---
 
 #### 练习
 
