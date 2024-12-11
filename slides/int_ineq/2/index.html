@@ -35,7 +35,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#2">
           Skip to content
         </a>
 </div>
@@ -368,16 +368,24 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      利用中值定理
+    </span>
+</a>
+<nav aria-label="利用中值定理" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
 <a class="md-nav__link" href="#lagrange">
 <span class="md-ellipsis">
-      用Lagrange
+      用Lagrange中值定理
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#cauchy">
 <span class="md-ellipsis">
-      用Cauchy
+      用Cauchy中值定理
     </span>
 </a>
 </li>
@@ -391,9 +399,12 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#taylor">
 <span class="md-ellipsis">
-      用Taylor
+      用Taylor中值定理
     </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -628,16 +639,24 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      利用中值定理
+    </span>
+</a>
+<nav aria-label="利用中值定理" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
 <a class="md-nav__link" href="#lagrange">
 <span class="md-ellipsis">
-      用Lagrange
+      用Lagrange中值定理
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#cauchy">
 <span class="md-ellipsis">
-      用Cauchy
+      用Cauchy中值定理
     </span>
 </a>
 </li>
@@ -651,9 +670,12 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#taylor">
 <span class="md-ellipsis">
-      用Taylor
+      用Taylor中值定理
     </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -662,11 +684,255 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<div><h1 id="_1">利用中值定理<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
-<h2 id="lagrange">用<span><span class="heti-spacing"> </span>Lagrange</span><a class="headerlink" href="#lagrange" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<h2 id="cauchy">用<span><span class="heti-spacing"> </span>Cauchy</span><a class="headerlink" href="#cauchy" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<h2 id="_2">用积分中值定理<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<h2 id="taylor">用<span><span class="heti-spacing"> </span>Taylor</span><a class="headerlink" href="#taylor" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2></div>
+<div><h1 id="2">积分不等式<span><span class="heti-spacing"> </span>2</span><a class="headerlink" href="#2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<h2 id="_1">利用中值定理<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
+<h3 id="lagrange">用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理<a class="headerlink" href="#lagrange" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>例题<span><span class="heti-spacing"> </span>1</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上一阶连续可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(a)=0\)</span></span>，<span class="arithmatex">\(|f'(x)|\le M\)</span>，证明：</p>
+<div class="arithmatex">\[
+\left|\int_a^bf(x)\mathrm{d}x\right|\le \dfrac{M}{2}(b-a)^2
+\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><strong>本题需要寻找函数值和导数值之间的联系，可以用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理、分部积分、逆用<span class="heti-skip"><span class="heti-spacing"> </span>N-L<span class="heti-spacing"> </span></span>公式等方法</strong></p>
+<p><strong>证明</strong></p>
+<div class="arithmatex">\[
+\left|\int_a^bf(x)\mathrm{d}x\right|\le \int_a^b|f(x)|\mathrm{d}x = \int_a^b|f(x)-f(a)|\mathrm{d}x = \int_a^b|f'(\xi)(x-a)|\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+\le M\int_a^b|x-a|\mathrm{d}x = \dfrac{M}{2}a^2
+\]</div>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>2</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上一阶连续可导，且<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(a) = f(b) =0\)</span></span>，<span class="arithmatex">\(|f'(x)|\le M\)</span>，证明：</p>
+<div class="arithmatex">\[
+\left|\int_a^bf(x)\mathrm{d}x\right|\le \dfrac{M}{4}(b-a)^2
+\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>注意到题目条件比较对称，因此我们模仿例题<span class="heti-skip"><span class="heti-spacing"> </span>1<span class="heti-spacing"> </span></span>的做法，把积分拆成两个，前一个对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span><span class="heti-spacing"> </span></span>点用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理，后一个对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b\)</span><span class="heti-spacing"> </span></span>点用<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>中值定理。</p>
+<p>这里我给一种用分部积分的做法</p>
+<div class="arithmatex">\[
+\left|\int_a^bf(x)\mathrm{d}\left(x - \dfrac{a+b}{2}\right)\right| = \left|\int_a^bf'(x)\left(x - \dfrac{a+b}{2}\right)\mathrm{d}x\right|\le M \int_a^b\left|x - \dfrac{a+b}{2}\right|\mathrm{d}x = \dfrac{M}{4}(b-a)^2
+\]</div>
+<blockquote>
+<p>注：对例题<span class="heti-skip"><span class="heti-spacing"> </span>1<span class="heti-spacing"> </span></span>用分段的方法，可以证明不等式右边为<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{(b-a)^2}{4}M+\dfrac{b-a}{2}|f(b)|\)</span></span></p>
+</blockquote>
+</div>
+<h3 id="cauchy">用<span class="heti-skip"><span class="heti-spacing"> </span>Cauchy<span class="heti-spacing"> </span></span>中值定理<a class="headerlink" href="#cauchy" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>例题<span><span class="heti-spacing"> </span>3</span></strong></p>
+<p>已知<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在连续可导，<span class="arithmatex">\(0 &lt; f'(x)\leq1\)</span>，<span class="arithmatex">\(f(0)=0\)</span>，证明：</p>
+<div class="arithmatex">\[\left(\int_{0}^{1}f(x)\mathrm{d}x\right)^{2}\geq\int_{0}^{1}f^{3}(x)\mathrm{d}x\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>设</p>
+<div class="arithmatex">\[
+F(x) = \left(\int_{0}^{x}f(t)\mathrm{d}t \right)^2, G(x) = \int_{0}^{x}f^3(t)\mathrm{d}t
+\]</div>
+<p><span class="arithmatex">\(\iff 1\le\dfrac{F(1)}{G(1)} = \dfrac{F(1)-F(0)}{G(1)-G(0)} = \dfrac{F'(\xi)}{G'(\xi)} = \dfrac{2\int_0^{\xi}f(t)\mathrm{d}t}{f^2(\xi)}\)</span></p>
+<p>再次利用柯西中值定理</p>
+<p><span class="arithmatex">\(= \dfrac{2f(\theta)}{2f(\theta)f'(\theta)} = \dfrac{1}{f'(\theta)}\ge 1\)</span></p>
+</div>
+<h3 id="_2">用积分中值定理<a class="headerlink" href="#_2" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p>告诉<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>单调性，可以考虑用积分中值定理</p>
+<div class="admonition 积分第一中值定理">
+<p class="admonition-title">积分第一中值定理</p>
+<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x),g(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续，<span><span class="arithmatex">\(g(x)\)</span><span class="heti-spacing"> </span></span>不变号，则存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi\in(a,b)\)</span></span>，使得</p>
+<div class="arithmatex">\[
+\int_a^bf(x)g(x)\mathrm{d}x = f(\xi)\int_a^bg(x)\mathrm{d}x
+\]</div>
+<p>在<span class="heti-skip"><span class="heti-spacing"> </span>2022<span class="heti-spacing"> </span></span>年微积分甲期末考试考过这个定理的证明</p>
+<p>常常用简化版本：</p>
+<p><span class="arithmatex">\(\exists c\in(a,b)\)</span>, s.t. </p>
+<div class="arithmatex">\[ \int_a^bf(x)\mathrm{d}x = f(c)(b-a) \]</div>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>4</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在连续且单调递减，证明：对任意的<span><span class="heti-spacing"> </span><span class="arithmatex">\(a\in(0,1)\)</span></span>，均有</p>
+<div class="arithmatex">\[\int_{0}^{a}f(x)\mathrm{d}x\geq a\int_{0}^{1}f(x)\mathrm{d}x\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p>如果直接使用积分中值定理，我们没法得到两个中值变量的大小关系，因此我们需要分割区间让两个中值变量不重叠</p>
+<div class="arithmatex">\[
+\iff \int_{0}^{a}f(x)\mathrm{d}x\geq a(\int_0^a f(x)\mathrm{d}x + \int_a^1 f(x)\mathrm{d}x)
+\]</div>
+<div class="arithmatex">\[
+\iff (1-a)\int_0^a f(x)\mathrm{d}x\ge a\int_a^1 f(x)\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+\iff (1-a)af(\xi_1)\ge a(1-a)f(\xi_2)，其中0&lt;\xi_1&lt;a&lt;\xi_2&lt;1
+\]</div>
+<p>由单调性即证</p>
+</div>
+<p><strong>例题<span><span class="heti-spacing"> </span>5</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>连续且单调递增，证明：</p>
+<div class="arithmatex">\[\int_{a}^{b}xf(x)\mathrm{d}x\geq\frac{a + b}{2}\int_{a}^{b}f(x)\mathrm{d}x\]</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>用中点分割区间，然后在两个区间上用积分第一中值定理，证明过程略</p>
+<p>题外话：此题的背景其实是切比雪夫不等式</p>
+<div class="arithmatex">\[
+\iff (b-a)\int_a^bxf(x)\mathrm{d}x\ge \dfrac{b^2-a^2}{2}\int_a^bf(x)\mathrm{d}x = \int_a^bx\mathrm{d}x\int_a^bf(x)\mathrm{d}x
+\]</div>
+</div>
+<h3 id="taylor">用<span class="heti-skip"><span class="heti-spacing"> </span>Taylor<span class="heti-spacing"> </span></span>中值定理<a class="headerlink" href="#taylor" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h3>
+<p><strong>例<span><span class="heti-spacing"> </span>1</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上二阶连续可导，<span class="arithmatex">\(f\left(\dfrac{a + b}{2}\right)=0\)</span>，<span class="arithmatex">\(\left|f^{\prime\prime}(x)\right|\leq M\)</span>。证：</p>
+<div class="arithmatex">\[\left|\int_{a}^{b} f(x)\mathrm{d}x\right|\leq\frac{M}{24}\cdot(b - a)^{3}\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><strong>证明</strong> <span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{a + b}{2}\)</span><span class="heti-spacing"> </span></span>处的带<span class="heti-skip"><span class="heti-spacing"> </span>Lagrange<span class="heti-spacing"> </span></span>余项的<span class="heti-skip"><span class="heti-spacing"> </span>Taylor<span class="heti-spacing"> </span></span>公式为</p>
+<div class="arithmatex">\[
+f(x)=f\left(\frac{a + b}{2}\right)+f'\left(\frac{a + b}{2}\right)\left(x-\frac{a + b}{2}\right)+\frac{1}{2}f''(\xi)\left(x-\frac{a + b}{2}\right)^{2}
+\]</div>
+<p>其中<span><span class="heti-spacing"> </span><span class="arithmatex">\(a\leqslant\xi\leqslant b\)</span></span>。对等式两边求积分，利用<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_{a}^{b}\left(x-\dfrac{a + b}{2}\right)\mathrm{d}x = 0\)</span></span>，得到</p>
+<div class="arithmatex">\[
+\int_{a}^{b}f(x)\mathrm{d}x=f'\left(\frac{a + b}{2}\right)\int_{a}^{b}\left(x-\frac{a + b}{2}\right)\mathrm{d}x+\frac{1}{2}\int_{a}^{b}f''(\xi)\left(x-\frac{a + b}{2}\right)^{2}\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+=\frac{1}{2}\int_{a}^{b}f''(\xi)\left(x-\frac{a + b}{2}\right)^{2}\mathrm{d}x
+\]</div>
+<p>于是</p>
+<div class="arithmatex">\[
+\left|\int_{a}^{b}f(x)\mathrm{d}x\right|\leqslant\frac{1}{2}\int_{a}^{b}\left|f''(\xi)\right|\left(x-\frac{a + b}{2}\right)^{2}\mathrm{d}x\leqslant\frac{M}{2}\int_{a}^{b}\left(x-\frac{a + b}{2}\right)^{2}\mathrm{d}x=\frac{M(b - a)^{3}}{24}.
+\]</div>
+<blockquote>
+<p><strong>评注：此题虽然不知道中点处的导数值等于多少，但是由于对称性，积分以后是<span><span class="heti-spacing"> </span>0</span>，比较巧妙</strong></p>
+</blockquote>
+</div>
+<p><strong>例<span><span class="heti-spacing"> </span>2</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上连续可导，<span class="arithmatex">\(f(a)=f(b)=0\)</span>，<span class="arithmatex">\(\vert f^{\prime}(x)\vert\leq M\)</span>，求证：</p>
+<div class="arithmatex">\[\left\vert\int_{a}^{b} f(x)\mathrm{d}x\right\vert\leq\frac{M}{12}(b - a)^{3}\]</div>
+<div class="admonition answer1">
+<p class="admonition-title">Answer1</p>
+<p><strong>如果仿照上一题的做法，在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a,b\)</span><span class="heti-spacing"> </span></span>处展开，会出现比较尴尬的情况，就是我们不知道<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a,b\)</span><span class="heti-spacing"> </span></span>处的导数值，因此我们需要将<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a(b)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>处展开<span><span class="heti-spacing"> </span>!</span></strong></p>
+<p><strong>证明<span><span class="heti-spacing"> </span>1</span></strong> 由<span class="heti-skip"><span class="heti-spacing"> </span>Taylor<span class="heti-spacing"> </span></span>公式，存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(\xi\in(a,b)\)</span></span>，使得</p>
+<p><span class="arithmatex">\(0 = f(a) = f(x) + f'(x)(a-x) + \dfrac{1}{2}f''(\xi)(a-x)^2\)</span></p>
+<p>由于</p>
+<div class="arithmatex">\[
+\int_a^b f'(x)(a-x)\mathrm{d}x = \int_a^b (a-x)\mathrm{d}f(x) = f(x)(a-x)\Big|_a^b - \int_a^b f(x)\mathrm{d}(a-x) = \int_a^b f(x)\mathrm{d}x
+\]</div>
+<p>对展开式两边积分，得</p>
+<div class="arithmatex">\[
+0 = 2\int_a^b f(x)\mathrm{d}x + \int_a^b f''(\xi)(a-x)^2\mathrm{d}x
+\]</div>
+<p>因此</p>
+<div class="arithmatex">\[
+\left\vert\int_{a}^{b} f(x)\mathrm{d}x\right\vert\leq\dfrac{1}{4}\left\vert\int_{a}^{b} f''(\xi)(a-x)^2\mathrm{d}x\right\vert\leq\dfrac{M}{12}(b - a)^{3}
+\]</div>
+</div>
+<div class="admonition answer2">
+<p class="admonition-title">Answer2</p>
+<p>此题亦可用分部积分法，注意题目条件是二阶导数的界，因此我们需要两次分部积分凑出二阶导数。</p>
+<p>在分部积分的时候，我们需要用到前面所学的技巧，<strong>往<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\mathrm{d}\)</span><span class="heti-spacing"> </span></span>后面加减一个常数，使得边界函数值为<span><span class="heti-spacing"> </span>0</span></strong></p>
+<p><strong>证法<span><span class="heti-spacing"> </span>2</span>：因为</strong></p>
+<div class="arithmatex">\[
+\int_{a}^{b}f(x)\mathrm{d}x=(x - a)f(x)\Big|_{a}^{b}-\int_{a}^{b}(x - a)f^{\prime}(x)\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+=-(x - a)(x - b)f^{\prime}(x)\Big|_{a}^{b}+\int_{a}^{b}(x - b)[f^{\prime}(x)+(x - a)f^{\prime\prime}(x)]\mathrm{d}x
+\]</div>
+<div class="arithmatex">\[
+=\int_{a}^{b}(x - b)(x - a)f^{\prime\prime}(x)\mathrm{d}x+(x - b)f(x)\Big|_{a}^{b}-\int_{a}^{b}f(x)\mathrm{d}x,
+\]</div>
+<p><strong>所以</strong> </p>
+<div class="arithmatex">\[\int_{a}^{b}f(x)\mathrm{d}x = \frac{1}{2}\int_{a}^{b}(x - b)(x - a)f^{\prime\prime}(x)\mathrm{d}x\]</div>
+<p><strong>从而</strong> </p>
+<div class="arithmatex">\[\left|\int_{a}^{b}f(x)\mathrm{d}x\right|=\frac{1}{2}\left|\int_{a}^{b}(x - b)(x - a)f^{\prime\prime}(x)\mathrm{d}x\right|\leq\frac{1}{2}M\int_{a}^{b}(b - x)(x - a)\mathrm{d}x=\frac{(b - a)^{3}}{12}M\]</div>
+<p><strong>注：在积分意义下，<span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>居然和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\)</span><span class="heti-spacing"> </span></span>乘以一个二次函数相等，而且零点恰好为<span><span class="heti-spacing"> </span><span class="arithmatex">\(a,b\)</span></span>，或许我们可以待定系数，留给同学们探究</strong></p>
+</div>
+<p><strong>例<span><span class="heti-spacing"> </span>3</span></strong></p>
+<p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>上二阶可导，<span class="arithmatex">\(f''(x)\lt 0\)</span>，证明<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[
+\int_0^1f(x^2)\mathrm{d}x\le f(\dfrac{1}{3})
+\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><strong>证明</strong></p>
+<p>由泰勒公式，得</p>
+<div class="arithmatex">\[
+f(t)=f\left(\frac{1}{3}\right)+f'\left(\frac{1}{3}\right)\left(t - \frac{1}{3}\right)+\frac{f''(\xi)}{2!}\left(t - \frac{1}{3}\right)^2
+\]</div>
+<p>其中<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\xi\)</span><span class="heti-spacing"> </span></span>介于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{1}{3}\)</span><span class="heti-spacing"> </span></span>与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(t\)</span><span class="heti-spacing"> </span></span>之间，从而</p>
+<div class="arithmatex">\[
+f(x^2)\leq f\left(\frac{1}{3}\right)+f'\left(\frac{1}{3}\right)\left(x^2 - \frac{1}{3}\right)
+\]</div>
+<p>积分得</p>
+<div class="arithmatex">\[
+\int_{0}^{1}f(x^2)\mathrm{d}x\leq f\left(\frac{1}{3}\right)
+\]</div>
+<p>推广：本题其实有比较深厚的<strong>凹凸性背景</strong>，不过留到后面再说，这里先做个简单的推广</p>
+<blockquote>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)\le 0\)</span></span>，证明</p>
+<div class="arithmatex">\[\int_0^1f(x^n)\mathrm{d}x\le f(\dfrac{1}{n+1}) = f\left(\int_0^1x^n\mathrm{d}x\right)\]</div>
+<p><strong>注：积分号和<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>换序</strong></p>
+</blockquote>
+</div>
+<div style="page-break-after: always;"></div>
+<p><strong>例<span><span class="heti-spacing"> </span>4</span></strong></p>
+<p>证明<strong>阿达玛<span class="heti-skip"><span class="heti-spacing"> </span>(Hadamard)<span class="heti-spacing"> </span></span>不等式</strong>：若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span><span class="heti-spacing"> </span></span>上二阶可导，<span class="arithmatex">\(f''(x)\ge0\)</span>，则</p>
+<div class="arithmatex">\[f\left(\frac{a + b}{2}\right)\leq\frac{1}{b - a}\int_a^bf(x)\mathrm{d}x\leq\frac{f(a)+f(b)}{2}\]</div>
+<div class="admonition hadamard">
+<p class="admonition-title">Hadamard</p>
+<p>先证明左边</p>
+<p>由<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)&gt;0\Rightarrow f(x) \ge f(x_0) + f'(x_0)(x-x_0)\)</span>(<span class="heti-spacing"> </span></span>切线不等式<span><span class="heti-spacing"> </span>)</span></p>
+<p><span class="arithmatex">\(\Rightarrow f(x) \ge f\left(\dfrac{a+b}{2}\right) + f'\left(\dfrac{a+b}{2}\right)(x-\dfrac{a+b}{2})\)</span></p>
+<p>积分得</p>
+<div class="arithmatex">\[
+\int_a^bf(x)\mathrm{d}x \ge (b-a)f\left(\dfrac{a+b}{2}\right)\iff f\left(\dfrac{a+b}{2}\right)\leq\frac{1}{b - a}\int_a^bf(x)\mathrm{d}x
+\]</div>
+<hr/>
+<p>再证明右边</p>
+<p>把<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span><span class="heti-spacing"> </span></span>点在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>点展开，得到切线不等式</p>
+<p><span class="arithmatex">\(f(a)\ge f(x) + f'(x)(a-x)\)</span>，两边积分</p>
+<div class="arithmatex">\[
+(b-a)f(a)\ge \int_a^bf(x)\mathrm{d}x+\int_a^bf'(x)(a-x)\mathrm{d}x
+\]</div>
+<p>而</p>
+<div class="arithmatex">\[
+\int_a^bf'(x)(a-x)\mathrm{d}x = \int_a^b(a-x)\mathrm{d}[f(x)-f(b)] = \int_a^b(f(x)-f(b))\mathrm{d}x
+\]</div>
+<p>即</p>
+<div class="arithmatex">\[
+(b-a)f(a)\ge 2\int_a^bf(x)\mathrm{d}x - (b-a)f(b)
+\]</div>
+<p>移项整理即得</p>
+<div class="arithmatex">\[
+\dfrac{1}{b-a}\int_a^bf(x)\mathrm{d}x\leq\frac{f(a)+f(b)}{2}
+\]</div>
+</div>
+<p><strong>例<span><span class="heti-spacing"> </span>5</span></strong></p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f''(x)&gt;0\)</span></span>，<span class="arithmatex">\((a &lt; b)\)</span>，证明：</p>
+<div class="arithmatex">\[\frac{1}{b - a}\int_a^bf[g(x)]\mathrm{d}x\geq f\left(\frac{1}{b - a}\int_{a}^{b} g(x)\mathrm{d}x\right)\quad\]</div>
+<div class="admonition answer">
+<p class="admonition-title">Answer</p>
+<p><span class="arithmatex">\(f''(x)\ge0\Rightarrow f(x)\ge f(x_0) + f'(x_0)(x-x_0)\)</span></p>
+<p>令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\to g(x), x_0\to \dfrac{1}{b-a}\int_a^bg(x)\mathrm{d}x\)</span><span class="heti-spacing"> </span></span>有</p>
+<div class="arithmatex">\[
+f[g(x)]\ge f\left(\frac{1}{b - a}\int_{a}^{b} g(x)\mathrm{d}x\right) + f'\left(\frac{1}{b - a}\int_{a}^{b} g(x)\mathrm{d}x\right)\left[g(x)-\frac{1}{b - a}\int_{a}^{b} g(x)\mathrm{d}x\right]
+\]</div>
+<p>不等式两边同时取<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(a\)</span><span class="heti-spacing"> </span></span>到<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(b\)</span><span class="heti-spacing"> </span></span>的积分，并且除以<span><span class="heti-spacing"> </span><span class="arithmatex">\(b-a\)</span></span>，得到</p>
+<div class="arithmatex">\[
+\frac{1}{b - a}\int_a^bf[g(x)]\mathrm{d}x\geq f\left(\frac{1}{b - a}\int_{a}^{b} g(x)\mathrm{d}x\right)
+\]</div>
+<p>注：本题的背景是<strong><span>Jensen<span class="heti-spacing"> </span></span>不等式</strong>，研究凸函数下积分平均见的不等关系</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>依托例题<span><span class="heti-spacing"> </span>5</span>，我们命制出前面几个题</p>
+<ul>
+<li>取<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = x^2\)</span></span>，区间为<span><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span></span>，得到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_0^1f(x^2)\mathrm{d}x\ge f(\dfrac{1}{3})\)</span></span></li>
+<li>取<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x) = x\)</span></span>，区间为<span><span class="heti-spacing"> </span><span class="arithmatex">\([a,b]\)</span></span>，得到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{1}{b-a}\int_a^bf(x)\mathrm{d}x\ge f(\dfrac{a+b}{2})\)</span></span></li>
+</ul>
+<p>更多的，我们可以赋予外层函数<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>利用凹凸性的那个函数<span class="heti-skip"><span class="heti-spacing"> </span>)<span class="heti-spacing"> </span></span>以具体，比如</p>
+<ul>
+<li>取<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \ln x\)</span></span>，区间为<span><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span></span>，得到<span><span class="heti-spacing"> </span><span class="arithmatex">\(\int_0^1\ln f(x)\mathrm{d}x\le \ln \left[\int_0^1 f(x)\mathrm{d}x\right]\)</span></span></li>
+</ul>
+</div>
+<div class="admonition exercise">
+<p class="admonition-title">Exercise</p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)&gt;0\)</span></span>，证明<span><span class="heti-spacing"> </span>:</span></p>
+<div class="arithmatex">\[ \int_0^1 \left[\ln f(x)\right]\mathrm{d}x \le \ln \left[\int_0^1 f(x)\mathrm{d}x\right] \]</div>
+</div></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
