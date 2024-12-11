@@ -139,10 +139,12 @@ nav:
       - 换元法和分部积分: slides/int/indefinite/3.md
     - 定积分:
       - 定积分基础: slides/int/definite/1.md
-      - 定积分其他: slides/int/definite/2.md
-      - 区间再现公式: slides/int/definite/3.md
+      # - 定积分其他: slides/int/definite/2.md
+      # - 区间再现公式: slides/int/definite/3.md
     - 积分不等式:
       - 方法汇总: slides/int_ineq/all.md
+      - 构造变限积分: slides/int_ineq/1.md
+      - 利用中值定理: slides/int_ineq/2.md
   - Quiz:
     - 24数分H第二次小测: quiz/anal_quiz2.md
     - 24微甲小测(周三班): quiz/calc_quiz2_1.md

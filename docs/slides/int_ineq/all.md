@@ -178,7 +178,7 @@ $$
 **证明**
 
 $$
-\text{ 令 } F(x)=\int_{a}^{x}f(t)dt, \quad F^{\prime}(a)=F^{\prime}(b)=0, \quad F(a)=0, \quad F(b)=\int_{a}^{b}f(x)\mathrm{d}x.
+\text{ 令 } F(x)=\int_{a}^{x}f(t)\mathrm{d}t, \quad F^{\prime}(a)=F^{\prime}(b)=0, \quad F(a)=0, \quad F(b)=\int_{a}^{b}f(x)\mathrm{d}x.
 $$
 
 $$
@@ -234,15 +234,15 @@ $$
     证明: 方法很多，这里构造积分上限函数
 
     $$
-    F(x)=\int_{a}^{x} f(t)dt\cdot \int_{a}^{x} g(t)dt - \left(\int_{a}^{x} f(t)g(t) dt\right)^2, \quad F(a) = 0.
+    F(x)=\int_{a}^{x} f(t)\mathrm{d}t\cdot \int_{a}^{x} g(t)\mathrm{d}t - \left(\int_{a}^{x} f(t)g(t) \mathrm{d}t\right)^2, \quad F(a) = 0.
     $$
 
     $$
-    \Rightarrow F^{\prime}(x)= f^2(x)\cdot \int_{a}^{x} g^2(t)dt + \int_{a}^{x} f^2(t)dt\cdot g^2(x) - 2\cdot \int_{a}^{x} f(t)g(t)dt\cdot f(x)\cdot g(x)
+    \Rightarrow F^{\prime}(x)= f^2(x)\cdot \int_{a}^{x} g^2(t)\mathrm{d}t + \int_{a}^{x} f^2(t)\mathrm{d}t\cdot g^2(x) - 2\cdot \int_{a}^{x} f(t)g(t)\mathrm{d}t\cdot f(x)\cdot g(x)
     $$
 
     $$
-    =\int_{a}^{x} \left(f^2(x)g^2(t)+f^2(t)g^2(x)-2f(t)g(t)f(x)g(x)\right) dt=\int_{a}^{x} \left(f(x)g(t)-f(t)g(x)\right)^2 dt \geq 0
+    =\int_{a}^{x} \left(f^2(x)g^2(t)+f^2(t)g^2(x)-2f(t)g(t)f(x)g(x)\right) \mathrm{d}t=\int_{a}^{x} \left(f(x)g(t)-f(t)g(x)\right)^2 \mathrm{d}t \geq 0
     $$
 
     $$
