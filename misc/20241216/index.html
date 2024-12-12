@@ -34,6 +34,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -603,7 +606,24 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1><span>18H.12<span class="heti-spacing"> </span></span>凸函数连续性</h1>
+<div><h1 id="_1">下凸函数开区间连续性<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<p><span>2018<span class="heti-spacing"> </span></span>微积分甲期末考试<span class="heti-skip"><span class="heti-spacing"> </span>12<span class="heti-spacing"> </span></span>题</p>
+<p><span>12.<span class="heti-spacing"> </span></span>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>在开区间<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>上有定义，且满足对于<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>中的任意三点<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{1}&lt;x_{2}&lt;x_{3}\)</span><span class="heti-spacing"> </span></span>成立不等式</p>
+<div class="arithmatex">\[\dfrac{f(x_{2})-f(x_{1})}{x_{2}-x_{1}}\leq\dfrac{f(x_{3})-f(x_{1})}{x_{3}-x_{1}}\leq\dfrac{f(x_{3})-f(x_{2})}{x_{3}-x_{2}}\]</div>
+<p>现任取<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>中一点<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span></span>，试证明<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f\)</span><span class="heti-spacing"> </span></span>在点<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_{0}\)</span><span class="heti-spacing"> </span></span>处右连续。</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>本题的背景是下凸函数在开区间的连续性，函数的凹凸性本身不通过二阶导数来定义，也并非所有的凹凸函数都有二阶导数。更一般的定义是斜率的关系或者琴生不等式</p>
+<p>本题用两条割线夹逼放缩就可以了，画一个草图翻译一下就行。</p>
+</div>
+<p>取<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_{1}&lt;x_{0}&lt;x&lt;x_{2}\)</span></span></p>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_0&lt;x&lt;x_2\)</span><span class="heti-spacing"> </span></span>用题干中左边的不等式</p>
+<div class="arithmatex">\[\frac{f(x)-f(x_{0})}{x - x_{0}}\leq\frac{f(x_{0})-f(x_{2})}{x_{0}-x_{2}}\]</div>
+<div class="arithmatex">\[\Rightarrow f(x)\leq(x - x_{0})\frac{f(x_{0})-f(x_{2})}{x_{0}-x_{2}}+f(x_{0})\]</div>
+<p>对<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x_1&lt;x_0&lt;x\)</span><span class="heti-spacing"> </span></span>用题干中最左边和最右边的不等关系</p>
+<div class="arithmatex">\[\frac{f(x_{0})-f(x_{1})}{x_{0}-x_{1}}\leq\frac{f(x)-f(x_{0})}{x - x_{0}}\]</div>
+<div class="arithmatex">\[\Rightarrow f(x)\geq(x - x_{0})\frac{f(x_{0})-f(x_{1})}{x_{0}-x_{1}}+f(x_{0})\]</div>
+<p>令<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\to x_0^+\)</span><span class="heti-spacing"> </span></span>由敛迫性即证。</p></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">

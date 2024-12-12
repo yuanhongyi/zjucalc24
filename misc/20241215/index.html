@@ -35,6 +35,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#2020t20">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -604,7 +607,33 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1><span>22H.16<span class="heti-spacing"> </span></span>微分中值定理</h1>
+<div><h1 id="2020t20"><span>2020<span class="heti-spacing"> </span></span>年研究生入学考试数学一<span><span class="heti-spacing"> </span>T20</span><a class="headerlink" href="#2020t20" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h1>
+<p><span>2022<span class="heti-spacing"> </span></span>年微积分<span class="heti-skip"><span class="heti-spacing"> </span>H<span class="heti-spacing"> </span></span>期末考试<span class="heti-skip"><span class="heti-spacing"> </span>16<span class="heti-spacing"> </span></span>题</p>
+<p>已知函数<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的导函数在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,2]\)</span><span class="heti-spacing"> </span></span>上连续，<span class="arithmatex">\(f(0)=f(2)=0\)</span>，且当<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\in(0,2)\)</span><span class="heti-spacing"> </span></span>时有<span><span class="heti-spacing"> </span><span class="arithmatex">\(\vert f(x)\vert_{\max}=M\)</span></span></p>
+<ul>
+<li><span>(1)<span class="heti-spacing"> </span></span>求证：<span class="arithmatex">\(\exists c\in(0,2)\)</span>，使<span><span class="heti-spacing"> </span><span class="arithmatex">\(\vert f'(c)\vert\geq M\)</span></span>；</li>
+<li><span>(2)<span class="heti-spacing"> </span></span>若对任意<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\in(0,2)\)</span><span class="heti-spacing"> </span></span>有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\vert f'(x)\vert\leq M\)</span><span class="heti-spacing"> </span></span>成立，求证：<span class="arithmatex">\(M = 0\)</span>。</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>此题的第一问有比较深刻的图像背景</p>
+<p>实际上第二问是可以推出<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\eta = 1\)</span><span class="heti-spacing"> </span></span>的，但是不推出也没事，我们逆用<span class="heti-skip"><span class="heti-spacing"> </span>N-L<span class="heti-spacing"> </span></span>公式一样能做</p>
+</div>
+<p><strong>证明：</strong>
+(1) 由最值定理可知：<span class="arithmatex">\(\vert f(x)\vert\)</span>在<span class="arithmatex">\([0,2]\)</span>上必能取到最大值<span class="arithmatex">\(M\)</span>，又由于<span class="arithmatex">\(\vert f(0)\vert=\vert f(2)\vert = 0\)</span></p>
+<p>则必有<span><span class="heti-spacing"> </span><span class="arithmatex">\(\eta\in(0,2)\)</span> s.t. <span class="arithmatex">\(\vert f(\eta)\vert = M\)</span></span></p>
+<p>则由拉格朗日中值定理可知：存在<span><span class="heti-spacing"> </span><span class="arithmatex">\(c_1\in(0,\eta)\)</span>, <span class="arithmatex">\(c_2\in(\eta,2)\)</span> s.t.:</span></p>
+<p><span class="arithmatex">\(f(\eta)-f(0) = f'(c_1)(\eta-0), f(2)-f(\eta) = f'(c_2)(2-\eta)\)</span></p>
+<p>即<span><span class="heti-spacing"> </span><span class="arithmatex">\(|M| = |f'(c_1)|\eta = |f'(c_2)|(2-\eta)\)</span></span></p>
+<p><span><span class="arithmatex">\(0&lt;\eta\le1\)</span><span class="heti-spacing"> </span></span>时，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(c=c_1\)</span></span>，则有<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f'(c)|\ge M\)</span></span>；<span><span class="arithmatex">\(1&lt;\eta&lt;2\)</span><span class="heti-spacing"> </span></span>时，取<span><span class="heti-spacing"> </span><span class="arithmatex">\(c=c_2\)</span></span>，则有<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f'(c)|\ge M\)</span></span>。</p>
+<hr/>
+<p>(2)</p>
+<div class="arithmatex">\[M = |f(\eta) - f(0)| = \left|\int_0^{\eta}f'(x)\mathrm{d}x\right| \le \int_0^{\eta}|f'(x)|\mathrm{d}x \le M\eta\]</div>
+<div class="arithmatex">\[M = |f(2) - f(\eta)| = \left|\int_{\eta}^{2}f'(x)\mathrm{d}x\right| \le \int_{\eta}^{2}|f'(x)|\mathrm{d}x \le M(2-\eta)\]</div>
+<p>两式相加</p>
+<div class="arithmatex">\[2M \le \int_0^2|f'(x)|\mathrm{d}x \le 2M\Rightarrow \int_0^2|f'(x)|\mathrm{d}x = 2M\]</div>
+<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(|f'(x)|\le M\)</span></span>，则有<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(|f'(x)| = M \Rightarrow f'(x) \equiv M\)</span><span class="heti-spacing"> </span></span>或者<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x) \equiv -M\)</span></span></p>
+<p>所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>是线性函数，由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(0)=f(2)=0\)</span></span>，所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) \equiv 0\)</span></span>，即<span><span class="heti-spacing"> </span><span class="arithmatex">\(M = 0\)</span></span>。</p></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
