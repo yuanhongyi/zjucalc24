@@ -44,3 +44,13 @@
 - [图灵班学习指南](https://zju-turing.github.io/TuringCourses/)
 - [丹青学指B站号](https://space.bilibili.com/389626435)
 
+## 题外话
+
+Ciallo～(∠・ω< )⌒★
+
+谢谢**xjgg**在我大晚上码字的时候陪我聊天、校对题目
+
+这个站点算是对[LALU](https://ckc-agc.bowling233.top/algebra/lalu/)一点拙劣的模仿，毕竟主要出自我一人之手，没有集思广益, ~~也没有时间~~
+
+教材也只看了卢老爷的课本，苏德矿老师的课本我一点没看，或许再来一个学长看看苏德矿的课本会使知识体系更完善orz
+
