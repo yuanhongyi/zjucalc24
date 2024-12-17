@@ -632,7 +632,7 @@
 <p>卢兴江课本题</p>
 <p><span>6-46.<span class="heti-spacing"> </span></span>证明：</p>
 <div class="arithmatex">\[\lim_{n\to+\infty}\int_{0}^{1}\frac{x^{n}}{1 + x^{2}}\mathrm{d}x = 0\]</div>
-<p>【解】因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(0\leqslant\dfrac{x^{n}}{1 + x^{2}}\leqslant x^{n}\)</span></span>，则</p>
+<p><strong>【解】</strong> 因为<span><span class="heti-spacing"> </span><span class="arithmatex">\(0\leqslant\dfrac{x^{n}}{1 + x^{2}}\leqslant x^{n}\)</span></span>，则</p>
 <div class="arithmatex">\[\int_{0}^{1}0dx\leqslant\int_{0}^{1}\frac{x^{n}}{1 + x^{2}}\mathrm{d}x\leqslant\int_{0}^{1}x^{n}\mathrm{d}x\]</div>
 <div class="arithmatex">\[\Rightarrow 0\leqslant\int_{0}^{1}\frac{x^{n}}{1 + x^{2}}\mathrm{d}x\leqslant\frac{1}{n + 1}\]</div>
 <p>由敛迫性有</p>
@@ -650,7 +650,7 @@
 <hr/>
 <p>(2) </p>
 <div class="arithmatex">\[\lim_{n\to0^{+}}n\int_{0}^{1}x^{n}f(x)\mathrm{d}x = f(1)\]</div>
-<p>证 由分部积分法</p>
+<p><strong>证</strong> 由分部积分法</p>
 <div class="arithmatex">\[
 \int_{0}^{1}x^{n}f(x)\mathrm{d}x=\frac{x^{n + 1}}{n + 1}f(x)\Big|_{0}^{1}-\frac{1}{n + 1}\int_{0}^{1}x^{n + 1}f^{\prime}(x)\mathrm{d}x
 \]</div>
@@ -687,18 +687,9 @@ m\leqslant f(x)\leqslant M,\quad \sqrt{m}\leqslant \sqrt{f(x)}\leqslant \sqrt{M}
 \]</div>
 <p>又<span><span class="heti-spacing"> </span><span class="arithmatex">\(g(x)&gt;0\)</span></span>，从而</p>
 <div class="arithmatex">\[
-\sqrt{m}g(x)\leqslant g(x)\sqrt{f(x)}\leqslant \sqrt{M}g(x)
-\]</div>
-<div class="arithmatex">\[
-\int_{a}^{b}\sqrt{m}g(x)\mathrm{d}x\leqslant \int_{a}^{b}g(x)\sqrt{f(x)}\mathrm{d}x\leqslant \int_{a}^{b}\sqrt{M}g(x)\mathrm{d}x
-\]</div>
-<div class="arithmatex">\[
 \sqrt{m}\int_{a}^{b}g(x)\mathrm{d}x\leqslant \int_{a}^{b}g(x)\sqrt{f(x)}\mathrm{d}x\leqslant \sqrt{M}\int_{a}^{b}g(x)\mathrm{d}x
 \]</div>
-<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\to\infty}\sqrt{m}=\lim\limits_{n\to\infty}\sqrt{M}=1\)</span></span>，则</p>
-<div class="arithmatex">\[
-\lim_{n\to\infty}\sqrt{m}\int_{a}^{b}g(x)\mathrm{d}x=\lim_{n\to\infty}\sqrt{M}\int_{a}^{b}g(x)\mathrm{d}x=\int_{a}^{b}g(x)\mathrm{d}x
-\]</div>
+<p>由于<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{n\to\infty}\sqrt{m}=\lim\limits_{n\to\infty}\sqrt{M}=1\)</span></span>，由敛迫性</p>
 <div class="arithmatex">\[\Rightarrow \lim_{n\to\infty}\int_{a}^{b}g(x)\sqrt{f(x)}\mathrm{d}x=\int_{a}^{b}g(x)\mathrm{d}x\]</div></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
