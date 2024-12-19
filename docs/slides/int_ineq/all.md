@@ -88,7 +88,7 @@ $$
     增加常数让分部积分第一项等于0也是在定积分有关题目中经常使用的技巧
 
 
-设\(f\)在\([0,1]\)有二阶连续导数，\(\vert f^{\prime\prime}(x)\vert\leqslant1\)，\(\forall x\in[0,1]\)。证明:
+设\(f\)在\([0,1]\)有二阶连续导数，\(\vert f^{\prime\prime}(x)\vert\leqslant1\)，\(\forall x\in[0,1]\)，$f'(0) = f'(1)$。证明:
 
 $$
 \left|\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right|\leqslant\frac{1}{24}

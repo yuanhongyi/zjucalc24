@@ -137,7 +137,7 @@ $$
 7.求曲线$f(x)$的弧长
 
 $$
-f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}dt
+f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t
 $$
 
 !!! Answer
@@ -286,11 +286,11 @@ $$
 
 12.设函数\(f(x)\)具有二阶导数，且\(\vert f^{\prime\prime}(x)\vert\leq1\)
 
-(1) 证明： 当\(x\in(0,1)\)时，\(\vert f(x)-f(0)(1 - x)-f(1)x\vert\leq\dfrac{x(1 - x)}{2}\)
+(1) 证明： 当\(x\in(0,1)\)时，\(\Big\vert f(x)-f(0)(1 - x)-f(1)x\Big\vert\leq\dfrac{x(1 - x)}{2}\)
 
 (2) 证明：
 
-$$\left\vert\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\right\vert\leq\dfrac{1}{12}$$
+$$\left\vert\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right\vert\leq\dfrac{1}{12}$$
 
 !!! Answer
 
@@ -300,26 +300,26 @@ $$\left\vert\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\right\vert\leq\dfrac{1}{12}$
 
     \(\because F(0)=0,F(1)=0\)
 
-    \(\because F^{\prime\prime}(x)=f^{\prime\prime}(x)+1\geq0,\left|f^{\prime\prime}(x)\right|\leq1\)
+    \(\because F^{\prime\prime}(x)=f^{\prime\prime}(x)+1\geq0\Leftarrow\left|f^{\prime\prime}(x)\right|\leq1\)
 
-    \(\therefore F(x)\)为凹函数\(\therefore F(x)\geq0\)
+    \(\therefore F(x)\)为下凸函数\(\therefore F(x)\leq0\)
 
     \(\therefore f(x)-f(0)(1 - x)-f(1)x\leq\dfrac{x(1 - x)}{2}\)
 
     类似可证\(\therefore f(x)-f(0)(1 - x)-f(1)x\ge-\dfrac{x(1 - x)}{2}\)
 
-    所以\(\left| f(x)-f(0)(1 - x)-f(1)x\right|\leq\dfrac{x(1 - x)}{2}\)
+    所以\(\Big| f(x)-f(0)(1 - x)-f(1)x\Big|\leq\dfrac{x(1 - x)}{2}\)
 
     (2) 证明：由(1)中\(f(x) - f(0)(1 - x) - f(1)x\leq\dfrac{x(1 - x)}{2}\)
 
-    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]dx\leq\int_{0}^{1}\dfrac{x(1 - x)}{2}dx\)
+    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\leq\int_{0}^{1}\dfrac{x(1 - x)}{2}\mathrm{d}x\)
 
-    \(\Rightarrow\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)
+    \(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)
 
     由(1)中\(f(x) - f(0)(1 - x) - f(1)x\geq-\dfrac{x(1 - x)}{2}\)
 
-    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]dx\geq\int_{0}^{1}-\dfrac{x(1 - x)}{2}dx\)
+    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\geq\int_{0}^{1}-\dfrac{x(1 - x)}{2}\mathrm{d}x\)
 
-    \(\Rightarrow\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)
+    \(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)
 
-    综上：\(\left|\int_{0}^{1}f(x)dx-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)
+    综上：\(\left|\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)

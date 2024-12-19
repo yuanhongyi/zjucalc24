@@ -83,8 +83,8 @@ $$
 
 12.设函数\(f(x)\)具有二阶导数，且\(\vert f^{\prime\prime}(x)\vert\leq1\)
 
-(1) 证明： 当\(x\in(0,1)\)时，\(\vert f(x)-f(0)(1 - x)-f(1)x\vert\leq\dfrac{x(1 - x)}{2}\)
+(1) 证明： 当\(x\in(0,1)\)时，\(\Big\vert f(x)-f(0)(1 - x)-f(1)x\Big\vert\leq\dfrac{x(1 - x)}{2}\)
 
 (2) 证明：
 
-$$\left\vert\int_{0}^{1}f(x)dx-\frac{f(0)+f(1)}{2}\right\vert\leq\frac{1}{12}$$
+$$\left\vert\int_{0}^{1}f(x)\mathrm{d}x-\frac{f(0)+f(1)}{2}\right\vert\leq\frac{1}{12}$$
