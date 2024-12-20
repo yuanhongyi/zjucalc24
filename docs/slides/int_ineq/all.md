@@ -235,7 +235,7 @@ $$
     证明: 方法很多，这里构造积分上限函数
 
     $$
-    F(x)=\int_{a}^{x} f(t)\mathrm{d}t\cdot \int_{a}^{x} g(t)\mathrm{d}t - \left(\int_{a}^{x} f(t)g(t) \mathrm{d}t\right)^2, \quad F(a) = 0.
+    F(x)=\int_{a}^{x} f^2(t)\mathrm{d}t\cdot \int_{a}^{x} g^2(t)\mathrm{d}t - \left(\int_{a}^{x} f(t)g(t) \mathrm{d}t\right)^2, \quad F(a) = 0.
     $$
 
     $$
