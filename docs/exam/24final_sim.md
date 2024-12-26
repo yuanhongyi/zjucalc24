@@ -49,8 +49,12 @@ $$
 
 ---
 
-8.设\(f(x)=\dfrac{1}{x + \sqrt{1 + x^{2}}}\)，其反函数记作\(f^{-1}(x)\)，求\(\int_{0}^{+\infty}f^{-1}(x)\mathrm{d}x\)
+8.设\(f(x)=\dfrac{1}{x + \sqrt{1 + x^{2}}}\)，其反函数记作\(f^{-1}(x)\)，求\(\displaystyle\int_{\sqrt{2}-1}^{1}f^{-1}(x)\mathrm{d}x\)
 
+!!! Warning
+
+    1226勘误，原题有误，已更正
+    
 ---
 
 
