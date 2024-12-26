@@ -717,48 +717,48 @@
 <p>卢兴江老师微积分课本习题<span><span class="heti-spacing"> </span>6.51</span></p>
 <p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,1]\)</span><span class="heti-spacing"> </span></span>连续，且</p>
 <div class="arithmatex">\[
-\int_0^1 f(x)\mathrm{d}x = \int_0^1 xf(x)\mathrm{d}x = 0
+\displaystyle\int_0^1 f(x)\mathrm{d}x = \displaystyle\int_0^1 xf(x)\mathrm{d}x = 0
 \]</div>
 <p>求证：<span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,1)\)</span><span class="heti-spacing"> </span></span>至少有<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>个零点</p>
 <p><strong>证明：</strong></p>
-<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = \int_0^x f(t)\mathrm{d}t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(0) = F(1) = 0\)</span></span></p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = \displaystyle\int_0^x f(t)\mathrm{d}t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(0) = F(1) = 0\)</span></span></p>
 <div class="arithmatex">\[
-0 = \int_0^1 xf(x)\mathrm{d}x = \int_0^1 x\mathrm{d}F(x) = xF(x)\bigg|_0^1 - \int_0^1 F(x)\mathrm{d}x
+0 = \displaystyle\int_0^1 xf(x)\mathrm{d}x = \displaystyle\int_0^1 x\mathrm{d}F(x) = xF(x)\bigg|_0^1 - \displaystyle\int_0^1 F(x)\mathrm{d}x
 \]</div>
-<p><span class="arithmatex">\(\Rightarrow \int_0^1 F(x)\mathrm{d}x = 0\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow \displaystyle\int_0^1 F(x)\mathrm{d}x = 0\)</span></p>
 <p>由积分中值定理，<span class="arithmatex">\(\exists c\in(0,1),\)</span> s.t. <span class="arithmatex">\((1-0)F(c) = 0\)</span>
 <span class="arithmatex">\(\Rightarrow F(0) = F(1) = F(c) = 0\)</span>，由罗尔定理即证。</p>
 <hr/>
 <h2 id="2">2<a class="headerlink" href="#2" title="Permanent link">¶</a></h2>
 <p>设<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\([0,\pi]\)</span><span class="heti-spacing"> </span></span>连续，且</p>
 <div class="arithmatex">\[
-\int_0^\pi f(x)\sin x\mathrm{d}x = \int_0^\pi f(x)\cos x\mathrm{d}x = 0
+\displaystyle\int_0^\pi f(x)\sin x\mathrm{d}x = \displaystyle\int_0^\pi f(x)\cos x\mathrm{d}x = 0
 \]</div>
 <p>求证：<span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\((0,\pi)\)</span><span class="heti-spacing"> </span></span>至少有<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>个零点</p>
 <p><strong>证明：</strong></p>
-<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = \int_0^x f(t)\sin t\mathrm{d}t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(0) = F(\pi) = 0\)</span></span></p>
+<p>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(x) = \displaystyle\int_0^x f(t)\sin t\mathrm{d}t\)</span></span>，则<span><span class="heti-spacing"> </span><span class="arithmatex">\(F(0) = F(\pi) = 0\)</span></span></p>
 <p><span><span class="arithmatex">\(\lim\limits_{x\to0^+}\dfrac{F(x)}{\sin x} = \lim\limits_{x\to0^+}f(x)\sin x = 0\)</span>(<span class="heti-spacing"> </span></span>洛必达法则<span><span class="heti-spacing"> </span>)</span></p>
 <p>同理<span><span class="heti-spacing"> </span><span class="arithmatex">\(\lim\limits_{x\to\pi^-}\dfrac{F(x)}{\sin x} = 0\)</span></span></p>
 <div class="arithmatex">\[
-0 = \int_0^\pi f(x)\cos x\mathrm{d}x = \int_0^\pi \dfrac{\cos x}{\sin x}f(x)\sin x\mathrm{d}x = \int_0^\pi \dfrac{\cos x}{\sin x}\mathrm{d}F(x)
+0 = \displaystyle\int_0^\pi f(x)\cos x\mathrm{d}x = \displaystyle\int_0^\pi \dfrac{\cos x}{\sin x}f(x)\sin x\mathrm{d}x = \displaystyle\int_0^\pi \dfrac{\cos x}{\sin x}\mathrm{d}F(x)
 \]</div>
 <div class="arithmatex">\[
-= \dfrac{F(x)}{\sin x}\bigg|_{0^+}^{\pi^-} - \int_0^\pi F(x)\mathrm{d}\left(\dfrac{\cos x}{\sin x}\right) = \int_0^\pi F(x)\dfrac{1}{\sin^2x}\mathrm{d}x
+= \dfrac{F(x)}{\sin x}\bigg|_{0^+}^{\pi^-} - \displaystyle\int_0^\pi F(x)\mathrm{d}\left(\dfrac{\cos x}{\sin x}\right) = \displaystyle\int_0^\pi F(x)\dfrac{1}{\sin^2x}\mathrm{d}x
 \]</div>
 <p>由积分中值定理，<span class="arithmatex">\(\exists c\in(0,\pi),\)</span> s.t. <span class="arithmatex">\((\pi-0)F(c)\dfrac{1}{\sin^2c} = 0\Rightarrow F(c) = 0\)</span></p>
 <p><span class="arithmatex">\(\Rightarrow F(0) = F(\pi) = F(c) = 0\)</span>，由罗尔定理即证。</p>
 <div class="admonition 另解">
 <p class="admonition-title">另解</p>
 <p><span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>恒为零则结论显然</p>
-<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>恒非负或恒非正，又<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sin x &gt; 0(x\in(0,\pi))\)</span></span>，与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\int_0^\pi f(x)\sin x\mathrm{d}x = 0\)</span><span class="heti-spacing"> </span></span>矛盾</p>
+<p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>恒非负或恒非正，又<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sin x &gt; 0(x\in(0,\pi))\)</span></span>，与<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\displaystyle\int_0^\pi f(x)\sin x\mathrm{d}x = 0\)</span><span class="heti-spacing"> </span></span>矛盾</p>
 <p><span><span class="arithmatex">\(\Rightarrow f(x)\)</span><span class="heti-spacing"> </span></span>有正有负，即存在零点</p>
 <p>若<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>只有一个零点，设为<span><span class="heti-spacing"> </span><span class="arithmatex">\(x_0\)</span></span>，则</p>
 <div class="arithmatex">\[
-\int_0^\pi f(x)\sin(x-x_0)\mathrm{d}x \neq 0     
+\displaystyle\int_0^\pi f(x)\sin(x-x_0)\mathrm{d}x \neq 0     
 \]</div>
 <p>但是，</p>
 <div class="arithmatex">\[
-\int_0^\pi f(x)\sin(x-x_0)\mathrm{d}x = \int_0^\pi f(x)\sin x\cos x_0\mathrm{d}x - \int_0^\pi f(x)\cos x\sin x_0\mathrm{d}x = 0
+\displaystyle\int_0^\pi f(x)\sin(x-x_0)\mathrm{d}x = \displaystyle\int_0^\pi f(x)\sin x\cos x_0\mathrm{d}x - \displaystyle\int_0^\pi f(x)\cos x\sin x_0\mathrm{d}x = 0
 \]</div>
 <p>矛盾，所以<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>至少有<span class="heti-skip"><span class="heti-spacing"> </span>2<span class="heti-spacing"> </span></span>个零点</p>
 </div></div>
@@ -767,7 +767,7 @@
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 17, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2024</span>
 </span>
 </aside>
 </article>
@@ -838,7 +838,7 @@
 <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
 <script src="../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>

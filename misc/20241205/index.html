@@ -699,9 +699,9 @@
 <article class="md-content__inner md-typeset">
 <h1><span>23H.8<span class="heti-spacing"> </span></span>定积分对称性</h1>
 <div><h2 id="_1">定积分计算对称性<a class="headerlink" href="#_1" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
-<p><span class="arithmatex">\(h(x)是奇函数,\int_{-a}^ah(x)\mathrm{d}x=0\)</span></p>
-<p><span class="arithmatex">\(h(x)是偶函数,\int_{-a}^ah(x)\mathrm{d}x=2\int_{0}^ah(x)\mathrm{d}x\)</span></p>
-<p><span class="arithmatex">\(h(x)+h(-x) = 2b(关于(0,b))中心对称\Rightarrow\int_{-a}^a(h(x)-b)\mathrm{d}x = 0\Rightarrow \int_{-a}^ah(x)\mathrm{d}x = 2ab\)</span></p>
+<p><span class="arithmatex">\(h(x)是奇函数,\displaystyle\int_{-a}^ah(x)\mathrm{d}x=0\)</span></p>
+<p><span class="arithmatex">\(h(x)是偶函数,\displaystyle\int_{-a}^ah(x)\mathrm{d}x=2\displaystyle\int_{0}^ah(x)\mathrm{d}x\)</span></p>
+<p><span class="arithmatex">\(h(x)+h(-x) = 2b(关于(0,b))中心对称\Rightarrow\displaystyle\int_{-a}^a(h(x)-b)\mathrm{d}x = 0\Rightarrow \displaystyle\int_{-a}^ah(x)\mathrm{d}x = 2ab\)</span></p>
 <p><span class="arithmatex">\(一般函数 h(x) = \dfrac{h(x)-h(-x)}{2}+\dfrac{h(x)+h(-x)}{2}\)</span></p>
 <ol start="8">
 <li><span>(2023<span class="heti-spacing"> </span></span>年微积分<span class="heti-skip"><span class="heti-spacing"> </span>(H) I<span class="heti-spacing"> </span></span>期末考试第<span class="heti-skip"><span class="heti-spacing"> </span>8<span class="heti-spacing"> </span></span>题<span class="heti-skip"><span class="heti-spacing"> </span>)<span class="heti-spacing"> </span></span>记<span><span class="heti-spacing"> </span><span class="arithmatex">\(a = \dfrac{\pi}{6}\)</span></span>，计算</li>
@@ -711,12 +711,8 @@
 \]</div>
 <p><span class="arithmatex">\(设f(x) = (\sin x)^2,g(x) = \dfrac{1}{1+e^{-x}},h(x) = f(x)g(x)\)</span></p>
 <p><span class="arithmatex">\(\begin{cases} f(-x) = f(x) \\ g(x)+g(-x) = 1 \end{cases}\Rightarrow h(x) + h(-x) = (\sin x)^2\)</span></p>
-<div class="arithmatex">\[
-\int_{-a}^ah(x)\mathrm{d}x = \int_{-a}^a\dfrac{h(x)+h(-x)}{2}\mathrm{d}x = \int_0^a(\sin x)^2\mathrm{d}x  
-\]</div>
-<div class="arithmatex">\[
-= \int_0^a\dfrac{1-\cos 2x}{2}\mathrm{d}x = \dfrac{a}{2} - \dfrac{1}{4}\sin 2a  = \dfrac{\pi}{12} - \dfrac{\sqrt{3}}{8}
-\]</div>
+<p><span class="arithmatex">\(\displaystyle\int_{-a}^ah(x)\mathrm{d}x = \displaystyle\int_{-a}^a\dfrac{h(x)+h(-x)}{2}\mathrm{d}x = \displaystyle\int_0^a(\sin x)^2\mathrm{d}x\)</span></p>
+<p><span class="arithmatex">\(= \displaystyle\int_0^a\dfrac{1-\cos 2x}{2}\mathrm{d}x = \dfrac{a}{2} - \dfrac{1}{4}\sin 2a  = \dfrac{\pi}{12} - \dfrac{\sqrt{3}}{8}\)</span></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>本题也可以用【区间再现公式<heti-adjacent class="heti-adjacent-half">】</heti-adjacent>，详情见<span class="heti-skip"><span class="heti-spacing"> </span>PDF<span class="heti-spacing"> </span></span>一栏</p>
@@ -726,7 +722,7 @@
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 9, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2024</span>
 </span>
 </aside>
 </article>
@@ -797,7 +793,7 @@
 <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
 <script src="../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://jsd.onmicrosoft.cn/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
 document$.subscribe(() => { lightbox.reload() });
 </script></body>
