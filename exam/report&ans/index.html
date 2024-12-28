@@ -798,26 +798,26 @@
 \]</div>
 </div>
 <hr/>
-<p><span>4.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\int_{0}^{x}\cos(x - t)^{2}\text{d}t\)</span></span>，<span class="arithmatex">\(\varphi(x)=\begin{cases}\dfrac{x-\sin x}{x-\ln(1 + x)},&amp;x\neq0\\0,&amp;x = 0\end{cases}\)</span>，求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\mathrm{d}}{\mathrm{d}x}f(\varphi(x))\vert_{x = 0}\)</span></span></p>
+<p><span>4.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\displaystyle\int_{0}^{x}\cos(x - t)^{2}\text{d}t\)</span></span>，<span class="arithmatex">\(\varphi(x)=\begin{cases}\dfrac{x-\sin x}{x-\ln(1 + x)},&amp;x\neq0\\0,&amp;x = 0\end{cases}\)</span>，求<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\mathrm{d}}{\mathrm{d}x}f(\varphi(x))\vert_{x = 0}\)</span></span></p>
 <div class="admonition answer">
 <p class="admonition-title">Answer</p>
 <div class="arithmatex">\[
 \varphi^{\prime}(0)=\lim_{x \to 0} \dfrac{\varphi(x)-\varphi(0)}{x}=\lim_{x \to 0} \dfrac{x - \sin x}{x - \ln(1 + x)}=\lim_{x \to 0} \dfrac{\dfrac{1}{6}x^{3}}{\dfrac{1}{2}x^{3}}=\dfrac{1}{3}
 \]</div>
 <div class="arithmatex">\[
-f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos u^{2} \mathrm{d}u(令u = x-t)
+f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos(u)^{2} \mathrm{d}u(令u = x-t)
 \]</div>
-<p>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)=\cos x^{2},\varphi(0) = 0\)</span></span>，因此<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)</span></span></p>
+<p>故<span><span class="heti-spacing"> </span><span class="arithmatex">\(f'(x)=\cos x^{2},\varphi(0) = 0\)</span></span>，因此<span><span class="heti-spacing"> </span><span class="arithmatex">\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)</span></span></p>
 </div>
 <hr/>
 <p><span>5.<span class="heti-spacing"> </span></span>求不定积分</p>
 <div class="arithmatex">\[\int\ln\left(1+\sqrt{\dfrac{1+x}{x}} \right)\text{d}x \]</div>
 <div class="admonition answer">
 <p class="admonition-title">Answer</p>
-<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\dfrac{\sqrt{1 + x}}{x}=t\)</span></span>，得<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t^{2}-1}\)</span></span></p>
-<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(=\int \ln(1 + t)\mathrm{d}(\dfrac{1}{t^{2}-1})\)</span></span></p>
-<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{t^{2}-1}\cdot\dfrac{1}{t + 1}\mathrm{d}t\)</span></p>
-<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{4(t - 1)}+\dfrac{-1}{4(t + 1)}-\dfrac{1}{2(t + 1)^{2}}\mathrm{d}t\)</span></p>
+<p>令<span><span class="heti-spacing"> </span><span class="arithmatex">\(\sqrt{\dfrac{1 + x}{x}}=t\)</span></span>，得<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = \dfrac{1}{t^{2}-1}\)</span></span></p>
+<p>原式<span><span class="heti-spacing"> </span><span class="arithmatex">\(=\displaystyle\int \ln(1 + t)\mathrm{d}(\dfrac{1}{t^{2}-1})\)</span></span></p>
+<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\displaystyle\int\dfrac{1}{t^{2}-1}\cdot\dfrac{1}{t + 1}\mathrm{d}t\)</span></p>
+<p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}-\displaystyle\int\left(\dfrac{1}{4(t - 1)}+\dfrac{-1}{4(t + 1)}-\dfrac{1}{2(t + 1)^{2}}\right)\mathrm{d}t\)</span></p>
 <p><span class="arithmatex">\(=\dfrac{\ln(1 + t)}{t^{2}-1}+\dfrac{1}{4}\ln\left|\dfrac{t + 1}{t - 1}\right|-\dfrac{1}{2(t + 1)}+C\)</span></p>
 <p><span class="arithmatex">\(=x\ln(1+\dfrac{\sqrt{1 + x}}{x})+\dfrac{1}{4}\ln\dfrac{\dfrac{\sqrt{1 + x}}{x}+1}{\dfrac{\sqrt{1 + x}}{x}-1}-\dfrac{1}{2(\dfrac{\sqrt{1 + x}}{x}+1)}+C\)</span></p>
 <p><span class="arithmatex">\(=x\ln(1+\dfrac{\sqrt{1 + x}}{x})+\dfrac{1}{2}\ln(\sqrt{1 + x}+\sqrt{x})-\dfrac{1}{2}\sqrt{x}(\sqrt{1 + x}-\sqrt{x})+C\)</span></p>
@@ -832,10 +832,7 @@ f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos u^{2} \mathr
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../image-1.png"><img alt="alt text" src="../image-1.png"/></a></p>
 </div>
 <hr/>
-<p><span>7.<span class="heti-spacing"> </span></span>求曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x)\)</span><span class="heti-spacing"> </span></span>的弧长</p>
-<div class="arithmatex">\[
-f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t
-\]</div>
+<p><span>7.<span class="heti-spacing"> </span></span>求曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) = \displaystyle\int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t\)</span><span class="heti-spacing"> </span></span>的弧长</p>
 <div class="admonition answer">
 <p class="admonition-title">Answer</p>
 <p><span class="arithmatex">\(y^{\prime}=\sqrt{3 - x^{2}}\)</span>，由弧长公式可得</p>
@@ -865,7 +862,7 @@ f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t
 <p><span>9.<span class="heti-spacing"> </span></span>设<span><span class="heti-spacing"> </span><span class="arithmatex">\(t &gt; 0\)</span></span>，平面有界区域<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(D\)</span><span class="heti-spacing"> </span></span>由曲线<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(y = \sqrt{x}e^{-x}\)</span><span class="heti-spacing"> </span></span>与直线<span><span class="heti-spacing"> </span><span class="arithmatex">\(x = t\)</span></span>，<span><span class="arithmatex">\(x = 2t\)</span><span class="heti-spacing"> </span></span>及<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>轴围成，<span><span class="arithmatex">\(D\)</span><span class="heti-spacing"> </span></span>绕<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(x\)</span><span class="heti-spacing"> </span></span>轴旋转一周所成旋转体的体积为<span><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span></span>，求<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span><span class="heti-spacing"> </span></span>的最大值。</p>
 <div class="admonition answer">
 <p class="admonition-title">Answer</p>
-<p><span class="arithmatex">\(V(t)=\int_{2t}^{2t + 1}\pi x e^{-2x}\mathrm{d}x=-\dfrac{\pi}{2}\left[(2t + \dfrac{1}{2})e^{-4t}-(t + \dfrac{1}{2})e^{-2t}\right]\)</span></p>
+<p><span class="arithmatex">\(V(t)=\displaystyle\int_{t}^{2t}\pi x e^{-2x}\mathrm{d}x=-\dfrac{\pi}{2}\left[(2t + \dfrac{1}{2})e^{-4t}-(t + \dfrac{1}{2})e^{-2t}\right]\)</span></p>
 <p>则<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)=-\pi te^{-2t}(1 - 4e^{-2t})\)</span></span>，令<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)=0\Rightarrow t=\ln 2\)</span></span>，</p>
 <p><span><span class="arithmatex">\(\because t\in(\ln 2-\delta,\ln 2)\)</span><span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)&gt;0\)</span></span>，<span><span class="arithmatex">\(t\in(\ln 2,\ln 2+\delta)\)</span><span class="heti-spacing"> </span></span>有<span><span class="heti-spacing"> </span><span class="arithmatex">\(V^{\prime}(t)&lt;0\)</span></span>，</p>
 <p><span><span class="arithmatex">\(\therefore t = \ln 2\)</span><span class="heti-spacing"> </span></span>为<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(V(t)\)</span><span class="heti-spacing"> </span></span>的极大值点即最大值点，</p>
@@ -946,19 +943,19 @@ f(a)=f(x_0)+\dfrac{f^{\prime\prime}(\gamma_2)}{2}(a - x_0)^2,0 &lt; \gamma_2 &lt
 <p>类似可证<span><span class="heti-spacing"> </span><span class="arithmatex">\(\therefore f(x)-f(0)(1 - x)-f(1)x\ge-\dfrac{x(1 - x)}{2}\)</span></span></p>
 <p>所以<span><span class="heti-spacing"> </span><span class="arithmatex">\(\Big| f(x)-f(0)(1 - x)-f(1)x\Big|\leq\dfrac{x(1 - x)}{2}\)</span></span></p>
 <p><span>(2)<span class="heti-spacing"> </span></span>证明：由<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>中<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) - f(0)(1 - x) - f(1)x\leq\dfrac{x(1 - x)}{2}\)</span></span></p>
-<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\leq\int_{0}^{1}\dfrac{x(1 - x)}{2}\mathrm{d}x\)</span></p>
-<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\displaystyle\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\leq\displaystyle\int_{0}^{1}\dfrac{x(1 - x)}{2}\mathrm{d}x\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)</span></p>
 <p>由<span class="heti-skip"><span class="heti-spacing"> </span>(1)<span class="heti-spacing"> </span></span>中<span><span class="heti-spacing"> </span><span class="arithmatex">\(f(x) - f(0)(1 - x) - f(1)x\geq-\dfrac{x(1 - x)}{2}\)</span></span></p>
-<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\geq\int_{0}^{1}-\dfrac{x(1 - x)}{2}\mathrm{d}x\)</span></p>
-<p><span class="arithmatex">\(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)</span></p>
-<p>综上：<span class="arithmatex">\(\left|\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\displaystyle\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\geq\displaystyle\int_{0}^{1}-\dfrac{x(1 - x)}{2}\mathrm{d}x\)</span></p>
+<p><span class="arithmatex">\(\Rightarrow\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)</span></p>
+<p>综上：<span class="arithmatex">\(\left|\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)</span></p>
 </div></div>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="Last update">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 26, 2024</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 28, 2024</span>
 </span>
 </aside>
 </article>
