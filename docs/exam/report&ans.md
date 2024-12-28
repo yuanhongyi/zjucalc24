@@ -81,7 +81,7 @@ $$\lim_{x\to+\infty}x\left[f\left(2+\dfrac{2}{x}\right)-f(2)\right]$$
 
 ---
 
-4.设\(f(x)=\int_{0}^{x}\cos(x - t)^{2}\text{d}t\)，\(\varphi(x)=\begin{cases}\dfrac{x-\sin x}{x-\ln(1 + x)},&x\neq0\\0,&x = 0\end{cases}\)，求\(\dfrac{\mathrm{d}}{\mathrm{d}x}f(\varphi(x))\vert_{x = 0}\)
+4.设\(f(x)=\displaystyle\int_{0}^{x}\cos(x - t)^{2}\text{d}t\)，\(\varphi(x)=\begin{cases}\dfrac{x-\sin x}{x-\ln(1 + x)},&x\neq0\\0,&x = 0\end{cases}\)，求\(\dfrac{\mathrm{d}}{\mathrm{d}x}f(\varphi(x))\vert_{x = 0}\)
 
 
 !!! Answer
@@ -91,10 +91,10 @@ $$\lim_{x\to+\infty}x\left[f\left(2+\dfrac{2}{x}\right)-f(2)\right]$$
     \]
 
     \[
-    f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos u^{2} \mathrm{d}u(令u = x-t)
+    f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos(u)^{2} \mathrm{d}u(令u = x-t)
     \]
 
-    故\(f(x)=\cos x^{2},\varphi(0) = 0\)，因此\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)
+    故\(f'(x)=\cos x^{2},\varphi(0) = 0\)，因此\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)
 
 
 ---
@@ -106,13 +106,13 @@ $$\int\ln\left(1+\sqrt{\dfrac{1+x}{x}} \right)\text{d}x $$
 
 !!! Answer
 
-    令\(\dfrac{\sqrt{1 + x}}{x}=t\)，得\(x = \dfrac{1}{t^{2}-1}\)
+    令\(\sqrt{\dfrac{1 + x}{x}}=t\)，得\(x = \dfrac{1}{t^{2}-1}\)
 
-    原式\(=\int \ln(1 + t)\mathrm{d}(\dfrac{1}{t^{2}-1})\)
+    原式\(=\displaystyle\int \ln(1 + t)\mathrm{d}(\dfrac{1}{t^{2}-1})\)
 
-    \(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{t^{2}-1}\cdot\dfrac{1}{t + 1}\mathrm{d}t\)
+    \(=\dfrac{\ln(1 + t)}{t^{2}-1}-\displaystyle\int\dfrac{1}{t^{2}-1}\cdot\dfrac{1}{t + 1}\mathrm{d}t\)
 
-    \(=\dfrac{\ln(1 + t)}{t^{2}-1}-\int\dfrac{1}{4(t - 1)}+\dfrac{-1}{4(t + 1)}-\dfrac{1}{2(t + 1)^{2}}\mathrm{d}t\)
+    \(=\dfrac{\ln(1 + t)}{t^{2}-1}-\displaystyle\int\left(\dfrac{1}{4(t - 1)}+\dfrac{-1}{4(t + 1)}-\dfrac{1}{2(t + 1)^{2}}\right)\mathrm{d}t\)
 
     \(=\dfrac{\ln(1 + t)}{t^{2}-1}+\dfrac{1}{4}\ln\left|\dfrac{t + 1}{t - 1}\right|-\dfrac{1}{2(t + 1)}+C\)
 
@@ -134,11 +134,9 @@ $$
 
 ---
 
-7.求曲线$f(x)$的弧长
+7.求曲线$f(x) = \displaystyle\int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t$的弧长
 
-$$
-f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t
-$$
+
 
 !!! Answer
 
@@ -179,7 +177,7 @@ $$
 
 !!! Answer
 
-    \(V(t)=\int_{2t}^{2t + 1}\pi x e^{-2x}\mathrm{d}x=-\dfrac{\pi}{2}\left[(2t + \dfrac{1}{2})e^{-4t}-(t + \dfrac{1}{2})e^{-2t}\right]\)
+    \(V(t)=\displaystyle\int_{t}^{2t}\pi x e^{-2x}\mathrm{d}x=-\dfrac{\pi}{2}\left[(2t + \dfrac{1}{2})e^{-4t}-(t + \dfrac{1}{2})e^{-2t}\right]\)
 
     则\(V^{\prime}(t)=-\pi te^{-2t}(1 - 4e^{-2t})\)，令\(V^{\prime}(t)=0\Rightarrow t=\ln 2\)，
 
@@ -316,14 +314,14 @@ $$\left\vert\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right\vert\leq\dfra
 
     (2) 证明：由(1)中\(f(x) - f(0)(1 - x) - f(1)x\leq\dfrac{x(1 - x)}{2}\)
 
-    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\leq\int_{0}^{1}\dfrac{x(1 - x)}{2}\mathrm{d}x\)
+    \(\Rightarrow\displaystyle\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\leq\displaystyle\int_{0}^{1}\dfrac{x(1 - x)}{2}\mathrm{d}x\)
 
-    \(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)
+    \(\Rightarrow\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\leq\dfrac{1}{12}\)
 
     由(1)中\(f(x) - f(0)(1 - x) - f(1)x\geq-\dfrac{x(1 - x)}{2}\)
 
-    \(\Rightarrow\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\geq\int_{0}^{1}-\dfrac{x(1 - x)}{2}\mathrm{d}x\)
+    \(\Rightarrow\displaystyle\int_{0}^{1}\left[f(x) - f(0)(1 - x) - f(1)x\right]\mathrm{d}x\geq\displaystyle\int_{0}^{1}-\dfrac{x(1 - x)}{2}\mathrm{d}x\)
 
-    \(\Rightarrow\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)
+    \(\Rightarrow\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\geq-\dfrac{1}{12}\)
 
-    综上：\(\left|\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)
+    综上：\(\left|\displaystyle\int_{0}^{1}f(x)\mathrm{d}x-\dfrac{f(0)+f(1)}{2}\right|\leq\dfrac{1}{12}\)
