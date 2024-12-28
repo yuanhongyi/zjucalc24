@@ -91,10 +91,10 @@ $$\lim_{x\to+\infty}x\left[f\left(2+\dfrac{2}{x}\right)-f(2)\right]$$
     \]
 
     \[
-    f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos(u)^{2} \mathrm{d}u(令u = x-t)
+    f(x)=\int_{0}^{x} \cos (x - t)^{2} \mathrm{d}t =  \int_{0}^{x} \cos(u^{2}) \mathrm{d}u(令u = x-t)
     \]
 
-    故\(f'(x)=\cos x^{2},\varphi(0) = 0\)，因此\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)
+    故\(f'(x)=\cos (x^{2}),\varphi(0) = 0\)，因此\(\left.\dfrac{\mathrm{d}f(\varphi(x))}{\mathrm{d}x}\right|_{x = 0}=f^{\prime}(\varphi(0))\cdot\varphi^{\prime}(0)=\dfrac{1}{3}\)
 
 
 ---
