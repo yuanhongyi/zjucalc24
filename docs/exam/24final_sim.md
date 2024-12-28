@@ -41,11 +41,7 @@ $$
 
 ---
 
-7.求曲线$f(x)$的弧长
-
-$$
-f(x) = \int_{-\sqrt{3}}^x\sqrt{3-t^2}dt
-$$
+7.求曲线$f(x) = \displaystyle\int_{-\sqrt{3}}^x\sqrt{3-t^2}\mathrm{d}t$的弧长
 
 ---
 

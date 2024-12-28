@@ -125,7 +125,7 @@ $$\int\ln\left(1+\sqrt{\dfrac{1+x}{x}} \right)\text{d}x $$
 6.求下面的极限
 
 $$
-\lim\limits_{n\to+\infty}\dfrac{1}{n^4}\prod\limits_{k = 1}^{2n}(n^2+k^2)^{\dfrac{1}{n}}
+\lim\limits_{n\to+\infty}\dfrac{1}{n^4}\prod\limits_{k = 1}^{2n}(n^2+k^2)^{\frac{1}{n}}
 $$
 
 !!! Answer
