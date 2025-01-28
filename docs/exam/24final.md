@@ -57,7 +57,7 @@ $f(0) = f(1) = 0\Rightarrow f(x)>0, \forall x\in(0,1)$
 
 $g(x)$在$(0,x_0)$上递增，在$(x_0,1)$上递减
 
-$g(0)<0,g(x_0)>0,g(1)<0\Rightarrow\exist x_1\in(0,x_0),x_2\in(x_0,1)$s.t. $g(x_1) = g(x_2) = 0$
+$g(0)<0,g(x_0)>0,g(1)<0\Rightarrow\exists x_1\in(0,x_0),x_2\in(x_0,1)$s.t. $g(x_1) = g(x_2) = 0$
 
 !!! Tip
 
@@ -75,7 +75,7 @@ $\therefore\displaystyle\int_{0}^{1}f(x)dx<f(x_0)(x_2 - x_1)$
 
 $\iff\displaystyle\int_{0}^{x_1}f(x)\mathrm{d}x+\displaystyle\int_{x_2}^{1}f(x)\mathrm{d}x < \displaystyle\int_{x_1}^{x_2}f(x_0)-f(x)\mathrm{d}x$
 
-$\Leftarrow \displaystyle\int_{0}^{x_1}f(x)\mathrm{d}x < \displaystyle\int_{x_1}^{x_0}f(x_0)-f(x)\mathrm{d}x$且$ \displaystyle\int_{x_2}^{1}f(x)\mathrm{d}x < \displaystyle\int_{x_0}^{x_2}f(x_0)-f(x)\mathrm{d}x$
+$\Leftarrow \displaystyle\int_{0}^{x_1}f(x)\mathrm{d}x < \displaystyle\int_{x_1}^{x_0}f(x_0)-f(x)\mathrm{d}x 且 \displaystyle\int_{x_2}^{1}f(x)\mathrm{d}x < \displaystyle\int_{x_0}^{x_2}f(x_0)-f(x)\mathrm{d}x$
 
 !!! Tip
 
@@ -99,7 +99,7 @@ $h(x) = h_1(x)-f(x) = f(x_0)-f(2x_1-x) -f(x),h(x_1) = 0$
 
 $h'(x) = f'(2x_1-x)-f'(x),h'(x_1) = 0$
 
-$h''(x) = -f''(2x_1-x)-f''(x) >0 $
+$h''(x) = -f''(2x_1-x)-f''(x) >0$
 
 $\therefore h'(x)<0 ,h(x)$递减，$h(x)\ge h(x_1) = 0$
 
