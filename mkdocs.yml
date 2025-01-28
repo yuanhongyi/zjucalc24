@@ -152,6 +152,7 @@ nav:
     - 考情分析: exam/final_exam_analysis.md
     - 24微甲期末模拟: exam/24final_sim.md
     - 模拟题分析与解答: exam/report&ans.md
+    - 24期末部分分析: exam/24final.md
   - PDF: 
     - Index: pdf/index.md
     - 数列极限: pdf/seq_lim/1.md
